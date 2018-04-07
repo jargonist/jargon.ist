@@ -37,8 +37,8 @@ const createPages = async ({ boundActionCreators, graphql }) => {
 
   // Algolia Indexes
   const algoliaClient = algoliasearch(
-    process.env.ALGOLIASEARCH_APP_ID,
-    process.env.ALGOLIASEARCH_ADMIN_KEY,
+    process.env.GATSBY_ALGOLIASEARCH_APP_ID,
+    process.env.GATSBY_ALGOLIASEARCH_ADMIN_KEY,
   );
 
   const jargonsIndex = algoliaClient.initIndex('jargons');

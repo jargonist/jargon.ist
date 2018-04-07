@@ -2,6 +2,11 @@
 
 import React from 'react';
 
-const Index = () => <h1>Jargon</h1>;
+const Index = () => (
+  <div>
+    <h1>Jargon</h1>
+    {process.env.GATSBY_ALGOLIASEARCH_APP_ID}
+  </div>
+);
 
 export default Index;
