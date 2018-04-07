@@ -5,3 +5,5 @@ yarn-error.log
 
 # Build directory
 /public
+
+.env

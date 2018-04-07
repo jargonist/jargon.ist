@@ -1,4 +1,5 @@
 const { resolve } = require('path');
+const algoliasearch = require('algoliasearch');
 
 const createPages = async ({ boundActionCreators, graphql }) => {
   const { createPage } = boundActionCreators;
@@ -34,22 +35,35 @@ const createPages = async ({ boundActionCreators, graphql }) => {
     throw Error(allMarkdown.errors);
   }
 
+  // Algolia Indexes
+  const algoliaClient = algoliasearch(
+    process.env.ALGOLIASEARCH_APP_ID,
+    process.env.ALGOLIASEARCH_ADMIN_KEY,
+  );
+
+  const jargonsIndex = algoliaClient.initIndex('jargons');
+  const tagsIndex = algoliaClient.initIndex('tags');
+
   const tagList = [];
   const jargonList = [];
 
   allMarkdown.data.allMarkdownRemark.edges.forEach(({ node }) => {
-    jargonList.push({
+    const jargon = {
       title: node.frontmatter.title,
       slug: node.fields.slug,
-    });
+    };
+
+    jargonList.push(jargon);
+    jargonsIndex.addObject(jargon, jargon.slug);
 
     node.fields.tagList.forEach(tag => {
       if (tagList.findIndex(t => t.slug === tag.slug) === -1) {
         tagList.push(tag);
+        tagsIndex.addObject(tag, tag.slug);
       }
     });
 
-    // Jargon Detail
+    // Jargon Detail Page
     createPage({
       path: node.fields.slug,
       component: jargonTemplate,
@@ -59,7 +73,7 @@ const createPages = async ({ boundActionCreators, graphql }) => {
     });
   });
 
-  // All Jargons
+  // All Jargons Page
   createPage({
     path: '/dizin',
     component: jargonsTemplate,
@@ -68,7 +82,7 @@ const createPages = async ({ boundActionCreators, graphql }) => {
     },
   });
 
-  // All Tags
+  // All Tags Page
   createPage({
     path: '/etiketler',
     component: tagsTemplate,
@@ -77,7 +91,7 @@ const createPages = async ({ boundActionCreators, graphql }) => {
     },
   });
 
-  // Tag Detail
+  // Tag Detail Page
   tagList.forEach(tag => {
     createPage({
       path: `/e/${tag.slug}`,

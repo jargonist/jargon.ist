@@ -9,6 +9,8 @@
     "gatsby/react-dom": "16.3.1"
   },
   "dependencies": {
+    "algoliasearch": "^3.26.0",
+    "dotenv": "^5.0.1",
     "gatsby": "^1.9.241",
     "gatsby-link": "^1.6.39",
     "gatsby-plugin-react-helmet": "^2.0.8",
