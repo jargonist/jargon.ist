@@ -1,0 +1,13 @@
+{
+  "editor.formatOnSave": true,
+  "flow.useNPMPackagedFlow": true,
+  "javascript.validate.enable": false,
+  "eslint.enable": true,
+  "stylelint.enable": true,
+  "css.validate": false,
+  "files.associations": {
+    ".lintstagedrc": "json",
+    ".stylelintrc": "json",
+    ".remarkrc": "json"
+  }
+}

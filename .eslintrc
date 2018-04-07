@@ -1,0 +1,25 @@
+{
+  "extends": [
+    "airbnb",
+    "prettier",
+    "plugin:flowtype/recommended",
+    "plugin:eslint-comments/recommended"
+  ],
+  "env": {
+    "browser": true
+  },
+  "plugins": ["react", "jsx-a11y", "import", "prettier", "flowtype", "eslint-comments", "graphql"],
+  "rules": {
+    "react/jsx-filename-extension": "off",
+    "flowtype/require-valid-file-annotation": ["error", "always"],
+    "jsx-a11y/anchor-is-valid": [
+      "error",
+      {
+        "components": ["Link"],
+        "specialLink": ["to", "hrefLeft", "hrefRight"],
+        "aspects": ["noHref", "invalidHref", "preferButton"]
+      }
+    ],
+    "prettier/prettier": ["error"]
+  }
+}
