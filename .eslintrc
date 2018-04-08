@@ -12,6 +12,20 @@
   "rules": {
     "react/jsx-filename-extension": "off",
     "react/no-unescaped-entities": "off",
+    "react/sort-comp": [
+      2,
+      {
+        "order": [
+          "type-annotations",
+          "state",
+          "static-methods",
+          "lifecycle",
+          "everything-else",
+          "/^render.+$/",
+          "render"
+        ]
+      }
+    ],
     "flowtype/require-valid-file-annotation": ["error", "always"],
     "jsx-a11y/anchor-is-valid": [
       "error",

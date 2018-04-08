@@ -8,6 +8,7 @@
   display: flex;
   flex-direction: row;
   padding: px-to-rem(8px) px-to-rem(12px);
+  position: relative;
 
   &__input {
     background-color: transparent;
@@ -16,5 +17,50 @@
     margin-left: gap(xsmall);
     outline: 0;
     width: 100%;
+  }
+
+  &__suggestions-container {
+    border-radius: 4px;
+    color: $secondary-color;
+    position: absolute;
+    right: 0;
+    width: px-to-rem(400px);
+
+    &--open::before {
+      background-color: transparent;
+      border-color: transparent transparent $color-tuatara;
+      border-style: solid;
+      border-width: 0 px-to-rem(10px) px-to-rem(10px);
+      content: '';
+      display: inline-block;
+      margin-left: px-to-rem(365px);
+      margin-top: 10px;
+      text-align: right;
+      vertical-align: middle;
+    }
+  }
+
+  &__suggestions-section-title {
+    background-color: $color-tuatara;
+    color: $color-white;
+    margin: 0;
+    padding: pad(2xsmall) pad(xsmall);
+  }
+
+  &__suggestions-list {
+    background-color: $color-vapor;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  &__suggestion {
+    color: $primary-color;
+    padding: pad(2xsmall) pad(xsmall);
+  }
+
+  &__suggestion--highlighted {
+    background-color: $primary-color;
+    color: $color-white;
   }
 }
