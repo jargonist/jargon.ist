@@ -17,3 +17,7 @@ Jargonları güncellemek veya yeni bir tane eklemek için yapmanız gereken, bu 
 ## Kurulum
 
 Repo'yu clone'ladıktan sonra uygulama klasöründe `yarn` komutunu çalıştırmanız yeterlidir. Herhangi bir kod değişikliğini commit'lemeden önce `yarn lint` ve `yarn test` komutlarını çalıştırmayı unutmayın.
+
+## Lisans
+
+Bu uygulama [MIT](LICENSE) lisansına sahiptir.
