@@ -57,7 +57,7 @@ const createPages = async ({ boundActionCreators, graphql }) => {
 
     jargonList.push(jargon);
 
-    if (process.env.ALGOLIA_INDEXING_ENABLED) {
+    if (process.env.ALGOLIA_INDEXING_ENABLED === 'true') {
       jargonsIndex.addObject(jargon, jargon.slug);
     }
 
@@ -65,7 +65,7 @@ const createPages = async ({ boundActionCreators, graphql }) => {
       if (tagList.findIndex(t => t.slug === tag.slug) === -1) {
         tagList.push(tag);
 
-        if (process.env.ALGOLIA_INDEXING_ENABLED) {
+        if (process.env.ALGOLIA_INDEXING_ENABLED === 'true') {
           tagsIndex.addObject(tag, tag.slug);
         }
       }
