@@ -62,5 +62,6 @@
   &__suggestion--highlighted {
     background-color: $primary-color;
     color: $color-white;
+    cursor: pointer;
   }
 }
