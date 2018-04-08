@@ -2,33 +2,29 @@
 
 import React from 'react';
 import Helmet from 'react-helmet';
-import Link from 'gatsby-link';
 
 import { Container, Section } from '../components/ui';
 
+import JargonList from '../components/pages/JargonList';
+
+import { type Jargon } from '../types/jargon';
+
 type Props = {
-  pathContext: Object,
+  pathContext: {
+    jargonList: Array<Jargon>,
+  },
 };
 
-const Tags = ({ pathContext }: Props) => (
+const Jargons = ({ pathContext }: Props) => (
   <Section>
     <Container>
       <Helmet>
         <title>Dizin</title>
       </Helmet>
 
-      <h1>Dizin</h1>
-      <ul style={{ margin: 0, padding: 0, listStyle: 'none' }}>
-        {pathContext.jargonList.map(jargon => (
-          <li key={jargon.slug} className="u-gap-bottom-xsmall">
-            <Link to={`/${jargon.slug}`} className="u-text-lowercase">
-              {jargon.title}
-            </Link>
-          </li>
-        ))}
-      </ul>
+      <JargonList jargons={pathContext.jargonList.sort((a, b) => a.title > b.title)} />
     </Container>
   </Section>
 );
 
-export default Tags;
+export default Jargons;

@@ -55,6 +55,16 @@ const Footer = () => (
                 target="_blank"
                 rel="noopener noreferrer"
               >
+                Kaynağı Görüntüle
+              </a>
+            </li>
+            <li className="c-footer__menu-item">
+              <a
+                href={process.env.GATSBY_REPO_URL}
+                className="c-footer__menu-link"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 Katkıda Bulun
               </a>
             </li>

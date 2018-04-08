@@ -1,15 +1,26 @@
 // @flow
-/* eslint-disable react/no-danger */
 
-import React, { Fragment } from 'react';
+import React from 'react';
 import Helmet from 'react-helmet';
-import Link from 'gatsby-link';
 import { graphql } from 'graphql';
 
 import { Container, Section } from '../components/ui';
 
+import JargonDetail from '../components/pages/JargonDetail';
+
+import { type JargonFrontmatter } from '../types/jargon';
+import { type Tag } from '../types/tag';
+
 type Props = {
-  data: Object,
+  data: {
+    markdownRemark: {
+      html: string,
+      frontmatter: JargonFrontmatter,
+      fields: {
+        tagList: Array<Tag>,
+      },
+    },
+  },
 };
 
 const Jargon = ({ data }: Props) => {
@@ -20,31 +31,16 @@ const Jargon = ({ data }: Props) => {
       <Container>
         <Helmet>
           <title>{frontmatter.title}</title>
-          {(frontmatter.tags || []).length > 0 && (
-            <meta name="keywords" content={frontmatter.tags.join(', ')} />
-          )}
+          <meta name="keywords" content={(frontmatter.tags || []).join(', ')} />
         </Helmet>
 
-        <h1 className="u-text-lowercase">{frontmatter.title}</h1>
-        <div dangerouslySetInnerHTML={{ __html: html }} />
-
-        {(frontmatter.tags || []).length > 0 && (
-          <Fragment>
-            <hr className="u-gap-top-medium" />
-
-            <div>
-              {fields.tagList.map(tag => (
-                <Link
-                  key={tag.slug}
-                  to={`/k/${tag.slug}`}
-                  className="u-gap-right-small u-text-lowercase"
-                >
-                  {tag.title}
-                </Link>
-              ))}
-            </div>
-          </Fragment>
-        )}
+        <JargonDetail
+          jargon={{
+            html,
+            title: frontmatter.title,
+            tags: (fields.tagList || []).sort((a, b) => a.title > b.title),
+          }}
+        />
       </Container>
     </Section>
   );
@@ -69,5 +65,3 @@ export const pageQuery = graphql`
 `;
 
 export default Jargon;
-
-/* eslint-enable react/no-danger */

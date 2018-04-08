@@ -2,12 +2,17 @@
 
 import React from 'react';
 import Helmet from 'react-helmet';
-import Link from 'gatsby-link';
 
 import { Container, Section } from '../components/ui';
 
+import TagList from '../components/pages/TagList';
+
+import { type Tag } from '../types/tag';
+
 type Props = {
-  pathContext: Object,
+  pathContext: {
+    tagList: Array<Tag>,
+  },
 };
 
 const Tags = ({ pathContext }: Props) => (
@@ -17,16 +22,7 @@ const Tags = ({ pathContext }: Props) => (
         <title>Konular</title>
       </Helmet>
 
-      <h1>Konular</h1>
-      <ul style={{ margin: 0, padding: 0, listStyle: 'none' }}>
-        {pathContext.tagList.map(tag => (
-          <li key={tag.slug} className="u-gap-bottom-xsmall">
-            <Link to={`/k/${tag.slug}`} className="u-text-lowercase">
-              {tag.title}
-            </Link>
-          </li>
-        ))}
-      </ul>
+      <TagList tags={pathContext.tagList.sort((a, b) => a.title > b.title)} />
     </Container>
   </Section>
 );

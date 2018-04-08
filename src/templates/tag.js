@@ -2,14 +2,31 @@
 
 import React from 'react';
 import Helmet from 'react-helmet';
-import Link from 'gatsby-link';
 import { graphql } from 'graphql';
 
 import { Container, Section } from '../components/ui';
 
+import TagDetail from '../components/pages/TagDetail';
+
+import { type JargonFrontmatter } from '../types/jargon';
+
 type Props = {
-  data: Object,
-  pathContext: Object,
+  data: {
+    allMarkdownRemark: {
+      totalCount: number,
+      edges: Array<{
+        node: {
+          fields: {
+            slug: string,
+          },
+          frontmatter: JargonFrontmatter,
+        },
+      }>,
+    },
+  },
+  pathContext: {
+    tag: string,
+  },
 };
 
 const Jargon = ({ data, pathContext }: Props) => {
@@ -21,18 +38,17 @@ const Jargon = ({ data, pathContext }: Props) => {
         <Helmet>
           <title>{`${pathContext.tag} konulu jargonlar`}</title>
         </Helmet>
-        <h1>
-          {pathContext.tag} ({totalCount})
-        </h1>
-        <ul style={{ margin: 0, padding: 0, listStyle: 'none' }}>
-          {jargons.map(jargon => (
-            <li key={jargon.node.fields.slug} className="u-gap-bottom-xsmall">
-              <Link to={`/${jargon.node.fields.slug}`} className="u-text-lowercase">
-                {jargon.node.frontmatter.title}
-              </Link>
-            </li>
-          ))}
-        </ul>
+
+        <TagDetail
+          tag={pathContext.tag}
+          totalCount={totalCount}
+          jargons={jargons
+            .map(jargon => ({
+              title: jargon.node.frontmatter.title,
+              slug: jargon.node.fields.slug,
+            }))
+            .sort((a, b) => a.title > b.title)}
+        />
       </Container>
     </Section>
   );
