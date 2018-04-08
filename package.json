@@ -46,7 +46,8 @@
     "lint": "yarn run lint:js && yarn run lint:flow && yarn run lint:css && yarn lint:md",
     "format:js": "prettier --write 'src/**/*.{js,jsx}' 'gatsby/**/*.js' 'gatsby-*.js'",
     "format:css": "prettier-stylelint --quiet --write 'src/**/*.scss'",
-    "format": "yarn run format:js && yarn run format:css",
+    "format:md": "prettier --write 'jargons/*.md' 'README.md' 'CONTRIBUTING.md'",
+    "format": "yarn run format:js && yarn run format:css && yarn run format:md",
     "flow-typed-install": "flow-typed install",
     "precommit": "lint-staged"
   },

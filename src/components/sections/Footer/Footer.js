@@ -80,7 +80,7 @@ const Footer = () => (
             </li>
             <li className="c-footer__menu-item">
               <a
-                href={`${process.env.GATSBY_REPO_URL || ''}#contributors`}
+                href={`${process.env.GATSBY_REPO_URL || ''}#katkida-bulunanlar`}
                 className="c-footer__menu-link"
                 target="_blank"
                 rel="noopener noreferrer"
