@@ -23,7 +23,7 @@ const Footer = () => (
             <img
               src="https://www.algolia.com/static_assets/images/press/downloads/search-by-algolia-white.svg"
               alt="Search by Algolia"
-              height="24"
+              height="18"
             />
           </div>
         </div>
