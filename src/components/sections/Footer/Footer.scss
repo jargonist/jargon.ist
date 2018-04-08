@@ -12,6 +12,12 @@
     grid-template-columns: 3fr 1fr 1fr;
   }
 
+  &__logos {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
   &__logo {
     &:hover {
       color: $primary-color;

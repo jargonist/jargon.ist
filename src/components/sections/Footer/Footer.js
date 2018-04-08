@@ -13,9 +13,19 @@ const Footer = () => (
   <footer className="c-footer">
     <Container>
       <div className="c-footer__inner">
-        <div>
-          <Logo className="u-color-white" />
-          <small>MIT lisansı ile geliştirilmiştir.</small>
+        <div className="c-footer__logos">
+          <div>
+            <Logo className="u-color-white" />
+            <small>MIT lisansı ile geliştirilmiştir.</small>
+          </div>
+
+          <div>
+            <img
+              src="https://www.algolia.com/static_assets/images/press/downloads/search-by-algolia-white.svg"
+              alt="Search by Algolia"
+              height="24"
+            />
+          </div>
         </div>
 
         <div>
