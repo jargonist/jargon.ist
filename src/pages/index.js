@@ -1,26 +1,24 @@
 // @flow
 
 import React from 'react';
-import { InstantSearch, Index, SearchBox, Hits, Configure } from 'react-instantsearch/dom';
+
+import { Container, Section, LinkButton } from '../components/ui';
 
 const Home = () => (
-  <div>
-    <h1>Jargon</h1>
-    <InstantSearch
-      appId={process.env.GATSBY_ALGOLIASEARCH_APP_ID}
-      apiKey={process.env.GATSBY_ALGOLIASEARCH_SEARCH_KEY}
-      indexName="jargons"
-    >
-      <Configure hitsPerPage={5} />
-      <SearchBox />
-      <Index indexName="jargons">
-        <Hits />
-      </Index>
-      <Index indexName="tags">
-        <Hits />
-      </Index>
-    </InstantSearch>
-  </div>
+  <Section>
+    <Container>
+      <h1>Jargon.ist</h1>
+      <p className="u-half-width u-gap-bottom">
+        Jargon.ist, bilgisayar bilimleri alanında kullanılan bazı jargonların topluluk tarafından
+        Türkçe olarak açıklanmasını sağlayan bir web uygulamasıdır.
+      </p>
+
+      <LinkButton to="/dizin" primary>
+        Dizini Görüntüle
+        <span className="u-pad-left-2xsmall">⟶</span>
+      </LinkButton>
+    </Container>
+  </Section>
 );
 
 export default Home;

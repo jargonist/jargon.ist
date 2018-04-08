@@ -1,0 +1,93 @@
+//
+// Variables
+//
+
+$g-body-bg: $color-white !default;
+$g-text-color: $color-oil !default;
+$g-link-color: $primary-color !default;
+$g-link-hover-color: darken($g-link-color, 15%) !default;
+$g-link-hover-decoration: underline !default;
+$g-border-color: $color-oil;
+
+$g-font-primary: 'Playfair Display', serif !default;
+$g-font-secondary: 'Roboto', sans-serif !default;
+$g-font-family-base: $g-font-primary;
+
+$g-font-size-root: 16px !default;
+
+$g-font-size-base-px: 16px;
+$g-font-size-base: px-to-rem($g-font-size-base-px) !default;
+
+$g-font-size-h1: px-to-rem(48px) !default;
+$g-font-size-h2: px-to-rem(32px) !default;
+$g-font-size-h3: px-to-rem(24px) !default;
+$g-font-size-h4: px-to-rem(18px) !default;
+$g-font-size-h5: 1rem !default;
+$g-font-size-h6: px-to-rem(14px) !default;
+
+$g-line-height-base: (24 / 16) !default; // 20/14
+$g-line-height-computed: px-to-rem(($g-font-size-base-px * $g-line-height-base)) !default;
+
+$g-headings-font-family: $g-font-secondary !default;
+$g-headings-font-weight: 700 !default;
+$g-headings-line-height: 1.1 !default;
+$g-headings-color: inherit !default;
+$g-headings-small-color: $color-monsoon;
+
+$g-text-muted-color: $color-monsoon !default;
+$g-hr-border-color: $g-border-color !default;
+
+// FONT SIZING
+// -------------------------
+
+$g-font-size-small: px-to-rem($g-font-size-base-px - 2px);
+$g-font-size-xsmall: px-to-rem($g-font-size-base-px - 4px);
+$g-font-size-2xsmall: px-to-rem($g-font-size-base-px - 6px);
+$g-font-size-medium: px-to-rem($g-font-size-base-px + 2px);
+$g-font-size-large: px-to-rem($g-font-size-base-px + 4px);
+$g-font-size-xlarge: px-to-rem($g-font-size-base-px + 8px);
+
+// GAPS
+//
+// normal: 24px <= Global line height
+// small:  16px
+// xsmall: 8px
+// 2xsmall: 4px
+// medium: 32px
+// large: 40px
+// xlarge:  48px
+// -------------------------
+$g-base-gap: $g-line-height-computed;
+$g-gaps: (
+  normal: $g-base-gap,
+  small: ($g-base-gap / 1.5),
+  xsmall: ($g-base-gap / 3),
+  2xsmall: ($g-base-gap / 6),
+  medium: ($g-base-gap * (4 / 3)),
+  large: ($g-base-gap * (5 / 3)),
+  xlarge: ($g-base-gap * 2)
+);
+
+// PADDINGS
+//
+// medium: 40px | large: 48px | xlarge: 64px | 2xlarge: 96px
+// normal: 32px
+// small: 24px | xsmall: 16px | 2xsmall: 8px
+// -------------------------
+$g-base-padding: px-to-rem(32px);
+$g-pads: (
+  normal: $g-base-padding,
+  small: ($g-base-padding * 0.75),
+  xsmall: ($g-base-padding / 2),
+  2xsmall: ($g-base-padding / 4),
+  medium: ($g-base-padding * 1.25),
+  large: ($g-base-padding * 1.5),
+  xlarge: ($g-base-padding * 2),
+  2xlarge: ($g-base-padding * 3)
+);
+
+//
+// Transition Duration
+// -------------------------
+
+$g-transition-duration: 0.3s;

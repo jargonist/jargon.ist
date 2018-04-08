@@ -1,0 +1,20 @@
+@import '../../../styles/abstracts/index';
+
+.c-search {
+  align-items: center;
+  background-color: $color-tuatara;
+  border-radius: px-to-rem(3px);
+  color: $color-white;
+  display: flex;
+  flex-direction: row;
+  padding: px-to-rem(8px) px-to-rem(12px);
+
+  &__input {
+    background-color: transparent;
+    border: 0;
+    color: $color-white;
+    margin-left: gap(xsmall);
+    outline: 0;
+    width: 100%;
+  }
+}

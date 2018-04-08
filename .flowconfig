@@ -6,6 +6,7 @@
 
 [libs]
 flow-typed
+libdefs.js
 
 [lints]
 
@@ -18,5 +19,7 @@ esproposal.class_static_fields=enable
 esproposal.class_instance_fields=enable
 
 suppress_comment=.*\\$FlowIgnoreNextLine
+
+module.name_mapper='.*\(.s?css\)' -> 'empty/object'
 
 [strict]

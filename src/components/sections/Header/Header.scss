@@ -1,0 +1,21 @@
+@import '../../../styles/abstracts/index';
+
+.c-header {
+  background-color: $secondary-color;
+  flex-shrink: 0;
+
+  &__inner {
+    align-items: center;
+    display: grid;
+    grid-gap: px-to-rem(32px);
+    grid-template-columns: 1fr 4fr 2fr;
+    padding: px-to-rem(16rem) 0;
+  }
+
+  &__logo {
+    &:hover {
+      color: $primary-color;
+      text-decoration: none;
+    }
+  }
+}

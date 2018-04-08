@@ -1,11 +1,13 @@
 ---
-title: Pure Function
+title: pure function
 tags:
 - javascript
+- haskell
+- ocaml
 - fonksiyonel programlama
 ---
 
-Verilen bir argüman için **her zaman** aynı çıktıyı veren fonksiyonlara denir. Herhangi bir side effect oluşturmaz.
+Verilen argümanlar için **her zaman** aynı çıktıyı veren fonksiyonlara denir. Herhangi bir [side effect](/side-effect) oluşturmaz.
 
 ```js
 function add(x, y) {

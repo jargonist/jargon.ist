@@ -1,0 +1,67 @@
+@function gap($size: normal) {
+  @return map-get($g-gaps, $size);
+}
+
+@function pad($size: normal) {
+  @return map-get($g-pads, $size);
+}
+
+//
+// Remove the unit of a length
+// @param {Number} $number - Number to remove unit from
+// @return {Number} - Unitless number
+//
+
+@function strip-unit($number) {
+  @if type-of($number) == 'number' and not unitless($number) {
+    @return $number / ($number * 0 + 1);
+  }
+
+  @return $number;
+}
+
+// Converts px to rem
+@function px-to-rem($value, $base-value: $g-font-size-root) {
+  @if type-of($value) != 'number' {
+    @warn 'value: #{$value} is not a number';
+    @return null;
+  }
+  @if type-of($base-value) != 'number' {
+    @warn 'base-value: #{$base-value} is not a number';
+    @return null;
+  }
+  $value: strip-unit($value) / strip-unit($base-value) * 1rem;
+  @if (strip-unit($value) == 0) {
+    $value: 0;
+  } // Turn 0rem into 0
+  @return $value;
+}
+
+// Converts rem to px
+@function rem-to-px($value, $base-value: $g-font-size-root) {
+  @if type-of($value) != 'number' {
+    @warn 'value: #{$value} is not a number';
+    @return null;
+  }
+  @if type-of($base-value) != 'number' {
+    @warn 'base-value: #{$base-value} is not a number';
+    @return null;
+  }
+  $value: strip-unit($value) * strip-unit($base-value) * 1px;
+  @if (strip-unit($value) == 0) {
+    $value: 0;
+  } // Turn 0rem into 0
+  @return $value;
+}
+
+//
+// Px to Em Mixin
+//
+
+@function em($px, $base: $g-font-size-base) {
+  $unit: unit($base);
+  @if ($unit == rem) {
+    $base: rem-to-px($base);
+  }
+  @return ($px / $base) * 1em;
+}

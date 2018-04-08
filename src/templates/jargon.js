@@ -6,6 +6,8 @@ import Helmet from 'react-helmet';
 import Link from 'gatsby-link';
 import { graphql } from 'graphql';
 
+import { Container, Section } from '../components/ui';
+
 type Props = {
   data: Object,
 };
@@ -14,25 +16,37 @@ const Jargon = ({ data }: Props) => {
   const { markdownRemark } = data;
   const { frontmatter, html, fields } = markdownRemark;
   return (
-    <div>
-      <Helmet>
-        <title>{frontmatter.title}</title>
-        <meta name="keywords" content={frontmatter.tags.join(', ')} />
-      </Helmet>
+    <Section>
+      <Container>
+        <Helmet>
+          <title>{frontmatter.title}</title>
+          {(frontmatter.tags || []).length > 0 && (
+            <meta name="keywords" content={frontmatter.tags.join(', ')} />
+          )}
+        </Helmet>
 
-      <h1>{frontmatter.title}</h1>
-      <div dangerouslySetInnerHTML={{ __html: html }} />
-      <hr />
-      <div>
-        <strong>Etiketler:</strong>
-        {fields.tagList.map((tag, index) => (
-          <Fragment key={tag.slug}>
-            <Link to={`/e/${tag.slug}`}>{tag.title}</Link>
-            {index < fields.tagList.length - 1 && <span>, </span>}
+        <h1 className="u-text-lowercase">{frontmatter.title}</h1>
+        <div dangerouslySetInnerHTML={{ __html: html }} />
+
+        {(frontmatter.tags || []).length > 0 && (
+          <Fragment>
+            <hr className="u-gap-top-medium" />
+
+            <div>
+              {fields.tagList.map(tag => (
+                <Link
+                  key={tag.slug}
+                  to={`/k/${tag.slug}`}
+                  className="u-gap-right-small u-text-lowercase"
+                >
+                  {tag.title}
+                </Link>
+              ))}
+            </div>
           </Fragment>
-        ))}
-      </div>
-    </div>
+        )}
+      </Container>
+    </Section>
   );
 };
 

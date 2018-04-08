@@ -24,6 +24,7 @@ const createPages = async ({ boundActionCreators, graphql }) => {
             frontmatter {
               title
               tags
+              sameWith
             }
           }
         }
@@ -51,6 +52,7 @@ const createPages = async ({ boundActionCreators, graphql }) => {
     const jargon = {
       title: node.frontmatter.title,
       slug: node.fields.slug,
+      sameWith: node.frontmatter.sameWith || [],
     };
 
     jargonList.push(jargon);
@@ -90,7 +92,7 @@ const createPages = async ({ boundActionCreators, graphql }) => {
 
   // All Tags Page
   createPage({
-    path: '/etiketler',
+    path: '/konular',
     component: tagsTemplate,
     context: {
       tagList,
@@ -100,7 +102,7 @@ const createPages = async ({ boundActionCreators, graphql }) => {
   // Tag Detail Page
   tagList.forEach(tag => {
     createPage({
-      path: `/e/${tag.slug}`,
+      path: `/k/${tag.slug}`,
       component: tagTemplate,
       context: {
         tag: tag.title,

@@ -1,3 +1,4 @@
 {
-  "*.js": ["yarn run format", "git add"]
+  "*.js": ["yarn run format:js", "git add"],
+  "*.scss": ["yarn run format:css", "git add"]
 }

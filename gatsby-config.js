@@ -2,11 +2,12 @@
 
 module.exports = {
   siteMetadata: {
-    title: 'Jargon!',
+    title: 'Jargon',
   },
   plugins: [
     'gatsby-plugin-react-helmet',
-    'gatsby-plugin-styled-components',
+    'gatsby-plugin-sass',
+    'gatsby-plugin-purify-css',
     {
       resolve: 'gatsby-source-filesystem',
       options: {
@@ -14,6 +15,17 @@ module.exports = {
         name: 'jargons',
       },
     },
-    'gatsby-transformer-remark',
+    {
+      resolve: 'gatsby-transformer-remark',
+      options: {
+        plugins: ['gatsby-remark-prismjs'],
+      },
+    },
+    {
+      resolve: `gatsby-plugin-google-fonts`,
+      options: {
+        fonts: ['Roboto:400,700', 'Playfair Display:400,400i,700,700i'],
+      },
+    },
   ],
 };

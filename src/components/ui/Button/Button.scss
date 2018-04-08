@@ -1,0 +1,18 @@
+@import '../../../../node_modules/buttono/buttono';
+@import '../../../styles/abstracts/index';
+
+$buttono-bg-color: $primary-color;
+$buttono-bg-hover: scale-color($buttono-bg-color, $lightness: $buttono-function-factor);
+$buttono-radius: px-to-rem(4px);
+$buttono-line-height: (20 / 14);
+$buttono-padding-ends: px-to-rem(15px);
+$buttono-padding-sides: px-to-rem(48px);
+$buttono-font-family: $g-font-secondary;
+
+.c-button {
+  @include buttono-block;
+
+  &--primary {
+    @include buttono-style-modifier($border-color: null, $border-hover-color: null);
+  }
+}

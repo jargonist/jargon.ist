@@ -1,0 +1,15 @@
+//
+// Root
+//
+
+.o-root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+
+  // IE Bug
+  // See https://github.com/philipwalton/flexbugs#flexbug-3
+  @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+    height: 100vh;
+  }
+}

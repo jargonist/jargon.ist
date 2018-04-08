@@ -16,13 +16,11 @@ const onCreateNode = ({ boundActionCreators, getNodes }) => {
 
       const tagList = tags.map(tag => ({ title: tag, slug: slug(tag, { lower: true }) }));
 
-      if (tagList.length) {
-        createNodeField({
-          node,
-          name: 'tagList',
-          value: tagList,
-        });
-      }
+      createNodeField({
+        node,
+        name: 'tagList',
+        value: tagList,
+      });
     });
 };
 

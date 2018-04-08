@@ -10,35 +10,43 @@
   },
   "dependencies": {
     "algoliasearch": "^3.26.0",
+    "buttono": "^0.1.0",
+    "classnames": "^2.2.5",
     "dotenv": "^5.0.1",
+    "empty": "^0.10.1",
     "gatsby": "^1.9.241",
     "gatsby-link": "^1.6.39",
+    "gatsby-plugin-google-fonts": "^0.0.4",
+    "gatsby-plugin-purify-css": "^2.2.1",
     "gatsby-plugin-react-helmet": "^2.0.8",
-    "gatsby-plugin-styled-components": "^2.0.11",
+    "gatsby-plugin-sass": "^1.0.25",
+    "gatsby-remark-prismjs": "^1.2.24",
     "gatsby-source-filesystem": "^1.5.28",
     "gatsby-transformer-remark": "^1.7.39",
     "graphql": "0.11.7",
+    "normalize.css": "^8.0.0",
+    "prismjs": "^1.13.0",
     "react": "^16.3.1",
     "react-dom": "^16.3.1",
     "react-helmet": "^5.2.0",
     "react-instantsearch": "^5.0.3",
-    "slug": "^0.9.1",
-    "styled-components": "^3.2.5"
+    "slug": "^0.9.1"
   },
-  "keywords": [
-    "gatsby"
-  ],
+  "keywords": ["gatsby"],
   "license": "MIT",
   "scripts": {
     "build": "gatsby build",
     "develop": "gatsby develop",
+    "start": "yarn run develop",
     "test": "echo \"Error: no test specified\" && exit 1",
     "lint:js": "eslint .",
     "lint:flow": "flow check",
-    "lint:css": "stylelint 'src/**/*.js'",
+    "lint:css": "stylelint 'src/**/*.scss'",
     "lint:md": "remark .",
     "lint": "yarn run lint:js && yarn run lint:flow && yarn run lint:css && yarn lint:md",
-    "format": "prettier --write 'src/**/*.js' 'gatsby/**/*.js' 'gatsby-*.js'",
+    "format:js": "prettier --write 'src/**/*.{js,jsx}' 'gatsby/**/*.js' 'gatsby-*.js'",
+    "format:css": "prettier-stylelint --quiet --write 'src/**/*.scss'",
+    "format": "yarn run format:js && yarn run format:css",
     "flow-typed-install": "flow-typed install",
     "precommit": "lint-staged"
   },
@@ -59,11 +67,11 @@
     "husky": "^0.14.3",
     "lint-staged": "^7.0.4",
     "prettier": "^1.11.1",
+    "prettier-stylelint": "^0.4.2",
     "remark-cli": "^5.0.0",
     "remark-preset-lint-recommended": "^3.0.1",
-    "stylelint": "9.1.3",
-    "stylelint-config-recommended": "^2.1.0",
-    "stylelint-config-styled-components": "^0.1.1",
-    "stylelint-processor-styled-components": "^1.3.1"
+    "stylelint": "^9.2.0",
+    "stylelint-config-prettier": "^3.2.0",
+    "stylelint-config-sass-guidelines": "^5.0.0"
   }
 }

@@ -1,0 +1,35 @@
+@import '../../../styles/abstracts/index';
+
+.c-menu {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  font-family: $g-font-secondary;
+
+  &__link {
+    color: $color-white;
+    font-size: $g-font-size-medium;
+    margin: 0 px-to-rem(16px);
+
+    &::after {
+      background-color: $primary-color;
+      content: '';
+      display: block;
+      height: 2px;
+      opacity: 0;
+      transition: opacity 0.4s;
+      width: 100%;
+    }
+
+    &:hover,
+    &.is-active {
+      color: $primary-color;
+      text-decoration: none;
+
+      // stylelint-disable-next-line max-nesting-depth
+      &::after {
+        opacity: 1;
+      }
+    }
+  }
+}

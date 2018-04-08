@@ -1,0 +1,13 @@
+@import '../../../styles/abstracts/index';
+
+.c-logo {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+
+  &__text {
+    font-size: px-to-rem(24px);
+    line-height: px-to-rem(24px * $g-line-height-base);
+    padding-left: pad(xsmall);
+  }
+}
