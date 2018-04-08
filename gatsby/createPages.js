@@ -54,12 +54,18 @@ const createPages = async ({ boundActionCreators, graphql }) => {
     };
 
     jargonList.push(jargon);
-    jargonsIndex.addObject(jargon, jargon.slug);
+
+    if (process.env.ALGOLIA_INDEXING_ENABLED) {
+      jargonsIndex.addObject(jargon, jargon.slug);
+    }
 
     node.fields.tagList.forEach(tag => {
       if (tagList.findIndex(t => t.slug === tag.slug) === -1) {
         tagList.push(tag);
-        tagsIndex.addObject(tag, tag.slug);
+
+        if (process.env.ALGOLIA_INDEXING_ENABLED) {
+          tagsIndex.addObject(tag, tag.slug);
+        }
       }
     });
 
