@@ -1,5 +1,5 @@
 [context.deploy-preview.environment]
-  ALGOLIA_INDEXING_ENABLED = false
+  ALGOLIA_INDEXING_ENABLED = "false"
 
 [context.branch-deploy.environment]
-  ALGOLIA_INDEXING_ENABLED = false
+  ALGOLIA_INDEXING_ENABLED = "false"
