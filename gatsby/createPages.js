@@ -36,6 +36,11 @@ const createPages = async ({ boundActionCreators, graphql }) => {
     throw Error(allMarkdown.errors);
   }
 
+  if (process.env.ALGOLIA_INDEXING_ENABLED !== 'true') {
+    // eslint-disable-next-line no-console
+    console.log('Algolia indexing skipping...');
+  }
+
   // Algolia Indexes
   const algoliaClient = algoliasearch(
     process.env.GATSBY_ALGOLIASEARCH_APP_ID,
