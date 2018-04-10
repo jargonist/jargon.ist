@@ -1,0 +1,34 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<nav
+  className="c-menu"
+>
+  <GatsbyLink
+    activeClassName="is-active"
+    className="c-menu__link"
+    to="/dizin"
+  >
+    Dizin
+  </GatsbyLink>
+  <GatsbyLink
+    activeClassName="is-active"
+    className="c-menu__link"
+    to="/konular"
+  >
+    Konular
+  </GatsbyLink>
+  <a
+    className="c-menu__link"
+    href="https://github.com/alpcanaydin/jargon.ist"
+    rel="noopener noreferrer"
+    target="_blank"
+    to="/konular"
+  >
+    Katkıda Bulun 
+    <i
+      className="fas fa-external-link-alt u-font-size-small"
+    />
+  </a>
+</nav>
+`;

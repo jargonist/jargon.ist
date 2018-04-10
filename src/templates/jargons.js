@@ -15,13 +15,14 @@ type Props = {
   },
 };
 
-const Jargons = ({ pathContext }: Props) => (
+export const Jargons = ({ pathContext }: Props) => (
   <Section>
     <Container>
       <Helmet>
         <title>Dizin</title>
       </Helmet>
 
+      {/* $FlowIgnoreNextLine */}
       <JargonList jargons={pathContext.jargonList.sort((a, b) => a.title > b.title)} />
     </Container>
   </Section>

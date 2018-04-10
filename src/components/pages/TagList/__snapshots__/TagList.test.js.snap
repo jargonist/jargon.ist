@@ -1,0 +1,41 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<React.Fragment>
+  <h1>
+    Konular
+  </h1>
+  <ul
+    style={
+      Object {
+        "listStyle": "none",
+        "margin": 0,
+        "padding": 0,
+      }
+    }
+  >
+    <li
+      className="u-gap-bottom-xsmall"
+      key="tag1"
+    >
+      <GatsbyLink
+        className="u-text-lowercase"
+        to="/k/tag1"
+      >
+        tag1
+      </GatsbyLink>
+    </li>
+    <li
+      className="u-gap-bottom-xsmall"
+      key="tag2"
+    >
+      <GatsbyLink
+        className="u-text-lowercase"
+        to="/k/tag2"
+      >
+        tag2
+      </GatsbyLink>
+    </li>
+  </ul>
+</React.Fragment>
+`;

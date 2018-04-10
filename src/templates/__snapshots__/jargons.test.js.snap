@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<Section
+  className=""
+>
+  <Container
+    className=""
+  >
+    <HelmetWrapper
+      defer={true}
+      encodeSpecialCharacters={true}
+    >
+      <title>
+        Dizin
+      </title>
+    </HelmetWrapper>
+    <JargonList
+      jargons={Array []}
+    />
+  </Container>
+</Section>
+`;

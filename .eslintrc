@@ -3,12 +3,23 @@
     "airbnb",
     "prettier",
     "plugin:flowtype/recommended",
-    "plugin:eslint-comments/recommended"
+    "plugin:eslint-comments/recommended",
+    "plugin:jest/recommended"
   ],
   "env": {
-    "browser": true
+    "browser": true,
+    "jest": true
   },
-  "plugins": ["react", "jsx-a11y", "import", "prettier", "flowtype", "eslint-comments", "graphql"],
+  "plugins": [
+    "react",
+    "jsx-a11y",
+    "import",
+    "prettier",
+    "flowtype",
+    "eslint-comments",
+    "graphql",
+    "jest"
+  ],
   "rules": {
     "react/jsx-filename-extension": "off",
     "react/no-unescaped-entities": "off",

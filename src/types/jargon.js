@@ -11,7 +11,7 @@ export type JargonFrontmatter = {
 export type Jargon = {
   html: string,
   title: string,
-  slug?: string,
+  slug: string,
   tags?: Array<Tag>,
   sameWith?: Array<string>,
 };

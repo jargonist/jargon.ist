@@ -1,0 +1,37 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<Autosuggest
+  alwaysRenderSuggestions={false}
+  focusInputOnSuggestionClick={true}
+  getSectionSuggestions={[Function]}
+  getSuggestionValue={[Function]}
+  highlightFirstSuggestion={false}
+  id="1"
+  inputProps={
+    Object {
+      "onChange": [Function],
+      "placeholder": "Jargon veya konu ara",
+      "value": "",
+    }
+  }
+  multiSection={true}
+  onSuggestionsClearRequested={[Function]}
+  onSuggestionsFetchRequested={[Function]}
+  renderSectionTitle={[Function]}
+  renderSuggestion={[Function]}
+  renderSuggestionsContainer={[Function]}
+  shouldRenderSuggestions={[Function]}
+  suggestions={Array []}
+  theme={
+    Object {
+      "input": "c-search__input",
+      "suggestion": "c-search__suggestion",
+      "suggestionHighlighted": "c-search__suggestion--highlighted",
+      "suggestionsContainer": "c-search__suggestions-container",
+      "suggestionsContainerOpen": "c-search__suggestions-container--open",
+      "suggestionsList": "c-search__suggestions-list",
+    }
+  }
+/>
+`;

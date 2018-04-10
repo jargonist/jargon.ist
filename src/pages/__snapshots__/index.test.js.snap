@@ -1,0 +1,32 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<Section
+  className=""
+>
+  <Container
+    className=""
+  >
+    <h1>
+      Jargon.ist
+    </h1>
+    <p
+      className="u-half-width u-gap-bottom"
+    >
+      Jargon.ist, bilgisayar bilimleri alanında kullanılan bazı jargonların topluluk tarafından Türkçe olarak açıklanmasını sağlayan bir web uygulamasıdır.
+    </p>
+    <Button
+      className=""
+      primary={true}
+      to="/dizin"
+    >
+      Dizini Görüntüle
+      <span
+        className="u-pad-left-2xsmall"
+      >
+        ⟶
+      </span>
+    </Button>
+  </Container>
+</Section>
+`;

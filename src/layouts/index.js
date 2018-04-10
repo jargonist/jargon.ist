@@ -22,7 +22,6 @@ const TemplateWrapper = ({ children }: Props) => (
             'Jargon.ist, bilgisayar bilimleri alanında kullanılan bazı jargonların topluluk tarafından Türkçe olarak açıklanmasını sağlayan bir web uygulamasıdır.',
         },
       ]}
-      defaultTitle="Jargon"
       titleTemplate="%s - Jargon.ist"
     />
 

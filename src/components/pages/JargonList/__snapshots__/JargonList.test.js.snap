@@ -1,0 +1,41 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<React.Fragment>
+  <h1>
+    Dizin
+  </h1>
+  <ul
+    style={
+      Object {
+        "listStyle": "none",
+        "margin": 0,
+        "padding": 0,
+      }
+    }
+  >
+    <li
+      className="u-gap-bottom-xsmall"
+      key="example-jargon-1"
+    >
+      <GatsbyLink
+        className="u-text-lowercase"
+        to="/example-jargon-1"
+      >
+        Example Jargon 1
+      </GatsbyLink>
+    </li>
+    <li
+      className="u-gap-bottom-xsmall"
+      key="example-jargon-2"
+    >
+      <GatsbyLink
+        className="u-text-lowercase"
+        to="/example-jargon-2"
+      >
+        Example Jargon 2
+      </GatsbyLink>
+    </li>
+  </ul>
+</React.Fragment>
+`;

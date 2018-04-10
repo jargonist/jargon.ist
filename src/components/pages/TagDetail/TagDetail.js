@@ -18,8 +18,8 @@ const TagDetail = ({ tag, jargons, totalCount }: Props) => (
     </h1>
     <ul style={{ margin: 0, padding: 0, listStyle: 'none' }}>
       {jargons.map(jargon => (
-        <li key={jargon.slug || ''} className="u-gap-bottom-xsmall">
-          <Link to={`/${jargon.slug || ''}`} className="u-text-lowercase">
+        <li key={jargon.slug} className="u-gap-bottom-xsmall">
+          <Link to={`/${jargon.slug}`} className="u-text-lowercase">
             {jargon.title}
           </Link>
         </li>

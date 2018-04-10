@@ -8,13 +8,21 @@ import Autosuggest from 'react-autosuggest';
 import { type Jargon } from '../../../types/jargon';
 import { type Tag } from '../../../types/tag';
 
+type IndexType = 'jargons' | 'tags';
+type Hit = (Jargon | Tag) & { index: IndexType };
+
+type Section = {
+  index: IndexType,
+  hits: Array<Jargon | Tag>,
+};
+
 type Props = {
   hits: Array<Jargon | Tag>,
   currentRefinement: string,
   refine: string => void,
 };
 
-class AutoComplete extends PureComponent<Props> {
+export class AutoCompleteWrapper extends PureComponent<Props> {
   titles: { [string]: string };
 
   constructor(props: Props) {
@@ -26,13 +34,13 @@ class AutoComplete extends PureComponent<Props> {
     };
   }
 
-  handleChange = (event, { newValue, method }) => {
+  handleChange = (event: any, { newValue, method }: { newValue: string, method: string }) => {
     if (['click', 'enter'].indexOf(method) > -1) {
       navigateTo(newValue);
     }
   };
 
-  handleSuggestionsFetchRequested = ({ value }) => {
+  handleSuggestionsFetchRequested = ({ value }: any) => {
     this.props.refine(value);
   };
 
@@ -40,17 +48,18 @@ class AutoComplete extends PureComponent<Props> {
     this.props.refine('');
   };
 
-  getSuggestionValue = hit => {
+  getSuggestionValue = (hit: Hit) => {
     const prefix = hit.index === 'jargons' ? '' : '/k';
 
-    return `${prefix}/${hit.slug || ''}`;
+    return `${prefix}/${hit.slug}`;
   };
 
-  getSectionSuggestions = section => section.hits.map(hit => ({ ...hit, index: section.index }));
+  getSectionSuggestions = (section: Section) =>
+    section.hits.map(hit => ({ ...hit, index: section.index }));
 
-  renderSuggestion = hit => hit.title;
+  renderSuggestion = (hit: Hit) => hit.title;
 
-  renderSectionTitle = section =>
+  renderSectionTitle = (section: Section) =>
     section.hits.length > 0 && (
       <h4 className="c-search__suggestions-section-title">{this.titles[section.index]}</h4>
     );
@@ -86,4 +95,4 @@ class AutoComplete extends PureComponent<Props> {
   }
 }
 
-export default connectAutoComplete(AutoComplete);
+export default connectAutoComplete(AutoCompleteWrapper);

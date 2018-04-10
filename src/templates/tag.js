@@ -29,7 +29,7 @@ type Props = {
   },
 };
 
-const Jargon = ({ data, pathContext }: Props) => {
+export const Tag = ({ data, pathContext }: Props) => {
   const { allMarkdownRemark: { totalCount, edges: jargons } } = data;
 
   return (
@@ -44,9 +44,11 @@ const Jargon = ({ data, pathContext }: Props) => {
           totalCount={totalCount}
           jargons={jargons
             .map(jargon => ({
+              html: '',
               title: jargon.node.frontmatter.title,
               slug: jargon.node.fields.slug,
             }))
+            /* $FlowIgnoreNextLine */
             .sort((a, b) => a.title > b.title)}
         />
       </Container>
@@ -72,4 +74,4 @@ export const pageQuery = graphql`
   }
 `;
 
-export default Jargon;
+export default Tag;
