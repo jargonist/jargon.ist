@@ -1,0 +1,33 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<Section
+  className=""
+>
+  <Container
+    className=""
+  >
+    <HelmetWrapper
+      defer={true}
+      encodeSpecialCharacters={true}
+    >
+      <title>
+        hello
+      </title>
+      <meta
+        content=""
+        name="keywords"
+      />
+    </HelmetWrapper>
+    <JargonDetail
+      jargon={
+        Object {
+          "html": "<p>hello world</p>",
+          "tags": Array [],
+          "title": "hello",
+        }
+      }
+    />
+  </Container>
+</Section>
+`;

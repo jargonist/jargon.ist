@@ -1,0 +1,26 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<header
+  className="c-header"
+>
+  <Container
+    className=""
+  >
+    <div
+      className="c-header__inner"
+    >
+      <GatsbyLink
+        className="c-header__logo"
+        to="/"
+      >
+        <Logo
+          className=""
+        />
+      </GatsbyLink>
+      <Menu />
+      <Search />
+    </div>
+  </Container>
+</header>
+`;

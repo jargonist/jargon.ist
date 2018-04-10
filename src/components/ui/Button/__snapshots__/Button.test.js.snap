@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly default button 1`] = `
+<button
+  className="c-button"
+>
+  Example button
+</button>
+`;
+
+exports[`renders correctly primary button 1`] = `
+<button
+  className="c-button c-button--primary"
+>
+  Example button
+</button>
+`;

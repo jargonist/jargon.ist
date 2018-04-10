@@ -4,6 +4,9 @@ node_modules
 yarn-error.log
 .DS_Store
 
+# Test
+coverage
+
 # Build directory
 /public
 

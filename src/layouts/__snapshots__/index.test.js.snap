@@ -1,0 +1,29 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<React.Fragment>
+  <HelmetWrapper
+    defer={true}
+    encodeSpecialCharacters={true}
+    meta={
+      Array [
+        Object {
+          "content": "Jargon.ist, bilgisayar bilimleri alanında kullanılan bazı jargonların topluluk tarafından Türkçe olarak açıklanmasını sağlayan bir web uygulamasıdır.",
+          "name": "description",
+        },
+      ]
+    }
+    title="Jargon.ist"
+    titleTemplate="%s - Jargon.ist"
+  />
+  <Header />
+  <main
+    className="o-main"
+  >
+    <h1>
+      Site
+    </h1>
+  </main>
+  <Footer />
+</React.Fragment>
+`;

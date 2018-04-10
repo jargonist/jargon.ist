@@ -23,7 +23,7 @@ type Props = {
   },
 };
 
-const Jargon = ({ data }: Props) => {
+export const Jargon = ({ data }: Props) => {
   const { markdownRemark } = data;
   const { frontmatter, html, fields } = markdownRemark;
   return (
@@ -38,6 +38,7 @@ const Jargon = ({ data }: Props) => {
           jargon={{
             html,
             title: frontmatter.title,
+            /* $FlowIgnoreNextLine */
             tags: (fields.tagList || []).sort((a, b) => a.title > b.title),
           }}
         />

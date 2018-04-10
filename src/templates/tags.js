@@ -15,13 +15,14 @@ type Props = {
   },
 };
 
-const Tags = ({ pathContext }: Props) => (
+export const Tags = ({ pathContext }: Props) => (
   <Section>
     <Container>
       <Helmet>
         <title>Konular</title>
       </Helmet>
 
+      {/* $FlowIgnoreNextLine */}
       <TagList tags={pathContext.tagList.sort((a, b) => a.title > b.title)} />
     </Container>
   </Section>

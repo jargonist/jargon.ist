@@ -1,0 +1,58 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<div
+  className="c-search"
+>
+  <i
+    className="fas fa-search"
+  />
+  <CreateInstantSearch
+    indexName="jargons"
+    refresh={false}
+    root={
+      Object {
+        "Root": "div",
+        "props": Object {
+          "className": "ais-InstantSearch__root",
+        },
+      }
+    }
+  >
+    <AlgoliaConfigure(UnknownComponent)
+      hitsPerPage={3}
+    />
+    <CreateIndex
+      indexName="jargons"
+      root={
+        Object {
+          "Root": "div",
+          "props": Object {
+            "className": "ais-MultiIndex__root",
+          },
+        }
+      }
+    >
+      <AlgoliaConfigure(UnknownComponent)
+        hitsPerPage={5}
+      />
+    </CreateIndex>
+    <CreateIndex
+      indexName="tags"
+      root={
+        Object {
+          "Root": "div",
+          "props": Object {
+            "className": "ais-MultiIndex__root",
+          },
+        }
+      }
+    >
+      <AlgoliaConfigure(UnknownComponent)
+        hitsPerPage={5}
+      />
+    </CreateIndex>
+    <AlgoliaAutoComplete(AutoCompleteWrapper) />
+  </CreateInstantSearch>
+</div>
+`;
