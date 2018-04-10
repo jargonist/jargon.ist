@@ -23,3 +23,6 @@ jobs:
       - run:
           name: Test
           command: yarn test
+      - run:
+          name: Coverage
+          command: yarn coverage

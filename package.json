@@ -33,15 +33,14 @@
     "react-instantsearch": "^5.0.3",
     "slug": "^0.9.1"
   },
-  "keywords": [
-    "gatsby"
-  ],
+  "keywords": ["gatsby"],
   "license": "MIT",
   "scripts": {
     "build": "gatsby build",
     "develop": "gatsby develop",
     "start": "yarn run develop",
     "test": "jest --env=jsdom",
+    "coverage": "jest --env=jsdom --coverage",
     "lint:js": "eslint .",
     "lint:flow": "flow check",
     "lint:css": "stylelint 'src/**/*.scss'",
