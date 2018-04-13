@@ -1,0 +1,109 @@
+//
+// Spacing
+//
+// Styleguide Utilities.Spacing
+
+//
+// Clear Gaps
+//
+// | Class                     | Description |
+// | ------------------------- | ------------- |
+// | `.u-clear-gap`            | Clears all margins. |
+// | `.u-clear-gap-top`        | Clears `margin-top`. |
+// | `.u-clear-gap-bottom`     | Clears `margin-bottom`. |
+// | `.u-clear-gap-right`      | Clears `margin-right`. |
+// | `.u-clear-gap-left`       | Clears `margin-left`. |
+// | `.u-clear-gap-ends`       | Clears `margin-bottom` and `margin-top`. |
+// | `.u-clear-gap-sides`      | Clears `margin-left` and `margin-right`. |
+//
+
+.u-clear-gap {
+  margin: 0;
+
+  &-top {
+    margin-top: 0;
+  }
+
+  &-bottom {
+    margin-bottom: 0;
+  }
+
+  &-right {
+    margin-right: 0;
+  }
+
+  &-left {
+    margin-left: 0;
+  }
+
+  &-ends {
+    margin-bottom: 0;
+    margin-top: 0;
+  }
+
+  &-sides {
+    margin-bottom: 0;
+    margin-top: 0;
+  }
+}
+
+//
+// Gaps and Paddings
+//
+// Control an element's margin using the `.u-{property}-{side?}-{size}` utility.
+// For example, `.u-gap-top` would add margin to the top of the element.
+// You can also use this class with responsive breakpoints; `.u-gap-{side?}-{size}@{breakpoint}-{up or down}`.
+//
+// **Where property is one of:**
+// - `gap` - for classes that set `margin`
+// - `pad` - for classes that set `padding`
+//
+// **Where sides is one of:**
+// - `top` - for classes that set `margin-top` or `padding-top`
+// - `bottom` - for classes that set `margin-bottom` or `padding-bottom`
+// - `left` - for classes that set `margin-left` or `padding-left`
+// - `right` - for classes that set `margin-right` or `padding-right`
+// - `sides` - for classes that set both `*-left` and `*-right`
+// - `ends` - for classes that set both `*-top` and `*-bottom`
+//
+// **Where size is one of:**
+// - undefined - (by default) for classes that set the margin `$g-gaps[normal]` or padding to `$g-pads[normal]`
+// - `auto` - for classes that set the margin `auto`
+// - `small` - (by default) for classes that set the margin `$g-gaps[small]` or padding to `$g-pads[small]`
+// - `xsmall` - (by default) for classes that set the margin `$g-gaps[xsmall]` or padding to `$g-pads[xsmall]`
+// - `2xsmall` - (by default) for classes that set the margin `$g-gaps[2xsmall]` or padding to `$g-pads[2xsmall]`
+// - `medium` - (by default) for classes that set the margin `$g-gaps[medium]` or padding to `$g-pads[medium]`
+// - `large` - (by default) for classes that set the margin `$g-gaps[large]` or padding to `$g-pads[large]`
+// - `xlarge` - (by default) for classes that set the margin `$g-gaps[xlarge]` or padding to `$g-pads[xlarge]`
+// - `2xlarge` - (by default) for classes that set the padding to `$g-pads[xlarge]` (not available for margin!)
+//
+// **Examples**
+//
+// ```css
+// .u-gap-top {
+//   margin-top: gap(); // ~27px  by default
+// }
+//
+// .u-gap-left-small {
+//   margin-left: gap(small); // ~18px by default
+// }
+//
+// .u-pad-sides-medium {
+//   padding-left: pad(medium); // ~45px by default
+//   padding-right: pad(medium);
+// }
+//
+// .u-pad {
+//   padding: pad(); // ~36px by default
+// }
+// ```
+//
+// Styleguide Utilities.Spacing.Gaps-And-Paddings
+
+.u-gap {
+  @include make-utility-gaps();
+}
+
+.u-pad {
+  @include make-utility-pads();
+}

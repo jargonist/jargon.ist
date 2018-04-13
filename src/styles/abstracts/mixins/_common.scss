@@ -1,0 +1,109 @@
+//
+// Mixins
+// --------------------------------------------------
+
+//
+// Font-Face Mixin
+//
+
+@mixin font-face(
+  $font-name,
+  $font-folder,
+  $font-file-name,
+  $font-weight: normal,
+  $font-style: normal
+) {
+  @font-face {
+    font-family: $font-name;
+    font-style: $font-style;
+    font-weight: $font-weight;
+    src: url('../fonts/#{$font-folder}/#{$font-file-name}.eot');
+    src: url('../fonts/#{$font-folder}/#{$font-file-name}.eot?#iefix') format('embedded-opentype'),
+      url('../fonts/#{$font-folder}/#{$font-file-name}.woff') format('woff'),
+      url('../fonts/#{$font-folder}/#{$font-file-name}.ttf') format('truetype'),
+      url('../fonts/#{$font-folder}/#{$font-file-name}.svg##{$font-file-name}') format('svg');
+  }
+}
+
+//
+// Font Face Mixin for modern browsers
+// IE 9+
+//
+
+@mixin font-face-modern(
+  $font-name,
+  $font-folder,
+  $font-file-name,
+  $font-weight: normal,
+  $font-style: normal
+) {
+  @font-face {
+    font-family: $font-name;
+    font-style: $font-style;
+    font-weight: $font-weight;
+    src: url('../fonts/#{$font-folder}/#{$font-file-name}.woff2') format('woff2'),
+      url('../fonts/#{$font-folder}/#{$font-file-name}.woff') format('woff');
+  }
+}
+
+//
+// We use this to create isosceles triangles
+// $triangle-size - Used to set border-size. No default, set a px or em size.
+// $triangle-color - Used to set border-color which makes up triangle. No default
+// $triangle-direction - Used to determine which direction triangle points. Options: top, bottom, left, right
+
+@mixin css-triangle($triangle-size, $triangle-color, $triangle-direction) {
+  border: inset $triangle-size;
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  @if ($triangle-direction == top) {
+    border-color: $triangle-color transparent transparent;
+    border-top-style: solid;
+  }
+  @if ($triangle-direction == bottom) {
+    border-bottom-style: solid;
+    border-color: transparent transparent $triangle-color;
+  }
+  @if ($triangle-direction == left) {
+    border-color: transparent transparent transparent $triangle-color;
+    border-left-style: solid;
+  }
+  @if ($triangle-direction == right) {
+    border-color: transparent $triangle-color transparent transparent;
+    border-right-style: solid;
+  }
+}
+
+// Responsive image
+//
+// Keep images from scaling beyond the width of their parents.
+
+@mixin img-fluid {
+  // Part 2: Override the height to auto, otherwise images will be stretched
+  // when setting a width and height attribute on the img element.
+  height: auto;
+  // Part 1: Set a maximum relative to the parent
+  max-width: 100%;
+}
+
+//
+// Retina Image
+//
+// $image2x - 2x Resim url adresi Örn 'img/logo-retina.png'
+// $width - Resim genişliği
+// $height - Resim yüksekliği
+
+@mixin image-retina($image2x, $width2x, $height2x) {
+  // stylelint-disable media-feature-name-no-vendor-prefix
+  @media only screen and (-webkit-min-device-pixel-ratio: 2),
+    only screen and (min--moz-device-pixel-ratio: 2),
+    only screen and (-o-min-device-pixel-ratio: 2/1),
+    only screen and (min-device-pixel-ratio: 2),
+    only screen and (min-resolution: 192dpi),
+    only screen and (min-resolution: 2dppx) {
+    background-image: url($image2x);
+    background-size: $width2x $height2x;
+  }
+}

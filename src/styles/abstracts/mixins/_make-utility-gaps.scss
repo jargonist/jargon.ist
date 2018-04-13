@@ -1,0 +1,82 @@
+//
+// Gaps
+//
+// stylelint-disable max-nesting-depth
+// -------------------------
+
+@mixin make-utility-gaps() {
+  @each $pos in map-keys($g-gaps) {
+    $gap: map-get($g-gaps, $pos);
+    $position: '';
+
+    @if not($pos == normal) {
+      $position: '-' + $pos;
+
+      &#{$position} {
+        margin: $gap;
+
+        @include make-utility-responsive() {
+          margin: $gap;
+        }
+      }
+    } @else {
+      margin: $gap;
+
+      @include make-utility-responsive() {
+        margin: $gap;
+      }
+    }
+
+    &-top#{$position} {
+      margin-top: $gap;
+
+      @include make-utility-responsive() {
+        margin-top: $gap;
+      }
+    }
+
+    &-bottom#{$position} {
+      margin-bottom: $gap;
+
+      @include make-utility-responsive() {
+        margin-bottom: $gap;
+      }
+    }
+
+    &-ends#{$position} {
+      margin-bottom: $gap;
+      margin-top: $gap;
+
+      @include make-utility-responsive() {
+        margin-bottom: $gap;
+        margin-top: $gap;
+      }
+    }
+
+    &-left#{$position} {
+      margin-left: $gap;
+
+      @include make-utility-responsive() {
+        margin-left: $gap;
+      }
+    }
+
+    &-right#{$position} {
+      margin-right: $gap;
+
+      @include make-utility-responsive() {
+        margin-right: $gap;
+      }
+    }
+
+    &-sides#{$position} {
+      margin-left: $gap;
+      margin-right: $gap;
+
+      @include make-utility-responsive() {
+        margin-left: $gap;
+        margin-right: $gap;
+      }
+    }
+  }
+}

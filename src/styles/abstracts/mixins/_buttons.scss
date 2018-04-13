@@ -1,0 +1,176 @@
+//
+// BUTTONS
+// --------------------------------------------------
+
+// @MIXIN btn-block
+//
+// Bu mixini butonun temel özelliklerini tanımlamak için kullanıyoruz
+//
+// @param $ease - Button arkaplanına transition tanımlar,
+//   Transition için scss/global/_utilities.scss deki .transition-background classını extend eder
+
+@mixin btn-block($ease: true) {
+  @if ($ease == true) {
+    transition-duration: $g-transition-duration;
+    transition-property: background-color, color, border-color;
+  }
+  align-items: center;
+  border: $c-button-border-width solid transparent;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: $c-button-font-family;
+  font-size: $c-button-font-size;
+  justify-content: center;
+  line-height: $c-button-line-height;
+  padding: $c-button-padding-vertical $c-button-padding-horizontal;
+
+  position: relative;
+  text-decoration: none;
+
+  &:hover,
+  &:focus {
+    text-decoration: none;
+  }
+}
+
+// @MIXIN btn-size
+//
+// Bu mixini butonun boyut özelliklerini tanımlamak için kullanıyoruz
+//
+// @param $padding-v - Butona üst ve alttan verilecek padding değerini tanımlar
+// @param $padding-h - Butona sağ ve soldan verilecek padding değerini tanımlar
+// @param $font-size - Buton font size değerini tanımlar
+
+@mixin btn-size(
+  $padding-v: $c-button-padding-vertical,
+  $padding-h: $c-button-padding-horizontal,
+  $font-size: null
+) {
+  // We control which padding styles come through,
+  // these can be turned off by setting $padding:false
+  @if $padding-v {
+    @if $padding-h {
+      padding: $padding-v $padding-h;
+    } @else {
+      padding-bottom: $padding-v;
+      padding-top: $padding-v;
+    }
+  } @else {
+    padding-left: $padding-h;
+    padding-right: $padding-h;
+  }
+
+  font-size: $font-size;
+}
+
+// @MIXIN btn-modifier
+//
+// Bu mixin butonun şekil özelliklerini tanımlamak için kullanıyoruz
+//
+// @param $bg - Butonun arkaplan rengini tanımlar
+// @param $bg-hover - Butonun hover durumundaki arkaplan rengini tanımlar
+// @param $color: Button color
+// @param $hover-color: Button hover color
+// @param $border-color - Button border color değerini tanımlar
+// @param $border-hover-color - Button border hover color değerini tanımlar
+// @param $border-width - Butonun border with degerini tanımlar
+// @param $radius - Butonun border-radius değerini tanımlar
+// @param $disabled - Butona disable efekti vermek için kullanılır
+
+@mixin btn-modifier(
+  $bg: $c-button-bg-color,
+  $bg-hover: $c-button-bg-hover,
+  $color: auto,
+  $hover-color: auto,
+  $border-width: $c-button-border-width,
+  $border-color: 'same-as-bg',
+  $border-hover-color: 'same-as-bg',
+  $radius: $c-button-radius,
+  $disabled: false,
+  $bg-lightness-threshold: 70%
+) {
+  // $bg-hover tanımlanmamışsa ve hover color `auto` seçilmişse
+  // sass fonksiyonlarını kullanarak hover rengi taımlıyoruz
+  @if $bg-hover == auto {
+    $bg-hover: scale-color($bg, $lightness: $c-button-function-factor);
+  }
+  // $border-color tanımlanmamışsa sass fonksiyonlarını kullanarak border rengi taımlıyoruz
+  @if ($border-color == auto) and not($bg == null) {
+    $border-color: scale-color($bg, $lightness: $c-button-function-factor);
+  }
+
+  @if ($border-hover-color == auto) and not($bg-hover == null) {
+    $border-hover-color: scale-color($bg-hover, $lightness: $c-button-function-factor);
+  }
+
+  @if $border-color == 'same-as-bg' {
+    $border-color: $bg;
+  }
+
+  @if $border-hover-color == 'same-as-bg' {
+    $border-hover-color: $bg-hover;
+  }
+
+  $bg-lightness: 0;
+  $bg-hover-lightness: 0;
+
+  // Arkaplan renginin lightness oranı
+  @if not($bg == null) {
+    $bg-lightness: lightness($bg);
+  }
+
+  @if $bg == transparent {
+    $bg-lightness: $bg-lightness-threshold + 1%;
+  }
+
+  @if not($bg-hover == null) {
+    $bg-hover-lightness: lightness($bg-hover);
+  }
+
+  // Bg rengine göre text rengi ayarlıyoruz
+  @if $color == auto {
+    $color: if(
+      $bg-lightness > $bg-lightness-threshold,
+      $c-button-font-color-alt,
+      $c-button-font-color
+    );
+  }
+
+  @if $hover-color == auto {
+    $hover-color: if(
+      $bg-hover-lightness > $bg-lightness-threshold,
+      $c-button-font-color-alt,
+      $c-button-font-color
+    );
+  }
+
+  background-color: $bg;
+  border-color: $border-color;
+  border-radius: $radius;
+  color: $color;
+
+  @if not($border-width == $c-button-border-width) {
+    border-width: $border-width;
+  }
+
+  &:hover,
+  &:focus {
+    background-color: $bg-hover;
+    border-color: $border-hover-color;
+    color: $hover-color;
+  }
+
+  // Eğer $disable:true ise Butonun disable durumunu ayarlıyoruz
+  @if $disabled {
+    &:disabled {
+      box-shadow: none;
+      cursor: not-allowed;
+      opacity: 0.7;
+
+      &:hover,
+      &:focus {
+        background-color: $bg;
+      }
+    }
+  }
+}

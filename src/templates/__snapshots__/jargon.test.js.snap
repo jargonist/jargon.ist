@@ -23,6 +23,7 @@ exports[`renders correctly 1`] = `
       jargon={
         Object {
           "html": "<p>hello world</p>",
+          "slug": undefined,
           "tags": Array [],
           "title": "hello",
         }

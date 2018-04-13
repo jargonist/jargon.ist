@@ -8,17 +8,19 @@ exports[`renders correctly 1`] = `
     className=""
   >
     <div
-      className="c-footer__inner"
+      className="row"
     >
       <div
-        className="c-footer__logos"
+        className="col col--md-8 c-footer__logos"
       >
         <div>
           <Logo
-            className="u-color-white"
+            className="u-color-white u-block"
           />
-          <small>
-            MIT lisansı ile geliştirilmiştir.
+          <small
+            className="u-color-muted"
+          >
+            Bu proje MIT lisansı kullanmaktadır.
           </small>
         </div>
         <div>
@@ -29,9 +31,11 @@ exports[`renders correctly 1`] = `
           />
         </div>
       </div>
-      <div>
+      <div
+        className="col col--md-2"
+      >
         <h4
-          className="u-text-uppercase u-clear-gap-top u-gap-bottom-xsmall u-color-muted"
+          className="u-uppercase u-clear-gap-top u-gap-bottom-xsmall u-color-muted"
         >
           Jargon
         </h4>
@@ -70,9 +74,11 @@ exports[`renders correctly 1`] = `
           </li>
         </ul>
       </div>
-      <div>
+      <div
+        className="col col--md-2"
+      >
         <h4
-          className="u-text-uppercase u-clear-gap-top u-gap-bottom-xsmall u-color-muted"
+          className="u-uppercase u-clear-gap-top u-gap-bottom-xsmall u-color-muted"
           lang="en"
         >
           Github
@@ -111,7 +117,7 @@ exports[`renders correctly 1`] = `
               rel="noopener noreferrer"
               target="_blank"
             >
-              Onay Bekleyen Jargonlar
+              Onaydaki Jargonlar
             </a>
           </li>
           <li

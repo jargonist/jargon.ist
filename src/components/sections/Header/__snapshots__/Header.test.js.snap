@@ -18,8 +18,8 @@ exports[`renders correctly 1`] = `
           className=""
         />
       </GatsbyLink>
-      <Menu />
       <Search />
+      <Menu />
     </div>
   </Container>
 </header>

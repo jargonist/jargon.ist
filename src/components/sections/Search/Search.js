@@ -10,7 +10,6 @@ import './Search.scss';
 
 const Search = () => (
   <div className="c-search">
-    <i className="fas fa-search" />
     <InstantSearch
       appId={process.env.GATSBY_ALGOLIASEARCH_APP_ID}
       apiKey={process.env.GATSBY_ALGOLIASEARCH_SEARCH_KEY}

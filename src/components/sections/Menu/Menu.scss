@@ -4,12 +4,12 @@
   align-items: center;
   display: flex;
   flex-direction: row;
-  font-family: $g-font-secondary;
+  margin-left: auto;
 
   &__link {
     color: $color-white;
-    font-size: $g-font-size-medium;
-    margin: 0 px-to-rem(16px);
+    font-size: $g-font-size-small;
+    margin-right: gap();
 
     &::after {
       background-color: $primary-color;

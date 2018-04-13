@@ -1,6 +1,7 @@
 {
   "extends": ["stylelint-config-sass-guidelines", "stylelint-config-prettier"],
   "rules": {
-    "max-nesting-depth": 2
+    "max-nesting-depth": 2,
+    "selector-class-pattern": null
   }
 }

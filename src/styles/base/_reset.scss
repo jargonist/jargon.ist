@@ -1,0 +1,29 @@
+//
+//  Body font fix
+//  Fixes font render bugs
+//  stylelint-disable property-no-vendor-prefix
+//
+//  Resources
+//  1. http://aestheticallyloyal.com/public/optimize-legibility/
+//  2. http://maxvoltar.com/archive/-webkit-font-smoothing
+//  3. http://maximilianhoffmann.com/posts/better-font-rendering-on-osx
+//     http://stackoverflow.com/questions/14409647/how-to-antialias-svg-text-in-firefox/18310579#18310579
+//  4. http://www.sitepoint.com/cross-browser-web-fonts-part-3/
+//     http://clagnut.com/sandbox/css3/
+//
+
+body,
+input,
+textarea,
+select,
+button {
+  -webkit-font-feature-settings: 'liga', 'kern';
+  -moz-font-feature-settings: 'liga', 'kern';
+  font-feature-settings: 'liga', 'kern'; // 4 // 6
+  -webkit-font-kerning: normal;
+  -moz-font-kerning: normal;
+  font-kerning: normal;
+  -webkit-font-smoothing: antialiased; // 2
+  -moz-osx-font-smoothing: grayscale; // 3
+  text-rendering: optimizeLegibility; // 1
+}

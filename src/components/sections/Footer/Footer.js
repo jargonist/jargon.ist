@@ -12,11 +12,11 @@ import './Footer.scss';
 const Footer = () => (
   <footer className="c-footer">
     <Container>
-      <div className="c-footer__inner">
-        <div className="c-footer__logos">
+      <div className="row">
+        <div className="col col--md-8 c-footer__logos">
           <div>
-            <Logo className="u-color-white" />
-            <small>MIT lisansı ile geliştirilmiştir.</small>
+            <Logo className="u-color-white u-block" />
+            <small className="u-color-muted">Bu proje MIT lisansı kullanmaktadır.</small>
           </div>
 
           <div>
@@ -28,10 +28,8 @@ const Footer = () => (
           </div>
         </div>
 
-        <div>
-          <h4 className="u-text-uppercase u-clear-gap-top u-gap-bottom-xsmall u-color-muted">
-            Jargon
-          </h4>
+        <div className="col col--md-2">
+          <h4 className="u-uppercase u-clear-gap-top u-gap-bottom-xsmall u-color-muted">Jargon</h4>
           <ul className="c-footer__menu">
             <li className="c-footer__menu-item">
               <Link to="/" className="c-footer__menu-link">
@@ -50,11 +48,9 @@ const Footer = () => (
             </li>
           </ul>
         </div>
-        <div>
-          <h4
-            className="u-text-uppercase u-clear-gap-top u-gap-bottom-xsmall u-color-muted"
-            lang="en"
-          >
+
+        <div className="col col--md-2">
+          <h4 className="u-uppercase u-clear-gap-top u-gap-bottom-xsmall u-color-muted" lang="en">
             Github
           </h4>
           <ul className="c-footer__menu">
@@ -85,7 +81,7 @@ const Footer = () => (
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                Onay Bekleyen Jargonlar
+                Onaydaki Jargonlar
               </a>
             </li>
             <li className="c-footer__menu-item">

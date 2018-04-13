@@ -1,0 +1,13 @@
+// Typography
+
+@mixin heading-styles(
+  $color: $g-headings-color,
+  $font-family: $g-headings-font-family,
+  $font-weight: $g-headings-font-weight,
+  $line-height: $g-headings-line-height
+) {
+  color: $color;
+  font-family: $font-family;
+  font-weight: $font-weight;
+  line-height: $line-height;
+}

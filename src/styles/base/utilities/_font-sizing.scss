@@ -1,0 +1,42 @@
+//
+// Font-Sizing
+//
+// | Class                     | Description |
+// | ------------------------------- | ------------- |
+// | `.u-font-size-2xsmall`          | Set the text size to 0.625rem (10px). |
+// | `.u-font-size-xsmall`           | Set the text size to .75rem (12px). |
+// | `small` or `.u-font-size-small` | Set the text size to 0.875rem (14px). |
+// | `.u-font-size-base`             | Set the text size to 1rem (16px). |
+// | `.u-font-size-medium`           | Set the text size to 1.125rem (18px). |
+// | `.u-font-size-large`            | Set the text size to 1.25rem (20px) |
+// | `.u-font-size-xlarge`           | Set the text size to 1.5rem (24px). |
+//
+
+.u-font-size-2xsmall {
+  font-size: $g-font-size-2xsmall;
+}
+
+.u-font-size-xsmall {
+  font-size: $g-font-size-xsmall;
+}
+
+small,
+.u-font-size-small {
+  font-size: $g-font-size-small;
+}
+
+.u-font-size-base {
+  font-size: $g-font-size-base;
+}
+
+.u-font-size-medium {
+  font-size: $g-font-size-medium;
+}
+
+.u-font-size-large {
+  font-size: $g-font-size-large;
+}
+
+.u-font-size-xlarge {
+  font-size: $g-font-size-xlarge;
+}

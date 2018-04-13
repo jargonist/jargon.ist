@@ -21,11 +21,5 @@ module.exports = {
         plugins: ['gatsby-remark-prismjs'],
       },
     },
-    {
-      resolve: `gatsby-plugin-google-fonts`,
-      options: {
-        fonts: ['Roboto:400,700', 'Playfair Display:400,400i,700,700i'],
-      },
-    },
   ],
 };

@@ -1,40 +1,65 @@
 //
 // Variables
 //
+// stylelint-disable declaration-bang-space-before
+// --------------------------------------------------
 
+// SCAFFOLDING
+// -------------------------
+
+// `<body>` nin arkaplan rengi
 $g-body-bg: $color-white !default;
-$g-text-color: $color-oil !default;
+
+//** `<body>` nin Global text rengi.
+$g-text-color: $color-tundora !default;
+
+// Global link rengi
 $g-link-color: $primary-color !default;
+
+// Global link hover rengi
 $g-link-hover-color: darken($g-link-color, 15%) !default;
+
 $g-link-hover-decoration: underline !default;
-$g-border-color: $color-oil;
 
-$g-font-primary: 'Playfair Display', serif !default;
-$g-font-secondary: 'Roboto', sans-serif !default;
-$g-font-family-base: $g-font-primary;
+$g-border-color: $color-alto;
 
-$g-font-size-root: 16px !default;
+//  TYPOGRAPHY
+// -------------------------
 
-$g-font-size-base-px: 16px;
+$g-font-family-primary: 'Roboto';
+$g-font-family-secondary: 'Alpha Headline Pro';
+
+// Pixel value used to responsively scale all typography. Applied to the `<html>` element.
+$g-font-size-root: 18px !default;
+
+$g-font-size-base-px: 18px;
 $g-font-size-base: px-to-rem($g-font-size-base-px) !default;
+$g-font-family-sans-serif: $g-font-family-primary, Arial, Helvetica, sans-serif !default;
+$g-font-family-base: $g-font-family-sans-serif !default;
 
 $g-font-size-h1: px-to-rem(48px) !default;
-$g-font-size-h2: px-to-rem(32px) !default;
+$g-font-size-h2: px-to-rem(36px) !default;
 $g-font-size-h3: px-to-rem(24px) !default;
-$g-font-size-h4: px-to-rem(18px) !default;
+$g-font-size-h4: px-to-rem(20px) !default;
 $g-font-size-h5: 1rem !default;
 $g-font-size-h6: px-to-rem(14px) !default;
 
-$g-line-height-base: (24 / 16) !default; // 20/14
+// Unit-less `line-height` for use in components like buttons.
+$g-line-height-base: (27 / 18) !default; // 20/14
+// Computed "line-height" (`font-size` * `line-height`) for use with `margin`, `padding`, etc.
 $g-line-height-computed: px-to-rem(($g-font-size-base-px * $g-line-height-base)) !default;
 
-$g-headings-font-family: $g-font-secondary !default;
-$g-headings-font-weight: 700 !default;
+// By default, this inherits from the `<body>`.
+$g-headings-font-family: $g-font-family-secondary !default;
+$g-headings-font-weight: 400 !default;
 $g-headings-line-height: 1.1 !default;
 $g-headings-color: inherit !default;
 $g-headings-small-color: $color-monsoon;
 
-$g-text-muted-color: $color-monsoon !default;
+// Text muted color
+$g-text-muted-color: $color-trout !default;
+
+// Horizontal line color.
 $g-hr-border-color: $g-border-color !default;
 
 // FONT SIZING
@@ -49,16 +74,17 @@ $g-font-size-xlarge: px-to-rem($g-font-size-base-px + 8px);
 
 // GAPS
 //
-// normal: 24px <= Global line height
-// small:  16px
-// xsmall: 8px
+// normal: 27px <= Global line height
+// small:  18px
+// xsmall: 9px
 // 2xsmall: 4px
-// medium: 32px
-// large: 40px
-// xlarge:  48px
+// medium: 40px
+// large: 45px
+// xlarge:  54px
 // -------------------------
-$g-base-gap: $g-line-height-computed;
+$g-base-gap: px-to-rem(24px);
 $g-gaps: (
+  auto: auto,
   normal: $g-base-gap,
   small: ($g-base-gap / 1.5),
   xsmall: ($g-base-gap / 3),
@@ -70,11 +96,11 @@ $g-gaps: (
 
 // PADDINGS
 //
-// medium: 40px | large: 48px | xlarge: 64px | 2xlarge: 96px
-// normal: 32px
-// small: 24px | xsmall: 16px | 2xsmall: 8px
+// medium: 45px | large: 54px | xlarge: 72px | 2xlarge: 108px
+// normal: 36px
+// small: 27px | xsmall: 18px | 2xsmall: 9px
 // -------------------------
-$g-base-padding: px-to-rem(32px);
+$g-base-padding: px-to-rem(36px);
 $g-pads: (
   normal: $g-base-padding,
   small: ($g-base-padding * 0.75),
@@ -86,8 +112,72 @@ $g-pads: (
   2xlarge: ($g-base-padding * 3)
 );
 
+//  BUTTONS VARIABLES
+// -------------------------
+
+$c-button-function-factor: -20% !default; // Butunun arkaplan rengini aydınlatma oranı
+$c-button-font-family: null !default; // Butonun fontu
+$c-button-bg-color: $primary-color !default; // Buton default bg color
+$c-button-bg-hover: scale-color(
+  $c-button-bg-color,
+  $lightness: $c-button-function-factor
+) !default; // Button default hover rengi
+$c-button-border-color: transparent !default; // Button default border rengi
+$c-button-radius: px-to-rem(2px) !default; // Button default border radius
+$c-button-font-size: px-to-rem(12px) !default; // Button default font boyutu
+$c-button-line-height: (18 / 12) !default; // Button line-height
+$c-button-font-color: $color-white !default; // Button default font rengi
+$c-button-font-color-alt: $color-white !default; // Button default font rengi
+$c-button-padding-vertical: px-to-rem(14px) !default; // Button dikey padding
+$c-button-padding-horizontal: pad(xsmall) !default; // Button default yatay padding
+$c-button-border-width: 0 !default; // Button default border width
+
+// Grid breakpoints
+//
+// Define the minimum dimensions at which your layout will change,
+// adapting to different screen sizes, for use in media queries.
+
+$grid-breakpoints: (
+  xs: 0,
+  sm: px-to-rem(544px),
+  md: px-to-rem(768px),
+  lg: px-to-rem(992px),
+  xl: px-to-rem(1200px)
+) !default;
+
+// Grid containers
+//
+// Define the maximum width of `.container` for different screen sizes.
+
+$container-max-widths: (
+  sm: px-to-rem(576px),
+  md: px-to-rem(720px),
+  lg: px-to-rem(940px),
+  xl: px-to-rem(1140px)
+) !default;
+
+// Grid columns
+//
+// Set the number of columns and specify the width of the gutters.
+
+$grid-columns: 12 !default;
+$grid-gutter-width: px-to-rem(36px) !default;
+
 //
 // Transition Duration
 // -------------------------
 
 $g-transition-duration: 0.3s;
+
+//
+// Z-index
+// Site genelinde kullanılan z-indexler burada tanımlanmalıdır
+// -------------------------
+
+$g-z-index-c-autocomplete: 1;
+
+//
+// Layout
+// -------------------------
+
+$g-root-max-width: px-to-rem(1440px);

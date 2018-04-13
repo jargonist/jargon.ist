@@ -1,16 +1,10 @@
 @import '../../../styles/abstracts/index';
 
 .c-footer {
-  background-color: $secondary-color;
+  background-color: $color-cinder;
   color: $color-white;
   flex-shrink: 0;
   padding: pad(large) 0;
-
-  &__inner {
-    display: grid;
-    grid-gap: px-to-rem(32px);
-    grid-template-columns: 3fr 1fr 1fr;
-  }
 
   &__logos {
     display: flex;
@@ -31,11 +25,12 @@
     padding: 0;
   }
 
-  &__menu-item {
-    margin-bottom: gap(2xsmall);
-  }
-
   &__menu-link {
     color: $color-white;
+    font-size: $g-font-size-small;
+
+    &:hover {
+      color: $color-white;
+    }
   }
 }

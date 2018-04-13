@@ -1,3 +1,11 @@
+//
+//  Colors
+//
+
+//
+// Default Colors
+//
+
 $color-white: #fff;
 $color-ghost: #fafafa;
 $color-snow: #f9f9f9;
@@ -7,7 +15,7 @@ $color-silver: #efefef;
 $color-smoke: #eee;
 $color-gainsboro: #ddd;
 $color-iron: #ccc;
-$color-base: #aaa;
+$color-silver-chalice: #aaa;
 $color-aluminum: #999;
 $color-jumbo: #888;
 $color-monsoon: #777;
@@ -17,9 +25,30 @@ $color-tuatara: #444;
 $color-oil: #333;
 $color-jet: #222;
 $color-black: #000;
-$color-cod-gray: #121212;
 
-$color-persimmon: #ff5a57;
+//
+// Custom Colors
+//
 
-$primary-color: $color-persimmon;
-$secondary-color: $color-oil;
+$color-royal-blue: #4c5be6;
+$color-tundora: #4a4a4a;
+$color-ebony-clay: #272939;
+$color-cinder: #11121a;
+$color-comet: #575a80;
+$color-carnation: #fd5a57;
+$color-burnt-sienna: #e6964c;
+$color-fountain-blue: #4db6ac;
+$color-regent-st-blue: #a0d3e8;
+$color-trout: #50515e;
+$color-alto: #d9d9d9;
+
+//
+// Project Colors
+//
+
+$primary-color: $color-royal-blue;
+$secondary-color: $color-tundora;
+$alert-color: $color-carnation;
+$success-color: $color-fountain-blue;
+$warning-color: $color-burnt-sienna;
+$info-color: $color-regent-st-blue;

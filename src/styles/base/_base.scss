@@ -1,0 +1,295 @@
+//
+// BASE
+// --------------------------------------------------
+
+//
+// Scaffolding
+// -------------------------
+
+// Body reset
+// 1. Change from `box-sizing: content-box` so that `width` is not affected by `padding` or `border`.
+// 2. Change the default tap highlight to be completely transparent in iOS.
+
+html {
+  box-sizing: border-box; // 1
+  -webkit-tap-highlight-color: transparent; // 2
+}
+
+// Reset the box-sizing
+//
+// Heads up! This reset may cause conflicts with some third-party widgets.
+// For recommendations on resolving such conflicts, see
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+// IE10+ doesn't honor `<meta name="viewport">` in some cases.
+@at-root {
+  // stylelint-disable at-rule-no-vendor-prefix, csstree/validator
+  @-ms-viewport {
+    width: device-width;
+  }
+}
+
+//
+// Body
+//
+// 1. Set an explicit initial text-align value so that we can later use the
+//    the `inherit` value on things like `<th>` elements.
+
+body {
+  background-color: $g-body-bg;
+  color: $g-text-color;
+  font-family: $g-font-family-base;
+  font-size: $g-font-size-base;
+  line-height: $g-line-height-base;
+  text-align: left; // 1
+}
+
+// Suppress the focus outline on elements that cannot be accessed via keyboard.
+// This prevents an unwanted focus outline from appearing around elements that
+// might still respond to pointer events.
+//
+// Credit: https://github.com/suitcss/base
+[tabindex='-1']:focus {
+  outline: 0 !important;
+}
+
+// Reset fonts for relevant elements
+input,
+button,
+select,
+textarea {
+  &:focus {
+    // Reset outline for chrome
+    outline: none;
+  }
+}
+
+[role='button'] {
+  cursor: pointer;
+}
+
+// Links
+
+a {
+  color: $g-link-color;
+  text-decoration: none;
+  transition: color $g-transition-duration;
+
+  &:focus {
+    // Reset outline for chrome
+    outline: none;
+  }
+
+  &:hover {
+    color: $g-link-hover-color;
+    text-decoration: $g-link-hover-decoration;
+  }
+}
+
+// Figures
+//
+// We reset this here because previously Normalize had no `figure` margins. This
+// ensures we don't break anyone's use of the element.
+
+figure {
+  margin: 0;
+}
+
+// Images
+
+img {
+  vertical-align: middle;
+}
+
+// Horizontal rules
+
+hr {
+  border: 0;
+  border-top: 1px solid;
+  color: $g-hr-border-color;
+  margin-bottom: $g-line-height-computed;
+  margin-top: $g-line-height-computed;
+}
+
+//
+// Typography
+//
+// Styleguide Typography
+
+//
+// Headings
+//
+// All HTML headings, `<h1>` through `<h6>`, are available.
+// `.h1` through `.h6` classes are also available,
+// for when you want to match the font styling of a heading but
+// cannot use the associated HTML element.
+//
+// Markup:
+// <h1>Level 1 Heading</h1>
+// <h2>Level 2 Heading</h2>
+// <h3>Level 3 Heading</h3>
+// <h4>Level 4 Heading</h4>
+// <h5>Level 5 Heading</h5>
+// <h6>Level 6 Heading</h6>
+// <!-- ---- -->
+// <p class="h1">h1. Heading</p>
+// <p class="h2">h2. Heading</p>
+// <p class="h3">h3. Heading</p>
+// <p class="h4">h4. Heading</p>
+// <p class="h5">h5. Heading</p>
+// <p class="h6">h6. Heading</p>
+//
+// Styleguide Typography.Headings
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
+.heading {
+  @include heading-styles();
+}
+
+h1,
+.h1,
+h2,
+.h2,
+h3,
+.h3 {
+  margin-bottom: $g-line-height-computed;
+  margin-top: $g-line-height-computed;
+}
+
+h4,
+.h4,
+h5,
+.h5,
+h6,
+.h6 {
+  margin-bottom: ($g-line-height-computed / 1.5);
+  margin-top: ($g-line-height-computed / 1.5);
+}
+
+h1,
+.h1 {
+  font-size: $g-font-size-h1;
+}
+
+h2,
+.h2 {
+  font-size: $g-font-size-h2;
+}
+
+h3,
+.h3 {
+  font-size: $g-font-size-h3;
+}
+
+h4,
+.h4 {
+  font-size: $g-font-size-h4;
+}
+
+h5,
+.h5 {
+  font-size: $g-font-size-h5;
+}
+
+h6,
+.h6 {
+  font-size: $g-font-size-h6;
+}
+
+//
+// Inline text elements
+//
+// Styling for common inline HTML5 elements.
+//
+// Markup:
+// <p>You can use the mark tag to <mark>highlight</mark> text.</p>
+// <p><del>This line of text is meant to be treated as deleted text.</del></p>
+// <p><s>This line of text is meant to be treated as no longer accurate.</s></p>
+// <p><ins>This line of text is meant to be treated as an addition to the document.</ins></p>
+// <p><u>This line of text will render as underlined</u></p>
+// <p><small>This line of text is meant to be treated as fine print.</small></p>
+// <p><strong>This line rendered as bold text.</strong></p>
+// <p><em>This line rendered as italicized text.</em></p>
+//
+// Styleguide Typography.Inline-Text-Elements
+
+//
+// Body text
+//
+
+p {
+  margin-bottom: 0;
+  margin-top: ($g-line-height-computed / 1.5);
+}
+
+//
+// Emphasis & misc
+//
+
+mark {
+  padding: 0.2em;
+}
+
+//
+// Lists
+//
+
+// Unordered and Ordered lists
+ul,
+ol {
+  margin-bottom: ($g-line-height-computed / 1.5);
+  margin-top: 0;
+
+  ul,
+  ol {
+    margin-bottom: 0;
+  }
+}
+
+// List options
+
+// Description Lists
+dl {
+  margin-bottom: $g-line-height-computed;
+  margin-top: 0; // Remove browser default
+}
+
+dt,
+dd {
+  line-height: $g-line-height-base;
+}
+
+dt {
+  font-weight: bold;
+}
+
+dd {
+  margin-left: 0; // Undo browser default
+}
+
+//
+// Misc
+//
+
+// Addresses
+address {
+  font-style: normal;
+  line-height: $g-line-height-base;
+  margin-bottom: $g-line-height-computed;
+}

@@ -19,16 +19,12 @@ exports[`renders correctly 1`] = `
     Konular
   </GatsbyLink>
   <a
-    className="c-menu__link"
+    className="c-button c-button--primary"
     href="https://github.com/alpcanaydin/jargon.ist"
     rel="noopener noreferrer"
     target="_blank"
-    to="/konular"
   >
-    Katkıda Bulun 
-    <i
-      className="fas fa-external-link-alt u-font-size-small"
-    />
+    Katkıda Bulun
   </a>
 </nav>
 `;

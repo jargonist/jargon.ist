@@ -1,0 +1,35 @@
+//
+// Fonts
+// --------------------------------------------------
+
+//
+// Font Weights
+// -------------------------
+// 100 = thin
+// 200 = extra-light
+// 300 = light
+// 400 = normal, book
+// 500 = medium
+// 600 = semibold, demibold
+// 700 = bold
+// 800 = heavy
+// 900 = black
+
+//
+//  Mixin Usage
+//  @include font-face-modern($fontName, $fontFolder, $fontFileName, $fontWeight: normal, $fontStyle: normal);
+//
+
+@include font-face-modern('Roboto', 'Roboto', 'Roboto-Regular');
+@include font-face-modern('Roboto', 'Roboto', 'Roboto-Italic', 400, italic);
+@include font-face-modern('Roboto', 'Roboto', 'Roboto-Bold', 700);
+
+@include font-face-modern('Alpha Headline Pro', 'AlphaHeadlinePro', 'AlphaHeadlinePro-Regular');
+@include font-face-modern(
+  'Alpha Headline Pro',
+  'AlphaHeadlinePro',
+  'AlphaHeadlinePro-Italic',
+  400,
+  italic
+);
+@include font-face-modern('Alpha Headline Pro', 'AlphaHeadlinePro', 'AlphaHeadlinePro-Bold', 700);

@@ -1,18 +1,67 @@
-@import '../../../../node_modules/buttono/buttono';
 @import '../../../styles/abstracts/index';
 
-$buttono-bg-color: $primary-color;
-$buttono-bg-hover: scale-color($buttono-bg-color, $lightness: $buttono-function-factor);
-$buttono-radius: px-to-rem(4px);
-$buttono-line-height: (20 / 14);
-$buttono-padding-ends: px-to-rem(15px);
-$buttono-padding-sides: px-to-rem(48px);
-$buttono-font-family: $g-font-secondary;
+//
+// Buttons
+//
+// Button styles can be applied to anything with the `.c-button` class applied.
+// However, typically you'll want to apply these to only `<a>` and `<button>` elements for the best rendering.
+//
+// Styleguide Components.Buttons
+
+//
+// Base styles & states
+//
+// Markup:
+// <a href="#" class="c-button {{modifier_class}}">Link Button</a>
+// <button class="c-button {{modifier_class}}">Button</button>
+//
+// .c-button--primary - Primary
+// .c-button--secondary - Secondary
+// .c-button--tertiary - Tertiary
+// .c-button--quaternary - Quaternary
+// .c-button--quinary - Quinary
+//
+// Styleguide Components.Buttons.Base
+
+//
+// Sizes
+//
+// Markup:
+// <button class="c-button {{modifier_class}}">Button</button>
+//
+// .c-button--small - Small
+//
+// Styleguide Components.Buttons.Sizes
+
+//
+//  Mixin Properties
+//
+// btn-modifier()
+//  $bg - Butonun arkaplan rengini tanımlar
+//  $bg-hover - Butonun hover durumundaki arkaplan rengini tanımlar
+//  $color: Button color
+//  $hover-color: Button hover color
+//  $border-color - Button border color değerini tanımlar
+//  $border-hover-color - Button border hover color değerini tanımlar
+//  $border-width - Butonun border with degerini tanımlar
+//  $radius - Butonun border-radius değerini tanımlar
+//  $disabled - Butona disable efekti vermek için kullanılır
+// @mixin btn-block( $ease:true, $font:$button-font-family )
+// @mixin btn-size( $padding-v:$button-padding-vertical, $padding-h:$button-padding-horizontal, $font-size:false )
 
 .c-button {
-  @include buttono-block;
+  @include btn-block();
+  font-weight: 700;
+  letter-spacing: px-to-rem(1px);
+  text-transform: uppercase;
 
   &--primary {
-    @include buttono-style-modifier($border-color: null, $border-hover-color: null);
+    @include btn-modifier($bg-hover: darken($primary-color, 5), $bg-lightness-threshold: 27%);
+
+    box-shadow: 0 px-to-rem(2px) px-to-rem(4px) 0 rgba(0, 0, 0, 0.1);
+  }
+
+  &--small {
+    @include btn-size($padding-v: px-to-rem(7px), $padding-h: px-to-rem(14px));
   }
 }

@@ -1,14 +1,14 @@
 @import '../../../styles/abstracts/index';
 
 .c-header {
-  background-color: $secondary-color;
+  background-color: $color-ebony-clay;
   flex-shrink: 0;
 
   &__inner {
     align-items: center;
     display: grid;
-    grid-gap: px-to-rem(32px);
-    grid-template-columns: 1fr 4fr 2fr;
+    grid-gap: gap(xlarge);
+    grid-template-columns: auto 4fr 3fr;
     padding: px-to-rem(16rem) 0;
   }
 

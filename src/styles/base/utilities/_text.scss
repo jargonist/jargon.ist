@@ -1,0 +1,113 @@
+//
+// Text
+//
+// | Class                     | Description |
+// | ------------------------- | ------------- |
+// | `.u-word-break-all`       | Break words between any two letters |
+// | `.u-text-nowrap`          | Prevent text from wrapping within an element. |
+// | `.u-underline`            | Underlines the text within an element. |
+// | `.u-no-hover-underline`   | Disables any text decorations previously applied to an element when visible on hover |
+//
+
+.u-word-break-all {
+  word-break: break-all;
+}
+
+.u-text-nowrap {
+  white-space: nowrap;
+}
+
+.u-underline {
+  text-decoration: underline;
+}
+
+.u-no-hover-underline:hover {
+  text-decoration: none;
+}
+
+//
+// Alignment
+//
+// | Class               | Description |
+// | ------------------- | ------------- |
+// | `.u-text-left`      | Align text to the left. |
+// | `.u-text-right`     | Align text to the right. |
+// | `.u-text-center`    | Align text to the center. |
+// | `.u-text-justify`   | Justify text. |
+//
+
+.u-text {
+  &-left {
+    text-align: left;
+  }
+
+  &-right {
+    text-align: right;
+  }
+
+  &-center {
+    text-align: center;
+
+    @include make-utility-responsive-down((sm, md)) {
+      text-align: center;
+    }
+  }
+
+  &-justify {
+    text-align: justify;
+  }
+}
+
+//
+// Transformation
+//
+// | Class               | Description |
+// | ------------------- | ------------- |
+// | `.u-uppercase`      | Makes all text lowercase within an element. |
+// | `.u-uppercase`      | Makes all text uppercase within an element. |
+// | `.u-capitalize`     | Capitalizes the text within an element. |
+//
+
+.u-lowercase {
+  text-transform: lowercase;
+}
+
+.u-uppercase {
+  text-transform: uppercase;
+}
+
+.u-capitalize {
+  text-transform: capitalize;
+}
+
+//
+// Font Weights
+//
+// | Class                     | Description |
+// | ------------------------- | ------------- |
+// | `.u-font-weight-light`    | Set the font weight of an element to light. (300) |
+// | `.u-font-weight-normal`   | Set the font weight of an element to normal. |
+// | `.u-font-weight-medium`   | Set the font weight of an element to medium. (500) |
+// | `.u-font-weight-semibold` | Set the font weight of an element to semibold. (600) |
+// | `.u-font-weight-bold`     | Set the font weight of an element to bold. (700) |
+//
+
+.u-font-weight-light {
+  font-weight: 300;
+}
+
+.u-font-weight-regular {
+  font-weight: 400;
+}
+
+.u-font-weight-medium {
+  font-weight: 500;
+}
+
+.u-font-weight-semibold {
+  font-weight: 600;
+}
+
+.u-font-weight-bold {
+  font-weight: 700;
+}

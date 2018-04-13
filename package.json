@@ -16,7 +16,6 @@
     "empty": "^0.10.1",
     "gatsby": "^1.9.241",
     "gatsby-link": "^1.6.39",
-    "gatsby-plugin-google-fonts": "^0.0.4",
     "gatsby-plugin-purify-css": "^2.2.1",
     "gatsby-plugin-react-helmet": "^2.0.8",
     "gatsby-plugin-sass": "^1.0.25",
@@ -33,7 +32,9 @@
     "react-instantsearch": "^5.0.3",
     "slug": "^0.9.1"
   },
-  "keywords": ["gatsby"],
+  "keywords": [
+    "gatsby"
+  ],
   "license": "MIT",
   "scripts": {
     "build": "gatsby build",

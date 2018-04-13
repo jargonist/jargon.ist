@@ -1,4 +1,17 @@
+// Colors
 @import 'colors';
-@import 'functions';
-@import 'variables';
+
+// Mixins
 @import 'mixins/index';
+
+// Functions
+@import 'functions/index';
+
+// Variables
+@import 'variables';
+
+// Placeholders
+@import 'placeholders';
+
+// Keyframes
+@import 'keyframes';

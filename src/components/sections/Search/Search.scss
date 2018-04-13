@@ -1,21 +1,16 @@
 @import '../../../styles/abstracts/index';
 
 .c-search {
-  align-items: center;
-  background-color: $color-tuatara;
-  border-radius: px-to-rem(3px);
-  color: $color-white;
-  display: flex;
-  flex-direction: row;
-  padding: px-to-rem(8px) px-to-rem(12px);
   position: relative;
 
   &__input {
-    background-color: transparent;
+    background-color: $color-cinder;
     border: 0;
+    border-radius: px-to-rem(3px);
     color: $color-white;
-    margin-left: gap(xsmall);
+    font-size: $g-font-size-small;
     outline: 0;
+    padding: px-to-rem(13px) px-to-rem(24px);
     width: 100%;
   }
 

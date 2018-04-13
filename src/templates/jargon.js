@@ -17,6 +17,7 @@ type Props = {
       html: string,
       frontmatter: JargonFrontmatter,
       fields: {
+        slug: string,
         tagList: Array<Tag>,
       },
     },
@@ -38,6 +39,7 @@ export const Jargon = ({ data }: Props) => {
           jargon={{
             html,
             title: frontmatter.title,
+            slug: fields.slug,
             /* $FlowIgnoreNextLine */
             tags: (fields.tagList || []).sort((a, b) => a.title > b.title),
           }}

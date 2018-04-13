@@ -4,19 +4,9 @@ exports[`renders correctly 1`] = `
 <span
   className="c-logo"
 >
-  <img
-    alt="Jargon.ist"
-    height="30"
-    src={
-      Object {
-        "process": [Function],
-      }
-    }
-  />
-  <span
-    className="c-logo__text"
-  >
-    jargon.ist
-  </span>
+  <strong>
+    jargon
+  </strong>
+  ist
 </span>
 `;

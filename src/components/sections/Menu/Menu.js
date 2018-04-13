@@ -19,10 +19,9 @@ const Menu = () => (
       href="https://github.com/alpcanaydin/jargon.ist"
       target="_blank"
       rel="noopener noreferrer"
-      className="c-menu__link"
-      to="/konular"
+      className="c-button c-button--primary"
     >
-      Katkıda Bulun <i className="fas fa-external-link-alt u-font-size-small" />
+      Katkıda Bulun
     </a>
   </nav>
 );

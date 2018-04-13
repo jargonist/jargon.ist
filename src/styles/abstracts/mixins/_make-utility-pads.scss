@@ -1,0 +1,82 @@
+//
+// Pads
+//
+// stylelint-disable max-nesting-depth
+// -------------------------
+
+@mixin make-utility-pads() {
+  @each $pos in map-keys($g-pads) {
+    $pad: map-get($g-pads, $pos);
+    $position: '';
+
+    @if not($pos == normal) {
+      $position: '-' + $pos;
+
+      &#{$position} {
+        padding: $pad;
+
+        @include make-utility-responsive() {
+          padding: $pad;
+        }
+      }
+    } @else {
+      padding: $pad;
+
+      @include make-utility-responsive() {
+        padding: $pad;
+      }
+    }
+
+    &-ends#{$position} {
+      padding-bottom: $pad;
+      padding-top: $pad;
+
+      @include make-utility-responsive() {
+        padding-bottom: $pad;
+        padding-top: $pad;
+      }
+    }
+
+    &-sides#{$position} {
+      padding-left: $pad;
+      padding-right: $pad;
+
+      @include make-utility-responsive() {
+        padding-left: $pad;
+        padding-right: $pad;
+      }
+    }
+
+    &-top#{$position} {
+      padding-top: $pad;
+
+      @include make-utility-responsive() {
+        padding-top: $pad;
+      }
+    }
+
+    &-bottom#{$position} {
+      padding-bottom: $pad;
+
+      @include make-utility-responsive() {
+        padding-bottom: $pad;
+      }
+    }
+
+    &-left#{$position} {
+      padding-left: $pad;
+
+      @include make-utility-responsive() {
+        padding-left: $pad;
+      }
+    }
+
+    &-right#{$position} {
+      padding-right: $pad;
+
+      @include make-utility-responsive() {
+        padding-right: $pad;
+      }
+    }
+  }
+}

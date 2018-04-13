@@ -5,7 +5,7 @@ import Helmet from 'react-helmet';
 
 import { Header, Footer } from '../components/sections';
 
-import '../styles/index.scss';
+import '../styles/main.scss';
 
 type Props = {
   children: () => Node,

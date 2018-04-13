@@ -1,0 +1,64 @@
+//
+// Display
+//
+// | Class              | Description |
+// | ------------------ | ------------- |
+// | `.u-block`         | Set the box type of the element to `block`. |
+// | `.u-inline-block`  | Set the box type of the element to `inline-block` |
+// | `.u-inline`        | Set the box type of the element to `inline`. |
+// | `.u-table`         | Set the box type of the element to `table`. |
+// | `.u-table-row`     | Set the box type of the element to `table-row`. |
+// | `.u-table-cell`    | Set the box type of the element to `table-cell`. |
+// | `.u-flex`          | Set the box type of the element to `flex`. You can use this class with responsive breakpoints;<br> `.u-flex@{breakpoint}-{up or down}` |
+// | `.u-inline-flex`   | Set the box type of the element to `u-inline-flex`. |
+// | `.u-hidden`        | Set the box type of the element to `none`. You can use this class with responsive breakpoints;<br> `.u-hidden@{breakpoint}-{up or down}` |
+//
+
+.u-block {
+  display: block;
+
+  @include make-utility-responsive() {
+    display: block;
+  }
+}
+
+.u-inline-block {
+  display: inline-block;
+}
+
+.u-inline {
+  display: inline;
+}
+
+.u-table {
+  border-collapse: collapse;
+  display: table;
+}
+
+.u-table-row {
+  display: table-row;
+}
+
+.u-table-cell {
+  display: table-cell;
+}
+
+.u-flex {
+  display: flex;
+
+  @include make-utility-responsive() {
+    display: flex;
+  }
+}
+
+.u-inline-flex {
+  display: inline-flex;
+}
+
+.u-hidden {
+  display: none;
+
+  @include make-utility-responsive() {
+    display: none;
+  }
+}

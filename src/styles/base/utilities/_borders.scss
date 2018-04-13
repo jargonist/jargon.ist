@@ -1,0 +1,19 @@
+//
+// Borders
+//
+// Use border utilities to add or remove an element’s borders. Choose from all borders or one at a time.
+//
+// | Class                     | Description |
+// | ------------------------- | ------------- |
+// | `.u-border-top`           | Adds 1px border top to element. |
+// | `.u-border-bottom`        | Adds 1px border bottom to element. |
+//
+// Styleguide Utilities.Borders
+
+.u-border-top {
+  border-top: px-to-rem(1px) solid $g-border-color;
+}
+
+.u-border-bottom {
+  border-bottom: px-to-rem(1px) solid $g-border-color;
+}

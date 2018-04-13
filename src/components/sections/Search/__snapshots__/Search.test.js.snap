@@ -4,9 +4,6 @@ exports[`renders correctly 1`] = `
 <div
   className="c-search"
 >
-  <i
-    className="fas fa-search"
-  />
   <CreateInstantSearch
     indexName="jargons"
     refresh={false}

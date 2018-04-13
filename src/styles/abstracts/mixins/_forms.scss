@@ -1,0 +1,65 @@
+//
+// FORMS
+// --------------------------------------------------
+
+// @MIXIN form-control
+//
+// Bu mixin form elemanının temel özelliklerini tanımlamak için kullanılır
+
+@mixin form-control-block(
+  $display: block,
+  $width: 100%,
+  $padding-vertical: $c-input-padding-vertical,
+  $padding-horizontal: $c-input-padding-horizontal,
+  $font-size: $c-input-font-size,
+  $line-height: $c-input-line-height
+) {
+  background-image: none; // Reset unusual Firefox-on-Android default style; see https://github.com/necolas/normalize.css/issues/214
+  border-style: solid;
+  border-width: $c-input-border-width;
+  display: $display;
+  font-family: $c-input-font-family;
+  font-size: $font-size;
+  height: $c-input-height-base; // Make inputs at least the height of their button counterpart (base line-height + padding + border)
+  line-height: $line-height;
+  padding: $padding-vertical $padding-horizontal;
+  width: $width;
+}
+
+// @MIXIN form-control-modifier
+//
+// Bu mixin form elemanının şekil özelliklerini tanımlamak için kullanılır
+//
+// @param $color - Input color
+// @param $bg-color - Input background color
+// @param $border-color - Input border color
+// @param $radius - Input border radius
+// @param $placeholder - Input placeholder color
+// @param $focus-border-color - Focus border color
+
+@mixin form-control-modifier(
+  $color: $c-input-color,
+  $bg-color: $c-input-bg-color,
+  $border-color: $c-input-border-color,
+  $radius: $c-input-border-radius,
+  $placeholder: $c-input-color-placeholder,
+  $focus-border-color: $c-input-border-focus
+) {
+  background-color: $bg-color;
+  border-color: $border-color;
+  border-radius: $radius;
+  color: $color;
+
+  // Placeholder
+  @if not($placeholder == null) {
+    &::placeholder {
+      color: $placeholder;
+    }
+  }
+
+  @if ($focus-border-color) {
+    &:focus {
+      border-color: $focus-border-color;
+    }
+  }
+}

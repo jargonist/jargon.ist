@@ -1,0 +1,195 @@
+//
+// Flex
+//
+// | Class                     | Description |
+// | ------------------------- | ------------- |
+// | `.u-flex-extend`          | Allow a flex item to grow and shrink as needed, ignoring its initial size. |
+// | `.u-flex-grow-full`       | Allow a flex item to grow to fill any available space. |
+// | `.u-flex-no-shrink`       | Prevent a flex item from shrinking. |
+// | `.u-flex-none`            | Prevent a flex item from growing or shrinking. |
+// | `.u-flex-full-center`     | Align and justify items in the center of the container. |
+//
+
+.u-flex-extend {
+  flex: 1;
+}
+
+.u-flex-grow-full {
+  flex-grow: 1;
+}
+
+.u-flex-no-shrink {
+  flex-shrink: 0;
+}
+
+.u-flex-none {
+  flex: none;
+}
+
+.u-flex-full-center {
+  align-items: center;
+  justify-content: center;
+}
+
+//
+// Direction
+//
+// | Class                     | Description |
+// | ------------------------- | ------------- |
+// | `.u-flex-row`             | Position flex items in the normal horizontal direction. |
+// | `.u-flex-row-reverse`     | Position flex items in the reverse horizontal direction. |
+// | `.u-flex-column`          | Position flex items vertically. |
+// | `.u-flex-column-reverse`  | Position flex items vertically in the reverse direction. |
+//
+
+.u-flex-row {
+  flex-direction: row;
+}
+
+.u-flex-row-reverse {
+  flex-direction: row-reverse;
+}
+
+.u-flex-column {
+  flex-direction: column;
+}
+
+.u-flex-column-reverse {
+  flex-direction: column-reverse;
+
+  @include make-utility-responsive-down(md) {
+    flex-direction: column-reverse;
+  }
+}
+
+//
+// Wrapping
+//
+// | Class                     | Description |
+// | ------------------------- | ------------- |
+// | `.u-flex-no-wrap`         | Don't allow flex items to wrap. |
+// | `.u-flex-wrap`            | Allow flex items to wrap in the normal direction. |
+// | `.u-flex-wrap-reverse`    | Allow flex items to wrap in the reverse direction. |
+//
+// Styleguide Utilities.Flex.Wrapping
+
+.u-flex-no-wrap {
+  flex-wrap: nowrap;
+}
+
+.u-flex-wrap {
+  flex-wrap: wrap;
+}
+
+.u-flex-wrap-reverse {
+  flex-wrap: wrap-reverse;
+}
+
+//
+// Justify Content
+//
+// | Class                     | Description |
+// | ------------------------- | ------------- |
+// | `.u-justify-start`        | Justify items against the start of the container. |
+// | `.u-justify-center`       | Justify items in the center of the container. |
+// | `.u-justify-end`          | Justify items against the end of the container. |
+// | `.u-justify-between`      | Justify items by adding an equal amount of space between each one. |
+// | `.u-justify-around`       | Justify items by adding an equal amount of space around each one. |
+//
+// Styleguide Utilities.Flex.Justify-Content
+
+.u-justify {
+  &-start {
+    justify-content: flex-start;
+  }
+
+  &-center {
+    justify-content: center;
+
+    @include make-utility-responsive() {
+      justify-content: center;
+    }
+  }
+
+  &-end {
+    justify-content: flex-end;
+  }
+
+  &-between {
+    justify-content: space-between;
+  }
+
+  &-around {
+    justify-content: space-around;
+  }
+}
+
+//
+// Align Items
+//
+// | Class                     | Description |
+// | ------------------------- | ------------- |
+// | `.u-align-items-stretch`  | Stretch items to fill the cross axis. |
+// | `.u-align-items-start`    | Align items against the start of the cross axis. |
+// | `.u-align-items-center`   | Align items along the center of the cross axis. |
+// | `.u-align-items-end`      | Align items against the end of the cross axis. |
+// | `.u-align-items-baseline` | Align the baselines of each item. |
+//
+// Styleguide Utilities.Flex.Align-Items
+
+.u-align-items {
+  &-stretch {
+    align-items: stretch;
+  }
+
+  &-start {
+    align-items: flex-start;
+  }
+
+  &-center {
+    align-items: center;
+  }
+
+  &-end {
+    align-items: flex-end;
+  }
+
+  &-baseline {
+    align-items: baseline;
+  }
+}
+
+//
+// Align Self
+//
+// | Class                     | Description |
+// | ------------------------- | ------------- |
+// | `.u-align-self-auto`      | Align item based on the container's `align-items` property. |
+// | `.u-align-self-start`     | Align item against the start of the cross axis. |
+// | `.u-align-self-center`    | Align item along the center of the cross axis. |
+// | `.u-align-self-end`       | Align item against the end of the cross axis. |
+// | `.u-align-self-stretch`   | Stretch item to fill the cross axis. |
+//
+// Styleguide Utilities.Flex.Align-Self
+
+.u-align-self {
+  &-auto {
+    align-self: auto;
+  }
+
+  &-start {
+    align-self: flex-start;
+  }
+
+  &-center {
+    align-self: center;
+  }
+
+  &-end {
+    align-self: flex-end;
+  }
+
+  &-stretch {
+    align-self: stretch;
+  }
+}

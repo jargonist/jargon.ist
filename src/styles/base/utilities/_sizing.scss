@@ -1,0 +1,58 @@
+//
+// Sizing
+//
+// | Class                     | Description |
+// | ------------------------- | ------------- |
+// | `.u-fit`                  | Set the element's maximum width to `100%`. |
+// | `.u-min-width-0`          | Set the element's minimum width to `0`. |
+// | `.u-min-width-full`       | Set the element's minimum width to `100%`. |
+// | `.u-full-width`           | Set the element's width to `100%`. You can use this class with responsive breakpoints;<br> `.u-full-width@{breakpoint}-{up or down}` |
+// | `.u-free-width`           | Set the element's width to `auto`. You can use this class with responsive breakpoints;<br> `.u-free-width@{breakpoint}-{up or down}` |
+// | `.u-half-width`           | Set the element's width to `50%`. |
+// | `.u-full-height`          | Set the element's height to `100%`. |
+// | `.u-full-vheight`         | Set the element's height to `100vh`. |
+//
+
+.u-fit {
+  max-width: 100%;
+}
+
+.u-min-width-0 {
+  min-width: 0;
+}
+
+.u-min-width-full {
+  min-width: 100%;
+}
+
+.u-full-width {
+  width: 100%;
+
+  @include make-utility-responsive() {
+    width: 100%;
+  }
+}
+
+.u-free-width {
+  width: auto;
+
+  @include make-utility-responsive() {
+    width: auto;
+  }
+}
+
+.u-half-width {
+  width: 50%;
+
+  @include make-utility-responsive() {
+    width: 50%;
+  }
+}
+
+.u-full-height {
+  height: 100%;
+}
+
+.u-full-vheight {
+  height: 100vh;
+}

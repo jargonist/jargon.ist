@@ -19,8 +19,9 @@ const Header = () => (
           <Logo />
         </Link>
 
-        <Menu />
         <Search />
+
+        <Menu />
       </div>
     </Container>
   </header>

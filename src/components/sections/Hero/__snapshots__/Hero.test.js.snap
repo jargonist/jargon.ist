@@ -1,0 +1,41 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<div
+  className="c-hero"
+>
+  <div>
+    <h1
+      className="u-color-primary"
+    >
+      Jargon.ist
+    </h1>
+    <p
+      className="u-gap-bottom"
+    >
+      Jargon.ist, bilgisayar bilimleri alanında kullanılan bazı jargonların topluluk tarafından Türkçe olarak açıklanmasını sağlayan bir web uygulamasıdır.
+    </p>
+    <Button
+      className=""
+      primary={true}
+      to="/dizin"
+    >
+      Dizini Görüntüle
+      <span
+        className="u-pad-left-2xsmall"
+      >
+        ⟶
+      </span>
+    </Button>
+  </div>
+  <img
+    alt="jargon.ist"
+    className="c-hero__img"
+    src={
+      Object {
+        "process": [Function],
+      }
+    }
+  />
+</div>
+`;
