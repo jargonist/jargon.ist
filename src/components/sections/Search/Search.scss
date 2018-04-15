@@ -21,6 +21,7 @@
     position: absolute;
     right: 0;
     width: 100%;
+    z-index: $g-z-index-c-autocomplete;
   }
 
   &__suggestions-section-title {

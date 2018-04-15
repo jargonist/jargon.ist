@@ -15,7 +15,7 @@ exports[`renders correctly 1`] = `
     <p
       className="u-gap-bottom"
     >
-      Jargon.ist, bilgisayar bilimleri alanında kullanılan bazı jargonların topluluk tarafından Türkçe olarak açıklanmasını sağlayan bir web uygulamasıdır.
+      Jargon.ist, bilgisayar bilimleri alanında kullanılan jargonların topluluk tarafından Türkçe olarak açıklanmasını sağlayan bir web uygulamasıdır.
     </p>
     <Button
       className=""
