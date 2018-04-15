@@ -61,7 +61,7 @@ export class AutoCompleteWrapper extends PureComponent<Props> {
 
   renderSectionTitle = (section: Section) =>
     section.hits.length > 0 && (
-      <h4 className="c-search__suggestions-section-title">{this.titles[section.index]}</h4>
+      <h5 className="c-search__suggestions-section-title">{this.titles[section.index]}</h5>
     );
 
   render() {
@@ -77,6 +77,7 @@ export class AutoCompleteWrapper extends PureComponent<Props> {
         getSectionSuggestions={this.getSectionSuggestions}
         renderSuggestion={this.renderSuggestion}
         inputProps={{
+          type: 'search',
           placeholder: 'Jargon veya konu ara',
           value: currentRefinement,
           onChange: this.handleChange,

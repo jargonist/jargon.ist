@@ -12,6 +12,7 @@ exports[`renders correctly 1`] = `
     Object {
       "onChange": [Function],
       "placeholder": "Jargon veya konu ara",
+      "type": "search",
       "value": "",
     }
   }

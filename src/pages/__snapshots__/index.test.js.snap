@@ -20,5 +20,23 @@ exports[`renders correctly 1`] = `
       <Features />
     </Container>
   </Section>
+  <Section
+    className="u-bg-cinder"
+  >
+    <Container
+      className=""
+    >
+      <ExampleJargon />
+    </Container>
+  </Section>
+  <Section
+    className=""
+  >
+    <Container
+      className=""
+    >
+      <CallToAction />
+    </Container>
+  </Section>
 </React.Fragment>
 `;

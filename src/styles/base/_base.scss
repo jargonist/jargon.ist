@@ -293,3 +293,10 @@ address {
   line-height: $g-line-height-base;
   margin-bottom: $g-line-height-computed;
 }
+
+// Code
+
+code {
+  font-family: $g-font-family-secondary;
+  font-size: $g-font-size-base;
+}
