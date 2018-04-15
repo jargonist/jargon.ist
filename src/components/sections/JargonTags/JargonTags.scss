@@ -1,7 +1,19 @@
 @import '../../../styles/abstracts/index';
 
 .c-jargon-tags {
+  &__list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
   &__tag {
+    display: inline-flex;
+    margin-bottom: gap(xsmall);
+    margin-right: gap(xsmall);
+  }
+
+  &__link {
     background-color: $color-comet;
     border-radius: px-to-rem(2px);
     box-shadow: 0 px-to-rem(2px) px-to-rem(4px) 0 rgba(0, 0, 0, 0.1);

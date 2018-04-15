@@ -17,11 +17,15 @@ type Props = {
 const JargonTags = ({ tags, className, max = 6 }: Props) => (
   <div className={cx('c-jargon-tags', className)}>
     <Fragment>
-      {tags.slice(0, max).map(tag => (
-        <Link key={tag.slug} to={`/k/${tag.slug}`} className="c-jargon-tags__tag u-gap-right-small">
-          {tag.title}
-        </Link>
-      ))}
+      <ul className="c-jargon-tags__list">
+        {tags.slice(0, max).map(tag => (
+          <li key={tag.slug} className="c-jargon-tags__tag">
+            <Link to={`/k/${tag.slug}`} className="c-jargon-tags__link">
+              {tag.title}
+            </Link>
+          </li>
+        ))}
+      </ul>
       {tags.length > max && (
         <span className="c-jargon-tags__more">ve {tags.length - max} tane daha</span>
       )}

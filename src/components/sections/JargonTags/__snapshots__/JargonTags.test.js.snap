@@ -5,20 +5,32 @@ exports[`renders correctly 1`] = `
   className="c-jargon-tags"
 >
   <React.Fragment>
-    <GatsbyLink
-      className="c-jargon-tags__tag u-gap-right-small"
-      key="tag1"
-      to="/k/tag1"
+    <ul
+      className="c-jargon-tags__list"
     >
-      tag1
-    </GatsbyLink>
-    <GatsbyLink
-      className="c-jargon-tags__tag u-gap-right-small"
-      key="tag2"
-      to="/k/tag2"
-    >
-      tag2
-    </GatsbyLink>
+      <li
+        className="c-jargon-tags__tag"
+        key="tag1"
+      >
+        <GatsbyLink
+          className="c-jargon-tags__link"
+          to="/k/tag1"
+        >
+          tag1
+        </GatsbyLink>
+      </li>
+      <li
+        className="c-jargon-tags__tag"
+        key="tag2"
+      >
+        <GatsbyLink
+          className="c-jargon-tags__link"
+          to="/k/tag2"
+        >
+          tag2
+        </GatsbyLink>
+      </li>
+    </ul>
   </React.Fragment>
 </div>
 `;
