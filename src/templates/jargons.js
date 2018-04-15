@@ -1,9 +1,7 @@
 // @flow
 
-import React from 'react';
+import React, { Fragment } from 'react';
 import Helmet from 'react-helmet';
-
-import { Container, Section } from '../components/ui';
 
 import JargonList from '../components/pages/JargonList';
 
@@ -16,16 +14,13 @@ type Props = {
 };
 
 export const Jargons = ({ pathContext }: Props) => (
-  <Section>
-    <Container>
-      <Helmet>
-        <title>Dizin</title>
-      </Helmet>
+  <Fragment>
+    <Helmet>
+      <title>Dizin</title>
+    </Helmet>
 
-      {/* $FlowIgnoreNextLine */}
-      <JargonList jargons={pathContext.jargonList.sort((a, b) => a.title > b.title)} />
-    </Container>
-  </Section>
+    <JargonList jargons={pathContext.jargonList} />
+  </Fragment>
 );
 
 export default Jargons;

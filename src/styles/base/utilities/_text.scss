@@ -111,3 +111,15 @@
 .u-font-weight-bold {
   font-weight: 700;
 }
+
+//
+// Font Family
+//
+
+.u-font-family-primary {
+  font-family: $g-font-family-primary;
+}
+
+.u-font-family-secondary {
+  font-family: $g-font-family-secondary;
+}

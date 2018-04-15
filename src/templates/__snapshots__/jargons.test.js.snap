@@ -1,23 +1,17 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`renders correctly 1`] = `
-<Section
-  className=""
->
-  <Container
-    className=""
+<React.Fragment>
+  <HelmetWrapper
+    defer={true}
+    encodeSpecialCharacters={true}
   >
-    <HelmetWrapper
-      defer={true}
-      encodeSpecialCharacters={true}
-    >
-      <title>
-        Dizin
-      </title>
-    </HelmetWrapper>
-    <JargonList
-      jargons={Array []}
-    />
-  </Container>
-</Section>
+    <title>
+      Dizin
+    </title>
+  </HelmetWrapper>
+  <JargonList
+    jargons={Array []}
+  />
+</React.Fragment>
 `;

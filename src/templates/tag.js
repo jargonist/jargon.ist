@@ -1,10 +1,8 @@
 // @flow
 
-import React from 'react';
+import React, { Fragment } from 'react';
 import Helmet from 'react-helmet';
 import { graphql } from 'graphql';
-
-import { Container, Section } from '../components/ui';
 
 import TagDetail from '../components/pages/TagDetail';
 
@@ -33,26 +31,21 @@ export const Tag = ({ data, pathContext }: Props) => {
   const { allMarkdownRemark: { totalCount, edges: jargons } } = data;
 
   return (
-    <Section>
-      <Container>
-        <Helmet>
-          <title>{`${pathContext.tag} konulu jargonlar`}</title>
-        </Helmet>
+    <Fragment>
+      <Helmet>
+        <title>{`${pathContext.tag} konulu jargonlar`}</title>
+      </Helmet>
 
-        <TagDetail
-          tag={pathContext.tag}
-          totalCount={totalCount}
-          jargons={jargons
-            .map(jargon => ({
-              html: '',
-              title: jargon.node.frontmatter.title,
-              slug: jargon.node.fields.slug,
-            }))
-            /* $FlowIgnoreNextLine */
-            .sort((a, b) => a.title > b.title)}
-        />
-      </Container>
-    </Section>
+      <TagDetail
+        tag={pathContext.tag}
+        totalCount={totalCount}
+        jargons={jargons.map(jargon => ({
+          html: '',
+          title: jargon.node.frontmatter.title,
+          slug: jargon.node.fields.slug,
+        }))}
+      />
+    </Fragment>
   );
 };
 

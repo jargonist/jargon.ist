@@ -1,9 +1,7 @@
 // @flow
 
-import React from 'react';
+import React, { Fragment } from 'react';
 import Helmet from 'react-helmet';
-
-import { Container, Section } from '../components/ui';
 
 import TagList from '../components/pages/TagList';
 
@@ -16,16 +14,13 @@ type Props = {
 };
 
 export const Tags = ({ pathContext }: Props) => (
-  <Section>
-    <Container>
-      <Helmet>
-        <title>Konular</title>
-      </Helmet>
+  <Fragment>
+    <Helmet>
+      <title>Konular</title>
+    </Helmet>
 
-      {/* $FlowIgnoreNextLine */}
-      <TagList tags={pathContext.tagList.sort((a, b) => a.title > b.title)} />
-    </Container>
-  </Section>
+    <TagList tags={pathContext.tagList} />
+  </Fragment>
 );
 
 export default Tags;

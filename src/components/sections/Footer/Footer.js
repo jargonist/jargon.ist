@@ -19,6 +19,25 @@ const Footer = () => (
             <small className="u-color-muted">Bu proje MIT lisansı kullanmaktadır.</small>
           </div>
 
+          <div className="u-hidden@lg-up u-gap-bottom-medium">
+            <div className="u-gap-bottom-xsmall">
+              <Link to="/" className="c-footer__menu-link">
+                Ana sayfa
+              </Link>
+            </div>
+
+            <div className="u-gap-bottom-xsmall">
+              <Link to="/dizin" className="c-footer__menu-link">
+                Dizin
+              </Link>
+            </div>
+            <div className="u-gap-bottom-xsmall">
+              <Link to="/konular" className="c-footer__menu-link">
+                Konular
+              </Link>
+            </div>
+          </div>
+
           <div>
             <img
               src="https://www.algolia.com/static_assets/images/press/downloads/search-by-algolia-white.svg"

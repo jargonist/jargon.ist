@@ -1,10 +1,8 @@
 // @flow
 
-import React from 'react';
+import React, { Fragment } from 'react';
 import Helmet from 'react-helmet';
 import { graphql } from 'graphql';
-
-import { Container, Section } from '../components/ui';
 
 import JargonDetail from '../components/pages/JargonDetail';
 
@@ -28,24 +26,21 @@ export const Jargon = ({ data }: Props) => {
   const { markdownRemark } = data;
   const { frontmatter, html, fields } = markdownRemark;
   return (
-    <Section>
-      <Container>
-        <Helmet>
-          <title>{frontmatter.title}</title>
-          <meta name="keywords" content={(frontmatter.tags || []).join(', ')} />
-        </Helmet>
+    <Fragment>
+      <Helmet>
+        <title>{frontmatter.title}</title>
+        <meta name="keywords" content={(frontmatter.tags || []).join(', ')} />
+      </Helmet>
 
-        <JargonDetail
-          jargon={{
-            html,
-            title: frontmatter.title,
-            slug: fields.slug,
-            /* $FlowIgnoreNextLine */
-            tags: (fields.tagList || []).sort((a, b) => a.title > b.title),
-          }}
-        />
-      </Container>
-    </Section>
+      <JargonDetail
+        jargon={{
+          html,
+          title: frontmatter.title,
+          slug: fields.slug,
+          tags: (fields.tagList || []).sort((a, b) => a.title.localeCompare(b.title)),
+        }}
+      />
+    </Fragment>
   );
 };
 

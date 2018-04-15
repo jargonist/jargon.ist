@@ -1,39 +1,45 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`renders correctly 1`] = `
-<React.Fragment>
-  <h1
-    className="u-text-lowercase"
+<Section
+  className=""
+>
+  <Container
+    className=""
   >
-    Example Jargon 1
-  </h1>
-  <div
-    dangerouslySetInnerHTML={
-      Object {
-        "__html": "<p>Hello world</p>",
-      }
-    }
-  />
-  <React.Fragment>
-    <hr
-      className="u-gap-top-medium"
-    />
-    <div>
-      <GatsbyLink
-        className="u-gap-right-small u-text-lowercase"
-        key="tag1"
-        to="/k/tag1"
+    <div
+      className="u-pad-sides-2xlarge@lg-up u-pad-sides-large@md-up u-pad-sides@sm-up"
+    >
+      <h1
+        className="u-color-primary u-clear-gap"
       >
-        tag1
-      </GatsbyLink>
-      <GatsbyLink
-        className="u-gap-right-small u-text-lowercase"
-        key="tag2"
-        to="/k/tag2"
-      >
-        tag2
-      </GatsbyLink>
+        Example Jargon 1
+      </h1>
+      <JargonTags
+        className="u-gap-top-small"
+        max={6}
+        tags={
+          Array [
+            Object {
+              "slug": "tag1",
+              "title": "tag1",
+            },
+            Object {
+              "slug": "tag2",
+              "title": "tag2",
+            },
+          ]
+        }
+      />
+      <div
+        className="u-pad-top"
+        dangerouslySetInnerHTML={
+          Object {
+            "__html": "<p>Hello world</p>",
+          }
+        }
+      />
     </div>
-  </React.Fragment>
-</React.Fragment>
+  </Container>
+</Section>
 `;

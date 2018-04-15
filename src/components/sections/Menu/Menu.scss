@@ -10,20 +10,25 @@
     color: $color-white;
     font-size: $g-font-size-small;
     margin-right: gap();
+    position: relative;
 
     &::after {
-      background-color: $primary-color;
+      background-color: $color-white;
+      border-radius: 50%;
+      bottom: px-to-rem(-6px);
       content: '';
       display: block;
-      height: 2px;
+      height: px-to-rem(4px);
+      left: calc(50% - #{px-to-rem(2px)});
       opacity: 0;
+      position: absolute;
       transition: opacity 0.4s;
-      width: 100%;
+      width: px-to-rem(4px);
     }
 
     &:hover,
     &.is-active {
-      color: $primary-color;
+      color: $color-white;
       text-decoration: none;
 
       // stylelint-disable-next-line max-nesting-depth

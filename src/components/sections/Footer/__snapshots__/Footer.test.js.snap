@@ -25,6 +25,40 @@ exports[`renders correctly 1`] = `
             Bu proje MIT lisansı kullanmaktadır.
           </small>
         </div>
+        <div
+          className="u-hidden@lg-up u-gap-bottom-medium"
+        >
+          <div
+            className="u-gap-bottom-xsmall"
+          >
+            <GatsbyLink
+              className="c-footer__menu-link"
+              to="/"
+            >
+              Ana sayfa
+            </GatsbyLink>
+          </div>
+          <div
+            className="u-gap-bottom-xsmall"
+          >
+            <GatsbyLink
+              className="c-footer__menu-link"
+              to="/dizin"
+            >
+              Dizin
+            </GatsbyLink>
+          </div>
+          <div
+            className="u-gap-bottom-xsmall"
+          >
+            <GatsbyLink
+              className="c-footer__menu-link"
+              to="/konular"
+            >
+              Konular
+            </GatsbyLink>
+          </div>
+        </div>
         <div>
           <img
             alt="Search by Algolia"

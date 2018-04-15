@@ -1,33 +1,27 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`renders correctly 1`] = `
-<Section
-  className=""
->
-  <Container
-    className=""
+<React.Fragment>
+  <HelmetWrapper
+    defer={true}
+    encodeSpecialCharacters={true}
   >
-    <HelmetWrapper
-      defer={true}
-      encodeSpecialCharacters={true}
-    >
-      <title>
-        tag1 konulu jargonlar
-      </title>
-    </HelmetWrapper>
-    <TagDetail
-      jargons={
-        Array [
-          Object {
-            "html": "",
-            "slug": "hello",
-            "title": "hello",
-          },
-        ]
-      }
-      tag="tag1"
-      totalCount={0}
-    />
-  </Container>
-</Section>
+    <title>
+      tag1 konulu jargonlar
+    </title>
+  </HelmetWrapper>
+  <TagDetail
+    jargons={
+      Array [
+        Object {
+          "html": "",
+          "slug": "hello",
+          "title": "hello",
+        },
+      ]
+    }
+    tag="tag1"
+    totalCount={0}
+  />
+</React.Fragment>
 `;

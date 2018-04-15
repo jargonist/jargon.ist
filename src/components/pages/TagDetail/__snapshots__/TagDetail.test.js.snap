@@ -2,43 +2,78 @@
 
 exports[`renders correctly 1`] = `
 <React.Fragment>
-  <h1>
-    tag1
-     (
-    3
-    )
-  </h1>
-  <ul
-    style={
-      Object {
-        "listStyle": "none",
-        "margin": 0,
-        "padding": 0,
-      }
-    }
+  <Section
+    className="u-bg-steel-gray"
   >
-    <li
-      className="u-gap-bottom-xsmall"
-      key="example-jargon-1"
+    <Container
+      className=""
     >
-      <GatsbyLink
-        className="u-text-lowercase"
-        to="/example-jargon-1"
+      <h1
+        className="u-color-primary u-clear-gap-top u-gap-bottom-small"
       >
-        Example Jargon 1
-      </GatsbyLink>
-    </li>
-    <li
-      className="u-gap-bottom-xsmall"
-      key="example-jargon-2"
+        tag1
+      </h1>
+      <p
+        className="u-color-comet u-half-width@md-up u-full-width@md-down"
+      >
+        tag1
+         konusu hakkında 
+        <strong>
+          3
+           jargon
+        </strong>
+         bulunuyor.
+      </p>
+    </Container>
+  </Section>
+  <Section
+    className="u-pad-bottom-large"
+  >
+    <Container
+      className=""
     >
-      <GatsbyLink
-        className="u-text-lowercase"
-        to="/example-jargon-2"
+      <div
+        className="row"
       >
-        Example Jargon 2
-      </GatsbyLink>
-    </li>
-  </ul>
+        <div
+          className="col col--lg-12"
+          key="0"
+        >
+          <div
+            className="u-pad-bottom-large"
+            key="E"
+          >
+            <h2
+              className="u-color-primary u-clear-gap-top"
+            >
+              E
+            </h2>
+            <div
+              className="u-gap-bottom-2xsmall"
+              key="example-jargon-1"
+            >
+              <GatsbyLink
+                className="c-link-secondary u-font-family-secondary"
+                to="/example-jargon-1"
+              >
+                Example Jargon 1
+              </GatsbyLink>
+            </div>
+            <div
+              className="u-gap-bottom-2xsmall"
+              key="example-jargon-2"
+            >
+              <GatsbyLink
+                className="c-link-secondary u-font-family-secondary"
+                to="/example-jargon-2"
+              >
+                Example Jargon 2
+              </GatsbyLink>
+            </div>
+          </div>
+        </div>
+      </div>
+    </Container>
+  </Section>
 </React.Fragment>
 `;

@@ -1,0 +1,24 @@
+@import '../../../styles/abstracts/index';
+
+.c-jargon-tags {
+  &__tag {
+    background-color: $color-comet;
+    border-radius: px-to-rem(2px);
+    box-shadow: 0 px-to-rem(2px) px-to-rem(4px) 0 rgba(0, 0, 0, 0.1);
+    color: $color-white;
+    font-size: $g-font-size-small;
+    padding: pad(2xsmall);
+
+    &:hover {
+      background-color: darken($color-comet, 5);
+      color: $color-white;
+      text-decoration: none;
+    }
+  }
+
+  &__more {
+    color: $color-comet;
+    font-size: $g-font-size-small;
+    padding: pad(2xsmall);
+  }
+}
