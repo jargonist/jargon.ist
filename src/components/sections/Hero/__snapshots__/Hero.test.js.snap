@@ -10,7 +10,7 @@ exports[`renders correctly 1`] = `
     <h1
       className="u-color-primary"
     >
-      Jargon.ist
+      jargon.ist
     </h1>
     <p
       className="u-gap-bottom"

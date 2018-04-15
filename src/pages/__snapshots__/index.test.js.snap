@@ -11,5 +11,14 @@ exports[`renders correctly 1`] = `
       <Hero />
     </Container>
   </Section>
+  <Section
+    className=""
+  >
+    <Container
+      className=""
+    >
+      <Features />
+    </Container>
+  </Section>
 </React.Fragment>
 `;

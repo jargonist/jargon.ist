@@ -14,3 +14,13 @@ it('renders correctly', () => {
 
   expect(wrapper).toMatchSnapshot();
 });
+
+it('passes classname to wrapper', () => {
+  const wrapper = shallow(
+    <Container className="example-classname">
+      <div>Example content</div>
+    </Container>,
+  );
+
+  expect(wrapper.find('.example-classname').exists()).toEqual(true);
+});

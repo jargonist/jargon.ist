@@ -3,13 +3,13 @@
 import React from 'react';
 import { shallow } from 'enzyme';
 
-import Section from './Section';
+import Box from './Box';
 
 it('renders correctly', () => {
   const wrapper = shallow(
-    <Section>
+    <Box>
       <div>Example content</div>
-    </Section>,
+    </Box>,
   );
 
   expect(wrapper).toMatchSnapshot();
@@ -17,9 +17,9 @@ it('renders correctly', () => {
 
 it('passes classname to wrapper', () => {
   const wrapper = shallow(
-    <Section className="example-classname">
+    <Box className="example-classname">
       <div>Example content</div>
-    </Section>,
+    </Box>,
   );
 
   expect(wrapper.find('.example-classname').exists()).toEqual(true);

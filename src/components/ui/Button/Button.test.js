@@ -16,3 +16,9 @@ it('renders correctly primary button', () => {
 
   expect(wrapper).toMatchSnapshot();
 });
+
+it('passes classname to wrapper', () => {
+  const wrapper = shallow(<Button className="example-classname">Example Button</Button>);
+
+  expect(wrapper.find('.example-classname').exists()).toEqual(true);
+});

@@ -15,6 +15,7 @@ const data = {
     },
     fields: {
       tagList: [],
+      slug: 'hello',
     },
   },
 };

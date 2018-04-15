@@ -11,10 +11,10 @@ import './Hero.scss';
 const Hero = () => (
   <div className="c-hero row u-align-items-center">
     <div className="col col--lg-5">
-      <h1 className="u-color-primary">Jargon.ist</h1>
+      <h1 className="u-color-primary">jargon.ist</h1>
       <p className="u-gap-bottom">
-        Jargon.ist, bilgisayar bilimleri alanında kullanılan bazı jargonların topluluk tarafından
-        Türkçe olarak açıklanmasını sağlayan bir web uygulamasıdır.
+        Jargon.ist, bilgisayar bilimleri alanında kullanılan jargonların topluluk tarafından Türkçe
+        olarak açıklanmasını sağlayan bir web uygulamasıdır.
       </p>
 
       <LinkButton to="/dizin" primary>
