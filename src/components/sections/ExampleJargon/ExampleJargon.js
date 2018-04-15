@@ -23,7 +23,6 @@ const ExampleJargon = () => (
       {/* It is embarrassing but works anyway :) */}
       {/* eslint-disable react/no-danger */}
       <div
-        className="u-hidden@sm-down"
         dangerouslySetInnerHTML={{
           __html: `
 <div class="gatsby-highlight">
@@ -32,7 +31,8 @@ const ExampleJargon = () => (
   email<span class="token punctuation">:</span> <span class="token string">'user1@example.com'</span><span class="token punctuation">,</span>
 <span class="token punctuation">}</span><span class="token punctuation">;</span>
 
-obj<span class="token punctuation">.</span>country <span class="token operator">=</span> <span class="token string">'TR'</span><span class="token punctuation">;</span> <span class="token comment">// Burada mutation yarattık.</span></code></pre>
+<span class="token comment">// obj objesini mutate ediyoruz.</span>
+obj<span class="token punctuation">.</span>country <span class="token operator">=</span> <span class="token string">'TR'</span><span class="token punctuation">;</span></code></pre>
 </div>
           `,
         }}
