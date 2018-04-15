@@ -1,0 +1,31 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<div
+  className="u-text-center"
+>
+  <h1
+    className="u-color-primary u-clear-gap"
+  >
+    <span
+      className="u-hidden@sm-down"
+    >
+      sen de 
+    </span>
+    katkıda bulun
+  </h1>
+  <p
+    className="u-color-comet u-gap-top-xsmall u-gap-bottom "
+  >
+    Yeni bir jargon eklemek için sadece bir markdown dosyası hazırlaman yeterli.
+  </p>
+  <a
+    className="c-button c-button--primary"
+    href="/blob/master/CONTRIBUTING.md"
+    rel="noopener noreferrer"
+    target="_blank"
+  >
+    Yeni Jargon Ekle
+  </a>
+</div>
+`;
