@@ -13,8 +13,8 @@ const Footer = () => (
   <footer className="c-footer">
     <Container>
       <div className="row">
-        <div className="col col--md-8 c-footer__logos">
-          <div>
+        <div className="col col--lg-8 col--md-6 c-footer__logos">
+          <div className="u-pad-bottom@md-down">
             <Logo className="u-color-white u-block" />
             <small className="u-color-muted">Bu proje MIT lisansı kullanmaktadır.</small>
           </div>
@@ -28,7 +28,7 @@ const Footer = () => (
           </div>
         </div>
 
-        <div className="col col--md-2">
+        <div className="col col--lg-2 col--md-3 u-hidden@md-down">
           <h4 className="u-uppercase u-clear-gap-top u-gap-bottom-xsmall u-color-muted">Jargon</h4>
           <ul className="c-footer__menu">
             <li className="c-footer__menu-item">
@@ -49,7 +49,7 @@ const Footer = () => (
           </ul>
         </div>
 
-        <div className="col col--md-2">
+        <div className="col col--lg-2 col--md-3 u-hidden@md-down">
           <h4 className="u-uppercase u-clear-gap-top u-gap-bottom-xsmall u-color-muted" lang="en">
             Github
           </h4>

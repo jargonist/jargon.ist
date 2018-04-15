@@ -14,14 +14,20 @@ import './Header.scss';
 const Header = () => (
   <header className="c-header">
     <Container>
-      <div className="c-header__inner">
-        <Link to="/" className="c-header__logo">
-          <Logo />
-        </Link>
+      <div className="row u-align-items-center u-pad-ends-xsmall">
+        <div className="col col--lg-2 col--xs-4">
+          <Link to="/" className="c-header__logo">
+            <Logo />
+          </Link>
+        </div>
 
-        <Search />
+        <div className="col col--lg-6 col--xs-8">
+          <Search />
+        </div>
 
-        <Menu />
+        <div className="col col--lg-4 u-flex u-hidden@md-down">
+          <Menu />
+        </div>
       </div>
     </Container>
   </header>

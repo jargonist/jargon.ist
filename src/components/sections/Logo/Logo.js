@@ -3,6 +3,8 @@
 import React from 'react';
 import cx from 'classnames';
 
+import logo from '../../../img/logo.svg';
+
 import './Logo.scss';
 
 type Props = {
@@ -11,7 +13,7 @@ type Props = {
 
 const Logo = ({ className }: Props) => (
   <span className={cx('c-logo', className)}>
-    <strong>jargon</strong>ist
+    <img src={logo} alt="Jargon.ist" height="24" className="u-img-responsive" />
   </span>
 );
 

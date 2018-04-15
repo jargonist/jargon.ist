@@ -8,18 +8,30 @@ exports[`renders correctly 1`] = `
     className=""
   >
     <div
-      className="c-header__inner"
+      className="row u-align-items-center u-pad-ends-xsmall"
     >
-      <GatsbyLink
-        className="c-header__logo"
-        to="/"
+      <div
+        className="col col--lg-2 col--xs-4"
       >
-        <Logo
-          className=""
-        />
-      </GatsbyLink>
-      <Search />
-      <Menu />
+        <GatsbyLink
+          className="c-header__logo"
+          to="/"
+        >
+          <Logo
+            className=""
+          />
+        </GatsbyLink>
+      </div>
+      <div
+        className="col col--lg-6 col--xs-8"
+      >
+        <Search />
+      </div>
+      <div
+        className="col col--lg-4 u-flex u-hidden@md-down"
+      >
+        <Menu />
+      </div>
     </div>
   </Container>
 </header>

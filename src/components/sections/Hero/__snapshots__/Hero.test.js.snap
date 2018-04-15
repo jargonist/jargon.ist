@@ -2,9 +2,11 @@
 
 exports[`renders correctly 1`] = `
 <div
-  className="c-hero"
+  className="c-hero row u-align-items-center"
 >
-  <div>
+  <div
+    className="col col--lg-5"
+  >
     <h1
       className="u-color-primary"
     >
@@ -28,14 +30,18 @@ exports[`renders correctly 1`] = `
       </span>
     </Button>
   </div>
-  <img
-    alt="jargon.ist"
-    className="c-hero__img"
-    src={
-      Object {
-        "process": [Function],
+  <div
+    className="col col--lg-7 u-hidden@md-down u-text-right"
+  >
+    <img
+      alt="jargon.ist"
+      className="c-hero__img"
+      src={
+        Object {
+          "process": [Function],
+        }
       }
-    }
-  />
+    />
+  </div>
 </div>
 `;

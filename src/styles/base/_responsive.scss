@@ -5,13 +5,3 @@
 // Componentlerin  responsive tanımlamaları kendi dosyaları
 // içerisinde yapılmalıdır.
 // --------------------------------------------------
-
-@include media-breakpoint-down(sm) {
-  h1 {
-    font-size: px-to-rem(36px);
-  }
-
-  h2 {
-    font-size: px-to-rem(24px);
-  }
-}

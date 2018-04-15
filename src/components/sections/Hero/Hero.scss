@@ -1,10 +1,6 @@
 @import '../../../styles/abstracts/index';
 
 .c-hero {
-  align-items: center;
-  display: grid;
-  grid-template-columns: 6fr 7fr;
-
   &__img {
     margin-left: auto;
   }

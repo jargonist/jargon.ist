@@ -11,9 +11,11 @@ exports[`renders correctly 1`] = `
       className="row"
     >
       <div
-        className="col col--md-8 c-footer__logos"
+        className="col col--lg-8 col--md-6 c-footer__logos"
       >
-        <div>
+        <div
+          className="u-pad-bottom@md-down"
+        >
           <Logo
             className="u-color-white u-block"
           />
@@ -32,7 +34,7 @@ exports[`renders correctly 1`] = `
         </div>
       </div>
       <div
-        className="col col--md-2"
+        className="col col--lg-2 col--md-3 u-hidden@md-down"
       >
         <h4
           className="u-uppercase u-clear-gap-top u-gap-bottom-xsmall u-color-muted"
@@ -75,7 +77,7 @@ exports[`renders correctly 1`] = `
         </ul>
       </div>
       <div
-        className="col col--md-2"
+        className="col col--lg-2 col--md-3 u-hidden@md-down"
       >
         <h4
           className="u-uppercase u-clear-gap-top u-gap-bottom-xsmall u-color-muted"

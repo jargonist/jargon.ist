@@ -9,8 +9,8 @@ import hero from '../../../img/hero.svg';
 import './Hero.scss';
 
 const Hero = () => (
-  <div className="c-hero">
-    <div>
+  <div className="c-hero row u-align-items-center">
+    <div className="col col--lg-5">
       <h1 className="u-color-primary">Jargon.ist</h1>
       <p className="u-gap-bottom">
         Jargon.ist, bilgisayar bilimleri alanında kullanılan bazı jargonların topluluk tarafından
@@ -23,7 +23,9 @@ const Hero = () => (
       </LinkButton>
     </div>
 
-    <img src={hero} alt="jargon.ist" className="c-hero__img" />
+    <div className="col col--lg-7 u-hidden@md-down u-text-right">
+      <img src={hero} alt="jargon.ist" className="c-hero__img" />
+    </div>
   </div>
 );
 

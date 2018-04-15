@@ -2,15 +2,6 @@
 
 .c-header {
   background-color: $color-ebony-clay;
-  flex-shrink: 0;
-
-  &__inner {
-    align-items: center;
-    display: grid;
-    grid-gap: gap(xlarge);
-    grid-template-columns: auto 4fr 3fr;
-    padding: px-to-rem(16rem) 0;
-  }
 
   &__logo {
     &:hover {
