@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<OpenSearchDescription xmlns="http://a9.com/-/spec/opensearch/1.1/" xmlns:moz="http://www.mozilla.org/2006/browser/search/">
+  <ShortName>jargon.ist</ShortName>
+  <Description>jargon.ist</Description>
+  <Image height="72" width="72" type="image/x-icon">https://jargon.ist/favicon.png</Image>
+  <Url type="text/html" method="get" template="https://jargon.ist/arama?q={searchTerms}"/>
+  <Language>tr-tr</Language>
+</OpenSearchDescription>

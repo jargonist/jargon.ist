@@ -4,6 +4,7 @@ module.exports = {
   transform: {
     '.(js|jsx)': 'babel-jest',
   },
+  testEnvironment: 'jest-environment-jsdom-global',
   testRegex: '(\\.(test|spec))\\.(jsx|js)$',
   testPathIgnorePatterns: ['/node_modules/', '/.cache/'],
   modulePaths: ['src'],
@@ -17,6 +18,7 @@ module.exports = {
   collectCoverageFrom: [
     'src/**/*.{js,jsx}',
     '!src/components/**/index.{js,jsx}',
+    '!src/types/**/*.js',
     '!src/html.jsx',
     '!src/styleMock.js',
   ],
