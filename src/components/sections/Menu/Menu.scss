@@ -15,15 +15,15 @@
     &::after {
       background-color: $color-white;
       border-radius: 50%;
-      bottom: px-to-rem(-6px);
+      bottom: -6px;
       content: '';
       display: block;
-      height: px-to-rem(4px);
-      left: calc(50% - #{px-to-rem(2px)});
+      height: 4px;
+      left: calc(50% - 2px);
       opacity: 0;
       position: absolute;
       transition: opacity 0.4s;
-      width: px-to-rem(4px);
+      width: 4px;
     }
 
     &:hover,
