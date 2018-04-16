@@ -37,7 +37,9 @@
     "react-instantsearch": "^5.0.3",
     "slug": "^0.9.1"
   },
-  "keywords": ["gatsby"],
+  "keywords": [
+    "gatsby"
+  ],
   "license": "MIT",
   "scripts": {
     "build": "gatsby build",
@@ -78,6 +80,7 @@
     "eslint-plugin-react": "^7.7.0",
     "flow-bin": "^0.69.0",
     "flow-typed": "^2.4.0",
+    "front-matter": "^2.3.0",
     "husky": "^0.14.3",
     "jest": "^22.4.3",
     "jest-environment-jsdom": "^22.4.3",
@@ -89,6 +92,7 @@
     "remark-preset-lint-recommended": "^3.0.1",
     "stylelint": "^9.2.0",
     "stylelint-config-prettier": "^3.2.0",
-    "stylelint-config-sass-guidelines": "^5.0.0"
+    "stylelint-config-sass-guidelines": "^5.0.0",
+    "twit": "^2.2.9"
   }
 }
