@@ -12,6 +12,38 @@ exports[`renders correctly 1`] = `
           "content": "Jargon.ist, bilgisayar bilimleri alanında kullanılan bazı jargonların topluluk tarafından Türkçe olarak açıklanmasını sağlayan bir web uygulamasıdır.",
           "name": "description",
         },
+        Object {
+          "content": "Jargon.ist, bilgisayar bilimleri alanında kullanılan bazı jargonların topluluk tarafından Türkçe olarak açıklanmasını sağlayan bir web uygulamasıdır.",
+          "name": "og:description",
+        },
+        Object {
+          "content": "jargon.ist",
+          "name": "og:title",
+        },
+        Object {
+          "content": "https://jargon.ist/social.png",
+          "name": "og:image",
+        },
+        Object {
+          "content": "jargon.ist",
+          "name": "og:site_name",
+        },
+        Object {
+          "content": "summary",
+          "name": "twitter:card",
+        },
+        Object {
+          "content": "jargon.ist",
+          "name": "twitter:title",
+        },
+        Object {
+          "content": "https://jargon.ist/social.png",
+          "name": "twitter:image",
+        },
+        Object {
+          "content": "Jargon.ist, bilgisayar bilimleri alanında kullanılan bazı jargonların topluluk tarafından Türkçe olarak açıklanmasını sağlayan bir web uygulamasıdır.",
+          "name": "twitter:description",
+        },
       ]
     }
     titleTemplate="%s - jargon.ist"

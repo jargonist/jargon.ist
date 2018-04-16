@@ -17,6 +17,8 @@ export const Tags = ({ pathContext }: Props) => (
   <Fragment>
     <Helmet>
       <title>Konular</title>
+      <meta property="og:title" content="Konular" />
+      <meta property="twitter:title" content="Konular" />
     </Helmet>
 
     <TagList tags={pathContext.tagList} />

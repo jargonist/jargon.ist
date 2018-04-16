@@ -1,0 +1,93 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<React.Fragment>
+  <Section
+    className="u-bg-steel-gray"
+  >
+    <Container
+      className=""
+    >
+      <h1
+        className="u-color-primary u-clear-gap"
+      >
+        Arama Sonuçları
+      </h1>
+    </Container>
+  </Section>
+  <Section
+    className=""
+  >
+    <Container
+      className=""
+    >
+      <div
+        className="row"
+      >
+        <div
+          className="col col--lg-6 u-gap-bottom-xlarge@md-down"
+        >
+          <h2
+            className="u-color-primary u-clear-gap-top"
+          >
+            Jargonlar
+          </h2>
+          <div
+            className="u-gap-bottom-2xsmall"
+            key="example-jargon-1"
+          >
+            <GatsbyLink
+              className="c-link-secondary"
+              to="/example-jargon-1"
+            >
+              Example Jargon 1
+            </GatsbyLink>
+          </div>
+          <div
+            className="u-gap-bottom-2xsmall"
+            key="example-jargon-2"
+          >
+            <GatsbyLink
+              className="c-link-secondary"
+              to="/example-jargon-2"
+            >
+              Example Jargon 2
+            </GatsbyLink>
+          </div>
+        </div>
+        <div
+          className="col col--lg-6"
+        >
+          <h2
+            className="u-color-primary u-clear-gap-top"
+          >
+            Konular
+          </h2>
+          <div
+            className="u-gap-bottom-2xsmall"
+            key="tag1"
+          >
+            <GatsbyLink
+              className="c-link-secondary"
+              to="/k/tag1"
+            >
+              tag1
+            </GatsbyLink>
+          </div>
+          <div
+            className="u-gap-bottom-2xsmall"
+            key="tag2"
+          >
+            <GatsbyLink
+              className="c-link-secondary"
+              to="/k/tag2"
+            >
+              tag2
+            </GatsbyLink>
+          </div>
+        </div>
+      </div>
+    </Container>
+  </Section>
+</React.Fragment>
+`;

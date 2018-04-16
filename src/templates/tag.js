@@ -34,6 +34,8 @@ export const Tag = ({ data, pathContext }: Props) => {
     <Fragment>
       <Helmet>
         <title>{`${pathContext.tag} konulu jargonlar`}</title>
+        <meta property="og:title" content={`${pathContext.tag} konulu jargonlar`} />
+        <meta property="twitter:title" content={`${pathContext.tag} konulu jargonlar`} />
       </Helmet>
 
       <TagDetail

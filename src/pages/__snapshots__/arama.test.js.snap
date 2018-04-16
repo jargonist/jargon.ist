@@ -1,0 +1,70 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<React.Fragment>
+  <HelmetWrapper
+    defer={true}
+    encodeSpecialCharacters={true}
+  >
+    <title>
+      Arama Sonuçları
+    </title>
+    <meta
+      content="Arama Sonuçları"
+      property="og:title"
+    />
+    <meta
+      content="Arama Sonuçları"
+      property="twitter:title"
+    />
+  </HelmetWrapper>
+  <CreateInstantSearch
+    indexName="jargons"
+    refresh={false}
+    root={
+      Object {
+        "Root": "div",
+        "props": Object {
+          "className": "ais-InstantSearch__root",
+        },
+      }
+    }
+  >
+    <AlgoliaConfigure(UnknownComponent)
+      hitsPerPage={3}
+      query="test"
+    />
+    <CreateIndex
+      indexName="jargons"
+      root={
+        Object {
+          "Root": "div",
+          "props": Object {
+            "className": "ais-MultiIndex__root",
+          },
+        }
+      }
+    >
+      <AlgoliaConfigure(UnknownComponent)
+        hitsPerPage={5}
+      />
+    </CreateIndex>
+    <CreateIndex
+      indexName="tags"
+      root={
+        Object {
+          "Root": "div",
+          "props": Object {
+            "className": "ais-MultiIndex__root",
+          },
+        }
+      }
+    >
+      <AlgoliaConfigure(UnknownComponent)
+        hitsPerPage={5}
+      />
+    </CreateIndex>
+    <AlgoliaStateResults(SearchResultsWrapper) />
+  </CreateInstantSearch>
+</React.Fragment>
+`;

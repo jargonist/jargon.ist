@@ -37,7 +37,14 @@ const HTML = ({ body, headComponents, postBodyComponents }: Props) => {
         <meta charSet="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         {headComponents}
+
         <link rel="shortcut icon" href={favicon} />
+        <link
+          title="jargon.ist"
+          rel="search"
+          type="application/opensearchdescription+xml"
+          href="/search.xml"
+        />
         {css}
       </head>
       <body>

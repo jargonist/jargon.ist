@@ -30,6 +30,8 @@ export const Jargon = ({ data }: Props) => {
       <Helmet>
         <title>{frontmatter.title}</title>
         <meta name="keywords" content={(frontmatter.tags || []).join(', ')} />
+        <meta property="og:title" content={frontmatter.title} />
+        <meta property="twitter:title" content={frontmatter.title} />
       </Helmet>
 
       <JargonDetail

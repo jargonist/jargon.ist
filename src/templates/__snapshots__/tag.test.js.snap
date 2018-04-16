@@ -9,6 +9,14 @@ exports[`renders correctly 1`] = `
     <title>
       tag1 konulu jargonlar
     </title>
+    <meta
+      content="tag1 konulu jargonlar"
+      property="og:title"
+    />
+    <meta
+      content="tag1 konulu jargonlar"
+      property="twitter:title"
+    />
   </HelmetWrapper>
   <TagDetail
     jargons={

@@ -9,6 +9,14 @@ exports[`renders correctly 1`] = `
     <title>
       Konular
     </title>
+    <meta
+      content="Konular"
+      property="og:title"
+    />
+    <meta
+      content="Konular"
+      property="twitter:title"
+    />
   </HelmetWrapper>
   <TagList
     tags={Array []}
