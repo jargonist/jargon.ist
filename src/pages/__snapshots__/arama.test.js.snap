@@ -9,6 +9,14 @@ exports[`renders correctly 1`] = `
     <title>
       Arama Sonuçları
     </title>
+    <meta
+      content="Arama Sonuçları"
+      property="og:title"
+    />
+    <meta
+      content="Arama Sonuçları"
+      property="twitter:title"
+    />
   </HelmetWrapper>
   <CreateInstantSearch
     indexName="jargons"

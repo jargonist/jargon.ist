@@ -3,6 +3,7 @@
 module.exports = {
   siteMetadata: {
     title: 'Jargon',
+    siteUrl: 'https://jargon.ist',
   },
   plugins: [
     'gatsby-plugin-react-helmet',

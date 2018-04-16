@@ -33,7 +33,7 @@ class SearchPage extends PureComponent<Props, State> {
   }
 
   getQuery = () => {
-    if (!window) {
+    if (typeof window === 'undefined') {
       return '';
     }
 
@@ -49,6 +49,8 @@ class SearchPage extends PureComponent<Props, State> {
       <Fragment>
         <Helmet>
           <title>Arama Sonuçları</title>
+          <meta property="og:title" content="Arama Sonuçları" />
+          <meta property="twitter:title" content="Arama Sonuçları" />
         </Helmet>
         <InstantSearch
           appId={process.env.GATSBY_ALGOLIASEARCH_APP_ID}

@@ -13,6 +13,14 @@ exports[`renders correctly 1`] = `
       content=""
       name="keywords"
     />
+    <meta
+      content="hello"
+      property="og:title"
+    />
+    <meta
+      content="hello"
+      property="twitter:title"
+    />
   </HelmetWrapper>
   <JargonDetail
     jargon={

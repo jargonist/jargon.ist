@@ -9,6 +9,14 @@ exports[`renders correctly 1`] = `
     <title>
       Dizin
     </title>
+    <meta
+      content="Dizin"
+      property="og:title"
+    />
+    <meta
+      content="Dizin"
+      property="twitter:title"
+    />
   </HelmetWrapper>
   <JargonList
     jargons={Array []}
