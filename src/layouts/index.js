@@ -14,7 +14,6 @@ type Props = {
 const TemplateWrapper = ({ children }: Props) => (
   <Fragment>
     <Helmet
-      title="Jargon.ist"
       meta={[
         {
           name: 'description',
@@ -22,7 +21,8 @@ const TemplateWrapper = ({ children }: Props) => (
             'Jargon.ist, bilgisayar bilimleri alanında kullanılan bazı jargonların topluluk tarafından Türkçe olarak açıklanmasını sağlayan bir web uygulamasıdır.',
         },
       ]}
-      titleTemplate="%s - Jargon.ist"
+      defaultTitle="jargon.ist"
+      titleTemplate="%s - jargon.ist"
     />
 
     <Header />

@@ -3,6 +3,7 @@
 exports[`renders correctly 1`] = `
 <React.Fragment>
   <HelmetWrapper
+    defaultTitle="jargon.ist"
     defer={true}
     encodeSpecialCharacters={true}
     meta={
@@ -13,8 +14,7 @@ exports[`renders correctly 1`] = `
         },
       ]
     }
-    title="Jargon.ist"
-    titleTemplate="%s - Jargon.ist"
+    titleTemplate="%s - jargon.ist"
   />
   <Header />
   <main
