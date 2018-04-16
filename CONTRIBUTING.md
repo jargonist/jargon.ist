@@ -25,7 +25,7 @@ Markdown dosyasının geri kalan kısmında jargon ile ilgili açıklamalar yaz�
 jargonlara link verilmesi güzel olur. Daha önce jargon.ist üzerinde tanımlanmamış bir jargon kullanımında onun için de
 pull request açan contributor ise en güzel contributor 🚀👊'dır.
 
-Tüm değişiklikler yapıldıktan sonra pull request açılır.
+Tüm değişiklikler yapıldıktan sonra **new-jargon** label'ı ile pull request açılır.
 
 ## Örnek bir Jargon dosyası
 
@@ -47,5 +47,5 @@ function add(x, y) {
 }
 ```
 
-Açıklamanın devami.
+Açıklamanın devamı.
 ````
