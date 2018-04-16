@@ -21,5 +21,12 @@ module.exports = {
         plugins: ['gatsby-remark-prismjs'],
       },
     },
+    {
+      resolve: 'gatsby-plugin-nprogress',
+      options: {
+        color: '#4c5be6',
+        showSpinner: false,
+      },
+    },
   ],
 };
