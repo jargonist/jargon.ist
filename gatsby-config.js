@@ -28,5 +28,12 @@ module.exports = {
         showSpinner: false,
       },
     },
+    {
+      resolve: 'gatsby-plugin-google-analytics',
+      options: {
+        trackingId: 'UA-117604702-1',
+        head: false,
+      },
+    },
   ],
 };

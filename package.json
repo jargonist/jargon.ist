@@ -16,6 +16,7 @@
     "empty": "^0.10.1",
     "gatsby": "^1.9.241",
     "gatsby-link": "^1.6.39",
+    "gatsby-plugin-google-analytics": "^1.0.29",
     "gatsby-plugin-nprogress": "^1.0.14",
     "gatsby-plugin-purify-css": "^2.2.1",
     "gatsby-plugin-react-helmet": "^2.0.8",
