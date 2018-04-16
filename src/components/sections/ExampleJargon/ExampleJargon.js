@@ -2,6 +2,8 @@
 
 import React from 'react';
 
+import { LinkButton } from '../../ui';
+
 import jargonIllustration from '../../../img/jargon.svg';
 
 const ExampleJargon = () => (
@@ -23,6 +25,7 @@ const ExampleJargon = () => (
       {/* It is embarrassing but works anyway :) */}
       {/* eslint-disable react/no-danger */}
       <div
+        className="u-gap-bottom-large"
         dangerouslySetInnerHTML={{
           __html: `
 <div class="gatsby-highlight">
@@ -38,6 +41,10 @@ obj<span class="token punctuation">.</span>country <span class="token operator">
         }}
       />
       {/* eslint-enable react/no-danger */}
+
+      <LinkButton to="/konular" primary className="u-full-width@md-down">
+        Konuları Görüntüle
+      </LinkButton>
     </div>
   </div>
 );

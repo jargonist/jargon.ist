@@ -49,6 +49,7 @@ exports[`renders correctly 1`] = `
        tipleri mutable'dır.
     </p>
     <div
+      className="u-gap-bottom-large"
       dangerouslySetInnerHTML={
         Object {
           "__html": "
@@ -65,6 +66,13 @@ obj<span class=\\"token punctuation\\">.</span>country <span class=\\"token oper
         }
       }
     />
+    <Button
+      className="u-full-width@md-down"
+      primary={true}
+      to="/konular"
+    >
+      Konuları Görüntüle
+    </Button>
   </div>
 </div>
 `;
