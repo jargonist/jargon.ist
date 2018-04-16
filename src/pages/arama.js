@@ -49,8 +49,8 @@ class SearchPage extends PureComponent<Props, State> {
       <Fragment>
         <Helmet>
           <title>Arama Sonuçları</title>
-          <meta property="og:title" content="Arama Sonuçları" />
-          <meta property="twitter:title" content="Arama Sonuçları" />
+          <meta name="og:title" content="Arama Sonuçları" />
+          <meta name="twitter:title" content="Arama Sonuçları" />
         </Helmet>
         <InstantSearch
           appId={process.env.GATSBY_ALGOLIASEARCH_APP_ID}

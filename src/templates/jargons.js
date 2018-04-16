@@ -17,8 +17,8 @@ export const Jargons = ({ pathContext }: Props) => (
   <Fragment>
     <Helmet>
       <title>Dizin</title>
-      <meta property="og:title" content="Dizin" />
-      <meta property="twitter:title" content="Dizin" />
+      <meta name="og:title" content="Dizin" />
+      <meta name="twitter:title" content="Dizin" />
     </Helmet>
 
     <JargonList jargons={pathContext.jargonList} />

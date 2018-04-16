@@ -11,11 +11,11 @@ exports[`renders correctly 1`] = `
     </title>
     <meta
       content="Konular"
-      property="og:title"
+      name="og:title"
     />
     <meta
       content="Konular"
-      property="twitter:title"
+      name="twitter:title"
     />
   </HelmetWrapper>
   <TagList
