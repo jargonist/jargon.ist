@@ -7,6 +7,13 @@ const fm = require('front-matter');
 const slug = require('slug');
 const Twit = require('twit');
 
+const sleep = ms =>
+  new Promise(resolve => {
+    setTimeout(() => {
+      resolve();
+    }, ms);
+  });
+
 const readFile = file =>
   new Promise((resolve, reject) => {
     fs.readFile(file, 'utf-8', (err, data) => {
@@ -93,6 +100,9 @@ const main = async () => {
     console.log(`Started to processing to ${j.file} for a new tweet.`);
     promises.push(getAndTweetJargon(j.file, T));
   });
+
+  console.log('Waiting for netlify');
+  await sleep(2 * 60 * 1000); // This is really embarrassing!
 
   await Promise.all(promises);
   console.log('Tweets sent!');
