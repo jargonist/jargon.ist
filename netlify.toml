@@ -3,3 +3,6 @@
 
 [context.branch-deploy.environment]
   ALGOLIA_INDEXING_ENABLED = "false"
+
+[build]
+  functions = "functions/"

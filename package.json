@@ -37,9 +37,7 @@
     "react-instantsearch": "^5.0.3",
     "slug": "^0.9.1"
   },
-  "keywords": [
-    "gatsby"
-  ],
+  "keywords": ["gatsby"],
   "license": "MIT",
   "scripts": {
     "build": "gatsby build",
@@ -57,7 +55,8 @@
     "format:md": "prettier --write 'jargons/*.md' 'README.md' 'CONTRIBUTING.md'",
     "format": "yarn run format:js && yarn run format:css && yarn run format:md",
     "flow-typed-install": "flow-typed install",
-    "precommit": "lint-staged"
+    "precommit": "lint-staged",
+    "tweet": "node bin/tweet.js"
   },
   "devDependencies": {
     "babel-eslint": "^8.2.2",
