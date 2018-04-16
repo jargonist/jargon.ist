@@ -11,7 +11,7 @@ exports[`renders correctly 1`] = `
       className="row"
     >
       <div
-        className="col col--lg-8 col--md-6 c-footer__logos"
+        className="col col--lg-6 c-footer__logos"
       >
         <div
           className="u-pad-bottom@md-down"
@@ -58,6 +58,28 @@ exports[`renders correctly 1`] = `
               Konular
             </GatsbyLink>
           </div>
+          <div
+            className="u-gap-bottom-xsmall"
+          >
+            <a
+              className="c-footer__menu-link"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              Github
+            </a>
+          </div>
+          <div
+            className="u-gap-bottom-xsmall"
+          >
+            <a
+              className="c-footer__menu-link"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              Twitter
+            </a>
+          </div>
         </div>
         <div>
           <img
@@ -68,12 +90,13 @@ exports[`renders correctly 1`] = `
         </div>
       </div>
       <div
-        className="col col--lg-2 col--md-3 u-hidden@md-down"
+        className="col col--lg-2 u-hidden@md-down"
       >
         <h4
           className="u-uppercase u-clear-gap-top u-gap-bottom-xsmall u-color-muted"
+          lang="en"
         >
-          Jargon
+          Jargon.ist
         </h4>
         <ul
           className="c-footer__menu"
@@ -111,7 +134,7 @@ exports[`renders correctly 1`] = `
         </ul>
       </div>
       <div
-        className="col col--lg-2 col--md-3 u-hidden@md-down"
+        className="col col--lg-2 u-hidden@md-down"
       >
         <h4
           className="u-uppercase u-clear-gap-top u-gap-bottom-xsmall u-color-muted"
@@ -153,7 +176,7 @@ exports[`renders correctly 1`] = `
               rel="noopener noreferrer"
               target="_blank"
             >
-              Onaydaki Jargonlar
+              Onay Bekleyenler
             </a>
           </li>
           <li
@@ -178,6 +201,41 @@ exports[`renders correctly 1`] = `
               target="_blank"
             >
               Katkıda Bulunanlar
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div
+        className="col col--lg-2 u-hidden@md-down"
+      >
+        <h4
+          className="u-uppercase u-clear-gap-top u-gap-bottom-xsmall u-color-muted"
+        >
+          Kanallar
+        </h4>
+        <ul
+          className="c-footer__menu"
+        >
+          <li
+            className="c-footer__menu-item"
+          >
+            <a
+              className="c-footer__menu-link"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              Github
+            </a>
+          </li>
+          <li
+            className="c-footer__menu-item"
+          >
+            <a
+              className="c-footer__menu-link"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              Twitter
             </a>
           </li>
         </ul>

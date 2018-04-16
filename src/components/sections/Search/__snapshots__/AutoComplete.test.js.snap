@@ -10,6 +10,9 @@ exports[`renders correctly 1`] = `
   id="1"
   inputProps={
     Object {
+      "autoCapitalize": "off",
+      "autoComplete": "off",
+      "autoCorrect": "off",
       "onChange": [Function],
       "placeholder": "Jargon veya konu ara",
       "type": "search",

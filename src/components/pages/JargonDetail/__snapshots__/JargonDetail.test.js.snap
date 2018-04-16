@@ -32,7 +32,7 @@ exports[`renders correctly 1`] = `
         }
       />
       <div
-        className="u-pad-top"
+        className="u-pad-top-xsmall"
         dangerouslySetInnerHTML={
           Object {
             "__html": "<p>Hello world</p>",

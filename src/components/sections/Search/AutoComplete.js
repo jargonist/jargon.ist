@@ -81,6 +81,9 @@ export class AutoCompleteWrapper extends PureComponent<Props> {
           placeholder: 'Jargon veya konu ara',
           value: currentRefinement,
           onChange: this.handleChange,
+          autoCorrect: 'off',
+          autoCapitalize: 'off',
+          autoComplete: 'off',
         }}
         renderSectionTitle={this.renderSectionTitle}
         theme={{

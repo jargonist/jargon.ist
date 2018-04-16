@@ -13,7 +13,7 @@ const Footer = () => (
   <footer className="c-footer">
     <Container>
       <div className="row">
-        <div className="col col--lg-8 col--md-6 c-footer__logos">
+        <div className="col col--lg-6 c-footer__logos">
           <div className="u-pad-bottom@md-down">
             <Logo className="u-color-white u-block" />
             <small className="u-color-muted">Bu proje MIT lisansı kullanmaktadır.</small>
@@ -25,7 +25,6 @@ const Footer = () => (
                 Ana sayfa
               </Link>
             </div>
-
             <div className="u-gap-bottom-xsmall">
               <Link to="/dizin" className="c-footer__menu-link">
                 Dizin
@@ -35,6 +34,26 @@ const Footer = () => (
               <Link to="/konular" className="c-footer__menu-link">
                 Konular
               </Link>
+            </div>
+            <div className="u-gap-bottom-xsmall">
+              <a
+                href={process.env.GATSBY_REPO_URL}
+                className="c-footer__menu-link"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Github
+              </a>
+            </div>
+            <div className="u-gap-bottom-xsmall">
+              <a
+                href={process.env.GATSBY_TWITTER_URL}
+                className="c-footer__menu-link"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Twitter
+              </a>
             </div>
           </div>
 
@@ -47,8 +66,10 @@ const Footer = () => (
           </div>
         </div>
 
-        <div className="col col--lg-2 col--md-3 u-hidden@md-down">
-          <h4 className="u-uppercase u-clear-gap-top u-gap-bottom-xsmall u-color-muted">Jargon</h4>
+        <div className="col col--lg-2 u-hidden@md-down">
+          <h4 className="u-uppercase u-clear-gap-top u-gap-bottom-xsmall u-color-muted" lang="en">
+            Jargon.ist
+          </h4>
           <ul className="c-footer__menu">
             <li className="c-footer__menu-item">
               <Link to="/" className="c-footer__menu-link">
@@ -68,7 +89,7 @@ const Footer = () => (
           </ul>
         </div>
 
-        <div className="col col--lg-2 col--md-3 u-hidden@md-down">
+        <div className="col col--lg-2 u-hidden@md-down">
           <h4 className="u-uppercase u-clear-gap-top u-gap-bottom-xsmall u-color-muted" lang="en">
             Github
           </h4>
@@ -100,7 +121,7 @@ const Footer = () => (
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                Onaydaki Jargonlar
+                Onay Bekleyenler
               </a>
             </li>
             <li className="c-footer__menu-item">
@@ -121,6 +142,34 @@ const Footer = () => (
                 rel="noopener noreferrer"
               >
                 Katkıda Bulunanlar
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div className="col col--lg-2 u-hidden@md-down">
+          <h4 className="u-uppercase u-clear-gap-top u-gap-bottom-xsmall u-color-muted">
+            Kanallar
+          </h4>
+          <ul className="c-footer__menu">
+            <li className="c-footer__menu-item">
+              <a
+                href={process.env.GATSBY_REPO_URL}
+                className="c-footer__menu-link"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Github
+              </a>
+            </li>
+            <li className="c-footer__menu-item">
+              <a
+                href={process.env.GATSBY_TWITTER_URL}
+                className="c-footer__menu-link"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Twitter
               </a>
             </li>
           </ul>

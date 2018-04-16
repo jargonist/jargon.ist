@@ -20,7 +20,7 @@ const JargonDetail = ({ jargon }: Props) => (
         {(jargon.tags || []).length > 0 && (
           <JargonTags className="u-gap-top-small" tags={jargon.tags || []} />
         )}
-        <div className="u-pad-top" dangerouslySetInnerHTML={{ __html: jargon.html }} />
+        <div className="u-pad-top-xsmall" dangerouslySetInnerHTML={{ __html: jargon.html }} />
       </div>
     </Container>
   </Section>
