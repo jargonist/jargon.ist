@@ -11,11 +11,11 @@ exports[`renders correctly 1`] = `
     </title>
     <meta
       content="Arama Sonuçları"
-      property="og:title"
+      name="og:title"
     />
     <meta
       content="Arama Sonuçları"
-      property="twitter:title"
+      name="twitter:title"
     />
   </HelmetWrapper>
   <CreateInstantSearch

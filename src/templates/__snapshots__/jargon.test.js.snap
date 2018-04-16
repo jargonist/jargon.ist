@@ -15,11 +15,11 @@ exports[`renders correctly 1`] = `
     />
     <meta
       content="hello"
-      property="og:title"
+      name="og:title"
     />
     <meta
       content="hello"
-      property="twitter:title"
+      name="twitter:title"
     />
   </HelmetWrapper>
   <JargonDetail
