@@ -35,5 +35,19 @@ module.exports = {
         head: false,
       },
     },
+    {
+      resolve: 'gatsby-plugin-manifest',
+      options: {
+        name: 'Jargon.ist',
+        short_name: 'Jargon.ist',
+        start_url: '/',
+        background_color: '#4C5BE6',
+        theme_color: '#ffffff',
+        display: 'standalone',
+        orientation: 'portrait',
+        icon: 'src/img/icon.png',
+      },
+    },
+    'gatsby-plugin-offline',
   ],
 };
