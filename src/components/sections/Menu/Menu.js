@@ -16,7 +16,7 @@ const Menu = () => (
     </Link>
 
     <a
-      href="https://github.com/alpcanaydin/jargon.ist"
+      href="https://github.com/alpcanaydin/jargon.ist/blob/master/CONTRIBUTING.md"
       target="_blank"
       rel="noopener noreferrer"
       className="c-button c-button--primary"
