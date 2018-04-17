@@ -9,7 +9,10 @@ tags:
 - fonksiyonel programlama
 ---
 
-Argüman olarak fonksiyon alan ve / veya bir fonksiyon return eden fonksiyonlara `higher-order function` denir.
+Aşağıdaki kurallardan **en az birini** karşılayan fonksiyonlar `higher-order function` olarak adlandırılır.
+
+* Argüman olarak bir veya birden fazla fonksiyon alır.
+* Geriye bir fonksiyon return eder.
 
 ```js
 // filterWords bir HOF'tur.
