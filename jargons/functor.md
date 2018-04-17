@@ -26,10 +26,6 @@ class Thing {
     return new Thing(...args);
   }
 
-  static get [Symbol.species]() {
-    return this;
-  }
-
   constructor(...args) {
     this.data = args;
   }
