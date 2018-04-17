@@ -11,8 +11,8 @@ Jargonları güncellemek veya yeni bir tane eklemek için yapmanız gereken, bu 
 ## Katkida Bulunanlar
 
 <!-- prettier-ignore -->
-| [<img src="https://avatars.githubusercontent.com/u/1801024?v=3" width="100px;"/><br /><sub><b>Alpcan Aydın</b></sub>](https://github.com/alpcanaydin)|
-| :---: |
+| [<img src="https://avatars.githubusercontent.com/u/1801024?v=3" width="100px;"/><br /><sub><b>Alpcan Aydın</b></sub>](https://github.com/alpcanaydin) | [<img src="https://avatars.githubusercontent.com/u/712419?v=3" width="100px;"/><br /><sub><b>Fatih Acet</b></sub>](https://github.com/fatihacet) |
+| :---: | :---: |
 
 ## Kurulum
 
