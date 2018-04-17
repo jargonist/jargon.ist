@@ -1,7 +1,5 @@
 ---
 title: bem
-sameWith:
-- bem
 tags:
 - javascript
 - css

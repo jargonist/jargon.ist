@@ -1,7 +1,5 @@
 ---
 title: ajax
-sameWith:
-- ajax
 tags:
 - javascript
 - http

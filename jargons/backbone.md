@@ -1,7 +1,5 @@
 ---
 title: backbone
-sameWith:
-- backbone
 tags:
 - javascript
 - mvc

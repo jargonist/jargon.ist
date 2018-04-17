@@ -1,7 +1,5 @@
 ---
 title: commonjs
-sameWith:
-- commonjs
 tags:
 - javascript
 - modules

@@ -1,7 +1,5 @@
 ---
 title: amd
-sameWith:
-- amd
 tags:
 - javascript
 - modules

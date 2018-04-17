@@ -1,7 +1,5 @@
 ---
 title: babel
-sameWith:
-- babel
 tags:
 - javascript
 - ecmascript
