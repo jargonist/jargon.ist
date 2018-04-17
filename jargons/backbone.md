@@ -1,0 +1,10 @@
+---
+title: backbone
+sameWith:
+- backbone
+tags:
+- javascript
+- mvc
+---
+
+[MVC](/mvc) tasarım şablonu ile çalışan basit bir arayüz geliştirme framework'üdür.
