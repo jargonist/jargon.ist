@@ -1,0 +1,7 @@
+daysUntilStale: 60
+daysUntilClose: 7
+staleLabel: wontfix
+markComment: >
+  Bu issue son zamanlarda herhangi bir aktivite olmadığı için **stale** olarak
+  işaretlendi. Herhangi bir aktivite daha olmaması durumda otomatik olarak kapatılacak.
+closeComment: true
