@@ -20,7 +20,7 @@ exports[`renders correctly 1`] = `
   </GatsbyLink>
   <a
     className="c-button c-button--primary"
-    href="https://github.com/alpcanaydin/jargon.ist"
+    href="https://github.com/alpcanaydin/jargon.ist/blob/master/CONTRIBUTING.md"
     rel="noopener noreferrer"
     target="_blank"
   >
