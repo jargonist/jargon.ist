@@ -1,5 +1,5 @@
 ---
-title: index
+title: index terimi
 tags:
 - genel
 ---
