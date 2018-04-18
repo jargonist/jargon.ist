@@ -1,9 +1,7 @@
 ---
 title: index
 tags:
-- veri yapısı
-- array
-- konum
+- genel
 ---
 
 Index, bir [array](/array)'deki verinin konumudur. `Lua, COBOL, Fortran` vb. gibi birkaç dil haricinde sıfırdan başlar.
