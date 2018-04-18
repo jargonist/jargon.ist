@@ -1,12 +1,12 @@
 newIssueWelcomeComment: >
   🎉👊 **Issue için teşekkürler** 👊 🎉
 
-  En kısa zamanda geliştiriciler size geri dönüş yapacaklardır. Eğer bu issue, bir yazım hatası ile ilgili ise bu hatayı siz de düzeltip pull request açabilirsiniz. Katkıda bulunmadan önce [CONTRIBUTING.md](https://github.com/alpcanaydin/jargon.ist/blob/master/CONTRIBUTING.md) dökümanını okumayı unutmayın.
+  En kısa zamanda geliştiriciler size geri dönüş yapacaklardır. Eğer bu issue, bir yazım hatası ile ilgili ise bu hatayı siz de düzeltip pull request açabilirsiniz. Katkıda bulunmadan önce [CONTRIBUTING.md](https://github.com/jargonist/jargon.ist/blob/master/CONTRIBUTING.md) dökümanını okumayı unutmayın.
 
 newPRWelcomeComment: >
   🎉👊 **Pull request için teşekkürler** 👊 🎉
 
-  Pull request için teşekkür ederiz. Eger bu PR'da yeni bir jargon eklediyseniz, lütfen [CONTRIBUTING.md](https://github.com/alpcanaydin/jargon.ist/blob/master/CONTRIBUTING.md) dökümanını okuyup burada yazılanlara uyduğunuza emin olun.
+  Pull request için teşekkür ederiz. Eger bu PR'da yeni bir jargon eklediyseniz, lütfen [CONTRIBUTING.md](https://github.com/jargonist/jargon.ist/blob/master/CONTRIBUTING.md) dökümanını okuyup burada yazılanlara uyduğunuza emin olun.
 
   Yazmış olduğunuz dökümünda eğer başka jargonları da kullandıysanız ve bu jargonlar daha önce [jargon.ist](https://jargon.ist) üzerinde yazılmışsa onlara link vermeniz faydalı olacaktır. Bu jargonlar daha önce tanımlanmadıysa ise yeni bir döküman yazmasanız bile, en azından bu jargonları linklemeniz topluluktan başkalarının daha sonra tanımlaması için yardımcı olacaktır.
 
