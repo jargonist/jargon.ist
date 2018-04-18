@@ -5,20 +5,10 @@ sameWith:
 tags:
 - javascript
 - haskell
-- ocaml
 - fonksiyonel programlama
 ---
 
-Tuttuğu veri üzerinde `map` işlemi yapılabilen yapılara `functor` ismi verilir. JavaScript açısından bakarsak `[Array](/array)` bir functor'dır. **Map**, fonksiyonel programlamada her bir eleman için bir fonksiyonun çalışıp, veri tipinin şekli bozulmadan bu elemanlar topluluğundan yeni bir değerler bütünü elde etmek anlamına gelir. Bu işlem veri kaynağını [mutate](/mutation) etmez, map'lenmiş yeni bir veri tipi daha elde edilir. Örnek olarak `Array.map`'e bakılabilir;
-
-```js
-const a = [1, 2, 3];
-const b = a.map(x => x * 2);
-
-console.log(b); // output: [2, 4, 6]
-```
-
-Dikkat edilmesi gereken herhangi bir veri tipinin functor olabileceğidir. Aşagıdaki örnek de bir functor'dır.
+Tuttuğu veri üzerinde [map](/map) işlemi yapılabilen yapılara `functor` ismi verilir. JavaScript açısından bakarsak [Array](/array) bir functor'dır. Dikkat edilmesi gereken [map](/map) kuralını sağlayan herhangi bir veri tipinin functor olabileceğidir. Aşagıdaki örnek de bir functor'dır.
 
 ```js
 class Thing {
@@ -43,3 +33,5 @@ thing.map(x => console.log(x * 2));
 // 4
 // 6
 ```
+
+**Dikkat:** Her map isminde metodu bulunan veri tipi bir functor değildir! Bu map metodu ayni zamanda [map](/map) özelliklerini de sağlamalıdır.
