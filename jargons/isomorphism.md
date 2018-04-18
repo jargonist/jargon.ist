@@ -8,7 +8,7 @@ tags:
 
 Isomorphism, bir değer ya da değerler kümesinden "biçimi koruyarak" başka bir değer ya da değerler kümesine geçiştir.
 
-Örnek olarak ``map`` işlemi bir isomorphismdir:
+Örnek olarak `map` işlemi bir isomorphismdir:
 
 ```javascript
 // 3 elemanlı bir Array
@@ -19,6 +19,7 @@ var result = myArray.map(item => item * 2); // [2, 4, 6];
 ```
 
 Eğer 2 değer ya da değerler kümesi arasında isomorphism ilişkisi var ise bu değerler *isomorphic*tır.
+
 ```
 // Bu Arrayler arasında 'map' işlemi uygulayarak birisinden diğerini elde edebileceğimiz için bu 2 Array isomorphictir.
 var array1 = [1, 2, 3];

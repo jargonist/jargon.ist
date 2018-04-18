@@ -14,10 +14,10 @@ Index, bir [array](/array)'deki verinin konumudur. `Lua, COBOL, Fortran` vb. gib
 myArray[0];
 
 // Array'in n'inci elemanına erişmek için (n tamsayı)
-myArray[n]; // 
+myArray[n]; //
 
 // n elemanlı bir Array'in son elemanına erişmek için
-myArray[n-1];
+myArray[n - 1];
 
 // ya da
 myArray[-1];
