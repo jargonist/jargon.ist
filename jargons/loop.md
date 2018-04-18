@@ -1,7 +1,7 @@
 ---
 title: loop
 sameWith:
--iteration
+- iteration
 tags:
 - genel
 ---
