@@ -25,7 +25,7 @@ Markdown dosyasının geri kalan kısmında jargon ile ilgili açıklamalar yaz�
 jargonlara link verilmesi güzel olur. Daha önce jargon.ist üzerinde tanımlanmamış bir jargon kullanımında onun için de
 pull request açan contributor ise en güzel contributor 🚀👊'dır.
 
-Açıklamalar yazılırken eğer jargon birden fazla alanda kullanılıyorsa açıklama için **kapsam belirtmek**, okuyucunun konuya daha rahat hakim olmasını sağlayacaktır. Örnek olarak `bias` terimi anlatılırken cümleye _machine learning için bias_ şu şu anlama gelmektedir şeklinde başlamak daha okunabilir bir döküman hazırlamanızı sağlar.
+Açıklamalar yazılırken eğer jargon birden fazla alanda kullanılıyorsa açıklama için **kapsam belirtmek**, okuyucunun konuya daha rahat hakim olmasını sağlayacaktır. Örnek olarak `bias` terimi anlatılırken cümleye _machine learning için bias_ şu şu anlama gelmektedir şeklinde başlamak daha okunabilir bir doküman hazırlamanızı sağlar.
 
 Tüm değişiklikler yapıldıktan sonra **new-jargon** label'ı ile pull request açılır.
 
