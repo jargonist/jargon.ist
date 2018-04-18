@@ -1,6 +1,7 @@
 ---
 title: oop
 tags:
+- genel
 - object
 - instance
 ---
