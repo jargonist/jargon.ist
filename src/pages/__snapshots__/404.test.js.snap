@@ -14,7 +14,7 @@ exports[`renders correctly 1`] = `
       Aradığınız sayfa bulunamadı. Eğer aradıgınız şey bir jargon ise, bize
        
       <a
-        href="https://github.com/alpcanaydin/jargon.ist/blob/master/CONTRIBUTING.md"
+        href="/blob/master/CONTRIBUTING.md"
       >
         katkıda bulunarak
       </a>
