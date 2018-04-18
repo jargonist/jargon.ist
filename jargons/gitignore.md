@@ -1,5 +1,5 @@
 ---
-title: .gitignore
+title: gitignore
 
 tags:
 - genel
