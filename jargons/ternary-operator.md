@@ -9,7 +9,7 @@ tags:
 - genel
 ---
 
-Ternary operator, bir çok programlama dilinde kısa `if` için kullanılan ve 3 tane [operand](/operand) olan bir operatördür. Aşagıdaki örnekte `ternary operator` kullanılmaktadır;
+Ternary operator, birçok programlama dilinde kısa `if` için kullanılan ve 3 tane [operand](/operand) olan bir operatördür. Aşagıdaki örnekte `ternary operator` kullanılmaktadır;
 
 ```js
 const x = 3;

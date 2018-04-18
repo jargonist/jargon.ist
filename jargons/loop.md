@@ -15,6 +15,7 @@ foreach($sayi_array as $arr){
   echo $arr + 1;
 }
 ```
-Yukarıdaki örnekte ise çıktı sırasıyla ``2,3,4,5,6,7`` olacaktır. array içindeki elemanlar tamamlandığında işlem tamamlanmış olacaktır.
+
+Yukarıdaki örnekte ise çıktı sırasıyla `2,3,4,5,6,7` olacaktır. array içindeki elemanlar tamamlandığında işlem tamamlanmış olacaktır.
 
 Ayrca [recursion](/recursion) jargonu da incelenebilir
