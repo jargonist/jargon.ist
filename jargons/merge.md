@@ -4,7 +4,7 @@ tags:
 - git
 ---
 
-Uzak sunucudan indirilmiş dosyaları, [local](/local)deki [repository](/repository) ile birleştirir.
+merge, [git](/git) [branch](/branch)lerini birleştirir.
 
 ```
 git merge branch_name
