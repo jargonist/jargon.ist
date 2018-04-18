@@ -16,7 +16,7 @@ exports[`renders correctly 1`] = `
       <p
         className="u-color-comet u-half-width@md-up u-full-width@md-down"
       >
-        Çeşitli programlama dillerinden ve prensiplerinden bir çok jargonu alfabetik olarak görüntüleyin, örneklerle birlikte jargona hakim olun.
+        Çeşitli programlama dillerinden ve prensiplerinden birçok jargonu alfabetik olarak görüntüleyin, örneklerle birlikte jargona hakim olun.
       </p>
     </Container>
   </Section>
