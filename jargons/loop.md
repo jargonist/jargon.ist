@@ -1,5 +1,7 @@
 ---
 title: loop
+sameWith:
+-iteration
 tags:
 - genel
 ---
@@ -14,3 +16,5 @@ foreach($sayi_array as $arr){
 }
 ```
 Yukarıdaki örnekte ise çıktı sırasıyla ``2,3,4,5,6,7`` olacaktır. array içindeki elemanlar tamamlandığında işlem tamamlanmış olacaktır.
+
+Ayrca [recursion](/recursion) jargonu da incelenebilir
