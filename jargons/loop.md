@@ -1,0 +1,16 @@
+---
+title: loop
+tags:
+- genel
+---
+
+Loop, kendini tekrar eden kod parçacığıdır. Örneğin bir [array](/array) içindeki her eleman için çalışacaktır ya da kullanıcı işlemi durdurana kadar çalışmaya devam edecektir.
+
+```php
+$sayi_array = array(1,2,3,4,5,6);
+
+foreach($sayi_array as $arr){
+  echo $arr + 1;
+}
+```
+Yukarıdaki örnekte ise çıktı sırasıyla ``2,3,4,5,6,7`` olacaktır. array içindeki elemanlar tamamlandığında işlem tamamlanmış olacaktır.
