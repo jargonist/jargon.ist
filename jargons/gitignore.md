@@ -1,32 +1,26 @@
 ---
 title: gitignore
-
 tags:
 - genel
+- git
 - github
 ---
 
-Mac otomatik olarak ürettiği gizli DS_Store isimli klasör veya C++ derleyicileri tarafından üretilen .o uzantılı obj dosyaları gibi. Hangi dosyaların versiyon kontrolü altında tutulacağına ve hangilerinin göz ardı edileceğine Git otomatik olarak karar vermez, bu kararı sizin vermeniz gerekir. 
+*.gitignore* dosyası git reposundan hariç tutulacak dosyaların listesinin bulunduğu repo ana dizinde bulunan bir ayar dosyasıdır.
 
-*Kullandığınız geliştirme araçlarına bağlı olarak hangi dosyaların göz ardı edilebileceği ile ilgili GitHub'ın yayınladığı [derlemeye](https://github.com/github/gitignore) göz atabilirsiniz.*
-
-.gitignore dosyasında kuralları nasıl tanımlayabileceğimize bir göz atalım
+Örnek bir *.gitignore* dosyası şu sekildedir;
 
 ```
-
-# Proje içindeki .jpg uzantılı tüm dosya türlerinin izlenmemesini sağladık
-*.jpg
-
-# Belirli bir dosya
+# Belirli bir dosyayı es geçmek için
 log.xml
 
-# Belirli bir dizin  
+# Belirli bir dizini es geçmek için
 logs/errors/
 
-# Belirli bir uzantı  
+# Belirli bir uzantılı dosyaları es geçmek için
 *.csv
 
-# records/logs altında bulunan xml dosyaları hariç   
-!records/logs/*.xml   
-
+# log dosyalarını es geç ama error.log dosyaları hariç.
+*.log
+!errors.log
 ```
