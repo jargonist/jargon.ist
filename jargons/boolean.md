@@ -1,5 +1,7 @@
 ---
 title: boolean
+sameWith:
+- bool
 tags:
 - programlama
 - matematik
