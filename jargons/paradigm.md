@@ -1,0 +1,29 @@
+
+---
+title: paradigm
+sameWith:
+- paradigma
+tags:
+- paradigm
+- paradigma
+---
+
+## Paradigm
+
+ 
+Sözlük anlamı : **bir şeyin nasıl üretileceği konusunda örnek, model.**
+
+Yazılım geliştirme üzerindeki anlamı ise, yazılımın geliştirileceği yol, method olarak anlamlandırılabilir.
+
+Örneğin, adını en çok duyduğumuz programlama paradigması, oop (nesneye dayalı programlama) olabilir.
+
+Diğer bazı paradigma örnekleri
+
+* [**Functional**](/functional)
+* [**Protocol-Oriented**](/protocol-oriented-programming)
+* [**Object-Oriented**](/oop)
+* [**Imperative**](/imperative-programming)
+* [**Declarative**](/declarative-programming)
+* [**Structured**](/structured-programming)
+* [**Procedural**](/procedural-programming)
+* [**Aspect-Oriented**](/aspect-oriented)
