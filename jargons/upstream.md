@@ -6,7 +6,7 @@ tags:
 - github
 ---
 
-Upstream forkladığınız git reposunun orjinal dosyalarını güncel tutmanıza yarar.
+Upstream forkladığınız git reposunun orijinal depoda yapılan değişiklikleri senkronize etmenizi sağlar.
 
 Komut satırı şu sekildedir;
 
