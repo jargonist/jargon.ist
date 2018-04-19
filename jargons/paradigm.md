@@ -1,4 +1,3 @@
-
 ---
 title: paradigm
 sameWith:
@@ -6,10 +5,8 @@ sameWith:
 tags:
 - paradigm
 - paradigma
+- genel
 ---
-
-## Paradigm
-
  
 Sözlük anlamı : **bir şeyin nasıl üretileceği konusunda örnek, model.**
 
