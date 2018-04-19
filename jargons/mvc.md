@@ -19,12 +19,6 @@ MVC ([model](/model), [view](/view), [controller](/controller) tr: model, görü
 * [Zend Framework](http://framework.zend.com/)
 * [Yii](http://www.yiiframework.com/)
 
-[Javascript](/javascript)'te MVC mimarisi kullanan bazı framework'ler ise şu şekildedir:
-
-* [Backbone.js](http://backbonejs.org/)
-* [AngularJS](https://angularjs.org/)
-* [EmberJS](https://www.emberjs.com)
-
 ### MVC Geçmişi
 MVC deseni ilk defa [Trygve Reenskaug](https://en.wikipedia.org/wiki/Trygve_Reenskaug) tarafından 1979 yılında ortaya atılmıştır.
 Daha sonraları bu desen [Xerox](https://tr.wikipedia.org/wiki/Xerox) ar-ge laboratuvarlarında 
