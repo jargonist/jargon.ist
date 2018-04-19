@@ -1,7 +1,7 @@
 ---
 title: virtual-dom
 sameWith:
-  - vdom
+- vdom
 tags:
 - javascript
 - dom
