@@ -19,4 +19,4 @@ extension Array: Equatable where Element: Equatable {
 
 Daha detaylı incelemek için proposal incelenebilir;
 
-[Conditinal Conformance](/https://github.com/apple/swift-evolution/blob/master/proposals/0143-conditional-conformances.md)
+[Conditinal Conformance](https://github.com/apple/swift-evolution/blob/master/proposals/0143-conditional-conformances.md)
