@@ -1,8 +1,7 @@
 ---
 title: foo bar
 tags:
-- yertutucu
-- placeholder
+- genel
 ---
 
 Genellikle örnek kodlarda; değişkenler, değerler, dosya adları, fonksiyon isimleri ya da parametreleri için kullanılan yertutucu. Rastgele harflerden oluşan kelimeler yerine kullanılır.
