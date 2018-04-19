@@ -7,7 +7,7 @@ tags:
 - type sistemi
 ---
 
-`type inference` bir programlama dilinde bir bir ifadenin veri tipinin otomatik olarak belirlenmesine denmektedir. Örnek olarak;
+`type inference` bir programlama dilinde bir ifadenin veri tipinin [implicit](/implicit) olarak belirlenmesine denmektedir. Örnek olarak;
 
 ```go
 package main
