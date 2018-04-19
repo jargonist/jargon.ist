@@ -5,7 +5,9 @@ tags:
 - genel
 ---
 
-Matematikte ve bilgisayar biliminde bir işi yapmak için tanımlanan, bir başlangıç durumundan başladığında, açıkça belirlenmiş bir son durumunda sonlanan, sonlu işlemler kümesidir.
+1-Matematikte ve bilgisayar biliminde bir işi yapmak için tanımlanan, bir başlangıç durumundan başladığında, açıkça belirlenmiş bir son durumunda sonlanan, sonlu işlemler kümesidir.
+
+2- Bir problemin çözümüne ulaşmak için uygulanması gereken kurallar dizini.
 
 Kullanıcı tarafından girilen bir sayının faktöriyel değerini bulmak için yazılmış örnek bir algoritma:
 
