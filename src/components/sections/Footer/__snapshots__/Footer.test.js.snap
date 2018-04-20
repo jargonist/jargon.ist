@@ -66,7 +66,7 @@ exports[`renders correctly 1`] = `
               rel="noopener noreferrer"
               target="_blank"
             >
-              Github
+              GitHub
             </a>
           </div>
           <div
@@ -140,7 +140,7 @@ exports[`renders correctly 1`] = `
           className="u-uppercase u-clear-gap-top u-gap-bottom-xsmall u-color-muted"
           lang="en"
         >
-          Github
+          GitHub
         </h4>
         <ul
           className="c-footer__menu"
@@ -224,7 +224,7 @@ exports[`renders correctly 1`] = `
               rel="noopener noreferrer"
               target="_blank"
             >
-              Github
+              GitHub
             </a>
           </li>
           <li

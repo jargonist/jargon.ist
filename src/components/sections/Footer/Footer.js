@@ -42,7 +42,7 @@ const Footer = () => (
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                Github
+                GitHub
               </a>
             </div>
             <div className="u-gap-bottom-xsmall">
@@ -91,7 +91,7 @@ const Footer = () => (
 
         <div className="col col--lg-2 u-hidden@md-down">
           <h4 className="u-uppercase u-clear-gap-top u-gap-bottom-xsmall u-color-muted" lang="en">
-            Github
+            GitHub
           </h4>
           <ul className="c-footer__menu">
             <li className="c-footer__menu-item">
@@ -159,7 +159,7 @@ const Footer = () => (
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                Github
+                GitHub
               </a>
             </li>
             <li className="c-footer__menu-item">
