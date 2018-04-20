@@ -1,7 +1,7 @@
 ---
 title: vuejs
 sameWith:
-  - vue
+- vue
 tags:
 - javascript
 - mvvm
