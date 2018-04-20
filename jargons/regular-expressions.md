@@ -104,7 +104,7 @@ const regex = /.*j.*a.*r.*g.*o.*n.*/;
 
 const string1 = "asdasjsdaqwdasrasdasgasdasdaoasdasdn",
       string2 = "x3asd11qzğo1maasds1",
-      string3 = "jargon";
+      string3 = "jargon",
       string4 = "Jargon";
 
 console.log(
