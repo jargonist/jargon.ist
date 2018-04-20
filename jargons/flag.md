@@ -8,9 +8,7 @@ tags:
 
 Bir bayrak (flag), belirli bir operasyona veya yere dikkat çekmeyi amaçlayan her şey için genelleştirilmiş bir terimdir. Bu bayrağın hangi biçime sahip olması gerektiğine veya ne tür bir veriye sahip olması gerektiğine dair bir standart yoktur.
 
-JavaScript düzenli ifadelerinde ([regular expressions](/regular-expressions)) bayrakları (flag) inceleyecek olursak;
-
-Flag'ları [JavaScript](/k/javascript)'te inceleyecek olursak; 
+[JavaScript](/k/javascript) düzenli ifadelerinde ([regular expressions](/regular-expressions)) bayrakları (flag) inceleyecek olursak;
 
 - `g` global eşleşme,
 - `i` görmezden gelme durumu,
