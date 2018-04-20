@@ -4,7 +4,7 @@ tags:
 - veri yapısı
 ---
 
-Maxtrisler , dizilerin çok boyutlu halleridir.
+Matrixler , dizilerin çok boyutlu halleridir.
 
 Örneğin,
 
