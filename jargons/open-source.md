@@ -16,4 +16,4 @@ En çok kullanılan açık kaynak yazılım lisansları arasında
 
 ilk üç sırada yer alır.
 
-Open source modeli yazılım ürünleri haricinde birçok farklı alanda da kullanılmakdır. Open source hardware (Açık kaynak donanım), Open source pharma (Açık kaynak ilaç) bunlara birer örnektir.
+Açık kaynak modeli yazılım ürünleri haricinde birçok farklı alanda da kullanılmaktadır. Open source hardware (Açık kaynak donanım), Open source pharma (Açık kaynak ilaç) bunlara birer örnektir.
