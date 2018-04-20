@@ -1,13 +1,12 @@
 ---
 title: class
 tags:
-- c#
-- oop
-- object
-- instance
+- genel
+- programlama
+- veri yapısı
 ---
 
-Nesne tabanlı ya da yönelimli programlama([oop](/oop)) yaklaşımında Sınıf'lar(class) kendisinden türetilecek Nesne'lerin([object](/object)) veri yapıları ve özelliklerini oluştururlar.
+Nesne tabanlı ya da yönelimli programlama ([oop](/oop)) yaklaşımında sınıflar (class) kendisinden türetilecek nesnelerin ([object](/object)) veri yapıları ve özelliklerini oluştururlar.
 
 ```C#
 // Ogrenci adında oluşturulan bu class(sınıf), kendisinden türetilecek her bir öğrenci nesnesine ortak özellik olarak Öğrenci Numarası, Ad ve Soyad alanlarını aktaracaktır.

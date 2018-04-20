@@ -1,13 +1,12 @@
 ---
 title: object
 tags:
-- c#
-- oop
-- class
-- instance
+- genel
+- programlama
+- veri yapısı
 ---
 
-Nesne tabanlı ya da yönelimli programlama([oop](/oop)) yaklaşımında nesneler, Sınıf([class](/class)) adı verilen veri şablonlarından türetilen somut parçalardır.
+Nesne tabanlı ya da yönelimli programlama ([oop](/oop)) yaklaşımında nesneler, sınıf ([class](/class)) adı verilen veri şablonlarından türetilen somut parçalardır.
 
 ```C#
 // Ogrenci adında class(sınıf) oluşturuldu.
