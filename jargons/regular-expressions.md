@@ -139,15 +139,17 @@ console.log("Eşleşen:", string3.match(regex1)[0]); // Xy123sazX
 console.log("Eşleşen:", string4.match(regex1)[0]); // WxyW
 
 // belirli bir karakter dizisi elemanlarından herhangi biri ile başlayan ve yine aynı karakter ile biten stringleri bulalım.
-const regex2 = /^([JARGON]).+\1$/;
+const regex2 = /^([JARGON]).*\1$/;
 
 const string5 = "JaskjdhqwonaslnasJ", // J ile başlayıp J ile bitiyor
       string6 = "xhasd8jsaklahdasjzX8", // x ile başlayıp 8 ile bitiyor
       string7 = "GXy123sazG", // G ile başlayıp G ile bitiyor
-      string8 = "AxyWz12wqN"; // A ile başlayıp N ile bitiyor
+      string8 = "AxyWz12wqN", // A ile başlayıp N ile bitiyor
+      string9 = "RR"; // R ile başlayıp R ile bitiyor
 
 console.log(regex2.test(string5)); // true
 console.log(regex2.test(string6)); // false
 console.log(regex2.test(string7)); // true
 console.log(regex2.test(string8)); // false
+console.log(regex2.test(string9)); // true
 ```
