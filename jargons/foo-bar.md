@@ -7,8 +7,8 @@ tags:
 Genellikle örnek kodlarda; değişkenler, değerler, dosya adları, fonksiyon isimleri ya da parametreleri için kullanılan yertutucu. Rastgele harflerden oluşan kelimeler yerine kullanılır.
 
 ```javascript
-var foo = "bar";
-var bar = "foo";
+var foo = 'bar';
+var bar = 'foo';
 var foobar = bar + foo;
 document.write(foobar);
 ```
