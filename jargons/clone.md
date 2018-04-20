@@ -9,7 +9,7 @@ clone, [local](/local)de ya da uzak bir sunucuda yer alan bir [repository](/repo
 ```
 // localdeki /path'den kopyalar.
 git clone /path
- 
+
 // uzak sunucudaki bir adresten kopyalar.
 git clone username@host:/path
 ```
