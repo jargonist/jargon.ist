@@ -3,6 +3,7 @@ title: algorithm
 tags:
 - programlama
 - genel
+- matematik
 ---
 
 1-Matematikte ve bilgisayar biliminde bir işi yapmak için tanımlanan, bir başlangıç durumundan başladığında, açıkça belirlenmiş bir son durumunda sonlanan, sonlu işlemler kümesidir.

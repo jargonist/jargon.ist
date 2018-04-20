@@ -13,4 +13,4 @@ NPM 'in açılımı, [Node Package Manager](/nodejs) 'dir. Yazılım geliştiric
 npm i eslint
 ```
 
-diyerek, eslint aracını npm den install edebilir.
+denilerek eslint kütüphanesi projeye dahil edilebilir.

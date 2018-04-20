@@ -15,7 +15,7 @@ Java'da ,
 int[][] myMatrix = { {0,1,2,3}, {3,2,1,0}, {3,5,6,1}, {3,8,3,4} };
 ```
 
-Javascriptte
+Javascript'te
 
 ```js
 // array içinde array tanımlıyoruz.
