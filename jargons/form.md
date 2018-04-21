@@ -3,7 +3,6 @@ title: form
 tags:
 - genel
 - programlama
-- html
 ---
 
 Kullanıcıların verileri doldurabileceği boş alanlar içeren biçimlendirilmiş yapılardır.

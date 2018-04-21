@@ -3,9 +3,9 @@ title: char
 sameWith:
 - character
 tags:
-- c
 - genel
 - programlama
+- c
 ---
 
 `Character` sınıfı  kaynak programda kullanılan bütün harf, rakam ve diğer simgelerin kümesidir. O kümenin her bir öğesini “karekter” (char) diye adlandırıyoruz. [Java](/k/java) dili, karekterleri [Unicode](/unicode) diye adlandırılan ve uzunluğu 2 [byte](/byte) (16 [bit](/bit)) olan sistemle belirler. Bu nedenle 1 byte (8 bit) lık sistemlerde olduğu gibi yalnızca İngiliz alfabesini değil, Türkçe, Arapça, Çince, Japonca, Rusça, İbranice vb. bütün dillerin alfabelerindeki harfleri içine alır.

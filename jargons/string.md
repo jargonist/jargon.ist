@@ -1,7 +1,6 @@
 ---
 title: string
 tags:
-- c
 - veri yapısı
 - programlama
 ---

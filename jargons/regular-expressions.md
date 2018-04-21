@@ -86,7 +86,7 @@ Niceleyiciler:
 
 - `{n}` n pozitif bir sayı olmak üzere. Kendinden önceki karakterden tam olarak `n` tane olması durumunda eşleşme gerçekleştirir. Örneğin: `a{5}` a karakterinden 5 tane olmasını beklemektedir.
 
-- `{n, }` n pozitif bir sayı olmak üzere. Kendinden önceki karakterden **en az `n`** tane olması durumunda eşleşme gerçekleştirir. Örneğin: `a{5, }` a karakterinden **en az 5** tane olmasını beklemektedir.
+- `{n,}` n pozitif bir sayı olmak üzere. Kendinden önceki karakterden **en az `n`** tane olması durumunda eşleşme gerçekleştirir. Örneğin: `a{5, }` a karakterinden **en az 5** tane olmasını beklemektedir.
 
 - `{n, m}` n ve m pozitif bir sayı olmak üzere. Kendinden önceki karakterden **en az `n`** ve **en fazla `m`** tane olması durumunda eşleşme gerçekleştirir. Örneğin: `a{5, 10}` a karakterinden **en az 5** ve **en fazla 10** tane olmasını beklemektedir.
 

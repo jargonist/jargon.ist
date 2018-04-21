@@ -2,8 +2,8 @@
 title: match
 tags:
 - genel
-- javascript
 - programlama
+- javascript
 ---
 
 Bilgisayar bilimlerinde çeşitli amaçlar için kullanılan eşleştirme problemlerinin genel ismidir. Genellikle bir arz ile bir talebin eşleştirilmesi şeklinde olur. 
