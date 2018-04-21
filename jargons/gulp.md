@@ -1,5 +1,5 @@
 ---
-title: webpack
+title: gulp
 tags:
 - javascript
 ---
@@ -11,7 +11,7 @@ En basit anlatımıyla; [Node.js](/nodejs) ile javascript üzerindeki bağımlı
 *  Sass, Less dosyalarının Css’e derlenmesi ve minimize edilmesi.
 *  Css sprite oluşturma.
 
-Webpack eklentilerini [buradan](https://github.com/webpack-contrib/awesome-webpack) inceleyebilirsiniz.
+Gulp eklentilerini [buradan](https://github.com/alferov/awesome-gulp) inceleyebilirsiniz.
 
-Alternatifler: [Gulp](/gulp), [Grunt](/grunt)
+Alternatifler: [Webpack](/webpack), [Grunt](/grunt)
 

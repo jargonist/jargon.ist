@@ -1,5 +1,5 @@
 ---
-title: webpack
+title: grunt
 tags:
 - javascript
 ---
@@ -11,7 +11,7 @@ En basit anlatımıyla; [Node.js](/nodejs) ile javascript üzerindeki bağımlı
 *  Sass, Less dosyalarının Css’e derlenmesi ve minimize edilmesi.
 *  Css sprite oluşturma.
 
-Webpack eklentilerini [buradan](https://github.com/webpack-contrib/awesome-webpack) inceleyebilirsiniz.
+Grunt eklentilerini [buradan](https://gruntjs.com/plugins) inceleyebilirsiniz.
 
-Alternatifler: [Gulp](/gulp), [Grunt](/grunt)
+Alternatifler: [Webpack](/webpack), [Gulp](/gulp)
 
