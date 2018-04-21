@@ -1,7 +1,7 @@
 ---
 title: try-catch
 tags:
-- hata yakalama
+- programlama
 ---
 
 Uygulama çalışma esnasında oluşan hataları yakalamaya yarar.
