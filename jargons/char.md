@@ -14,8 +14,10 @@ tags:
 
 ```c
 char karakter = 'K';
+char karakterAscii = 75;
 char karakterDizisi[10] = "Jargon";
 printf("Karakter: %c\n", karakter); // K
+printf("Karakter: %c\n", karakterAscii); // K, karakterin ascii değerini girerek de aynı sonucu elde edebiliriz.
 printf("Dizi: %s", karakterDizisi); // Jargon
 printf("Karakter dizisinin 1. karakteri: %c", karakterDizisi[0]); // J
 ```

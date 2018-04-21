@@ -9,11 +9,11 @@ tags:
 - javascript
 ---
 
-Türkçe olarak `düzenli ifadeler` anlamına gelmektedir. Tek bir [programlama](/k/programlama) diline özel değildir. Tüm programlama dillerinin bir parçasıdır. [JavaScript](/k/javascript) dilinde düzenli ifadeler aynı zamanda bir [object](/object) dir.
+Türkçe olarak `düzenli ifadeler` anlamına gelmektedir. Tek bir [programlama](/k/programlama) diline özel değildir. Tüm programlama dillerinin bir parçasıdır. [JavaScript](/k/javascript) dilinde düzenli ifadeler aynı zamanda bir obje ([object](/object)) dir.
 
-Düzenli ifadeler [string](/string) üzerinde belirli bir desene ([pattern](/pattern)) sahip karakter kombinasyonlarını eşleştirmek ([match](/match)) etmek için kullanılır.
+Düzenli ifadeler metin ([string](/string)) üzerinde belirli bir desene ([pattern](/pattern)) sahip karakter kombinasyonlarını eşleştirmek ([match](/match)) etmek için kullanılır.
 
-Düzenli ifadelerin yapısı genellikle bir string deseni ve bu desenin nasıl eşleştireleceğini belirten bir [flag](/flag) den oluşur. `/pattern/flags`
+Düzenli ifadelerin yapısı genellikle bir string deseni ve bu desenin nasıl eşleştireleceğini belirten bir bayrak ([flag](/flag)) den oluşur. `/pattern/flags`
 
 Oluşturma yapısına örnek olarak:
 
@@ -38,7 +38,7 @@ Düzenli ifadeler bazı özel karakterlere sahiptir. Bunları belirli başlıkla
 - Koşullar - Assertions 
 
 Karakter Sınıfları:
-
+<!-- prettier-ignore -->
 | Karakter   | Eşleşmeler - Matches     | 
 | ---        | ---      | 
 | `.`     | Herhangi bir karakter ile eşleşir. |
@@ -60,7 +60,7 @@ Değişim:
 `|` sembolü düzenli ifadelerde iki şeyden birisi ile eşleşmek için kullanılmaktadır. Örneğin: `a|b`, `a` veya `b` ile eşleşecektir.
 
 Sınırlar:
-
+<!-- prettier-ignore -->
 | Karakter   | Eşleşmeler - Matches     | 
 | ---        | ---      | 
 | `^`     | String'in **başı** ile eşleşir. Eğer multiline flag'ı aktif ise aynı zamanda line break (`\n`) karakterinden hemen **sonrası** ile de eşleşir. |
@@ -86,7 +86,7 @@ Niceleyiciler:
 
 - `{n}` n pozitif bir sayı olmak üzere. Kendinden önceki karakterden tam olarak `n` tane olması durumunda eşleşme gerçekleştirir. Örneğin: `a{5}` a karakterinden 5 tane olmasını beklemektedir.
 
-- `{n,}` n pozitif bir sayı olmak üzere. Kendinden önceki karakterden **en az `n`** tane olması durumunda eşleşme gerçekleştirir. Örneğin: `a{5, }` a karakterinden **en az 5** tane olmasını beklemektedir.
+- `{n,}` n pozitif bir sayı olmak üzere. Kendinden önceki karakterden **en az `n`** tane olması durumunda eşleşme gerçekleştirir. Örneğin: `a{5,}` a karakterinden **en az 5** tane olmasını beklemektedir.
 
 - `{n, m}` n ve m pozitif bir sayı olmak üzere. Kendinden önceki karakterden **en az `n`** ve **en fazla `m`** tane olması durumunda eşleşme gerçekleştirir. Örneğin: `a{5, 10}` a karakterinden **en az 5** ve **en fazla 10** tane olmasını beklemektedir.
 
@@ -97,7 +97,7 @@ Koşullar:
 - `a(?!b)` a dan hemen sonra b **gelmiyor** ise eşleşme gerçekleştirir.
 
 Örnek 1:
-
+<!-- prettier-ignore -->
 ```js
 // içinde yazım sırası önem arzeder şekilde `jargon` kelimesi bulunan string'leri arayalım. 
 const regex = /.*j.*a.*r.*g.*o.*n.*/;
@@ -124,6 +124,7 @@ console.log(
 Dördüncü string `jargon` barındırıyor fakat `J` harfi büyük. Sonuç: `false`
 
 Örnek 2:
+<!-- prettier-ignore -->
 ```js
 // herhangi bir karakterden yine aynı karaktere kadar olan kısımın arasında kalan karakterleri match edelim.
 const regex1 = /(.).*\1/;
