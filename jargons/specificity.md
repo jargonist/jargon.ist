@@ -4,8 +4,7 @@ tags:
 - css
 ---
 
-CSS
---
+## CSS
 
 Specificity, tarayıcıların hangi CSS özellik değerlerinin bir öğeyle en alakalı olduğuna karar verebilmek için kullandığı belirli kurallara göre hesaplanan bir baskınlık değeridir. Tarayıcı bu baskınlık değerine göre hangi CSS deklerasyonunun öğeye uygulanacağına karar verir.
 
