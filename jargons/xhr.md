@@ -26,6 +26,6 @@ tags:
 
 * [That’s so Fetch (*Jake Archibald*) (*İngilizce*)](https://jakearchibald.com/2015/thats-so-fetch/)
 * [`XMLHttpRequest` (*MDN*) (*İngilizce*)](https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest)
-* [`fetch` API (*MDN*) (*İngilizce*)]](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API)
+* [`fetch` API (*MDN*) (*İngilizce*)](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API)
 
 [`fetch`](/fetch) komutunun gelişi ile [deprecated](/deprecated) olmuş sayılabilir.
