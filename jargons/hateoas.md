@@ -14,7 +14,7 @@ Aşağıdaki JSON nesnesi, HATEOAS destekleyen bir sunucuya yapılan HTTP GET i�
 <br /><br />
 `GET /hesap/12345`
 
-```
+```json
 {
     "hesapNumarası": 12345,
     "name": "jargonist",
