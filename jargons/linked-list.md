@@ -1,8 +1,8 @@
 ---
 title: linked list
 tags:
-- data structure
-- queue
+- veri yapısı
+- kuyruk
 ---
 
 İçerdiği her düğümün sahip olduğu datası ve bir sonraki düğümü işaret(point) etmesi ile oluşan dinamik veri yapısıdır. Tek yönlü, iki yönlü
@@ -10,6 +10,6 @@ ve dairesel olmak üzere üç çeşidi vardır.
 
 Dizi(Array) ile farkları
 
-*Birbirini işaret(point) etmesi
-*Eleman boyutunun dinamik olarak değişmesi
-*Diziye oranla çok kısa sürede ekleme/çıkarma vb. işlemlerin yapılmasıdır.
+-Birbirini işaret(point) etmesi
+-Eleman boyutunun dinamik olarak değişmesi
+-Diziye oranla çok kısa sürede ekleme/çıkarma vb. işlemlerin yapılmasıdır.
