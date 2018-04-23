@@ -20,5 +20,4 @@ function fibonacci(x) {
 
   let y = fibonacci(8);
   document.write(y);
-}
 ```
