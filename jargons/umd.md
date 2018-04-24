@@ -5,7 +5,7 @@ tags:
 - modüller
 ---
 
-**Universal Module Definition** ifadesinin kısaltması. Bir kodun hem tarayıcıda hem de Node.js üzerinde çalışmasını sağlayan modül tanımlama sistemi.
+**Universal Module Definition** ifadesinin kısaltmasıdır. Bir kodun hem tarayıcıda hem de [Node.js](/nodejs) üzerinde çalışmasını sağlayan modül tanımlama sistemidir.
 
 Birçok yöntem olmakla birlikte, en genel yöntemlerden biri aşağıdaki gibidir:
 

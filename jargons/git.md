@@ -13,4 +13,5 @@ git, bir versiyon kontrol sistemidir. Sürüm kontrolü, bir ya da daha fazla do
 [fetch](/fetch),
 [branch](/branch),
 [merge](/merge)
+
 gibi komutları vardır.

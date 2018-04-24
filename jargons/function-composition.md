@@ -9,7 +9,7 @@ tags:
 - fonksiyonel programlama
 ---
 
-Fonksiyonların iç içe birbirini çağırmasına ve süreç esnasında bir önceki fonksiyonun sonucunun bir sonraki fonksiyonda argüman olarak kullanılmasına `function composition` denir.
+Fonksiyonların iç içe birbirini çağırmasına ve süreç esnasında bir önceki fonksiyonun sonucunun bir sonraki fonksiyonda argüman ([argument](/argument)) olarak kullanılmasına `function composition` denir.
 
 <!-- prettier-ignore -->
 ```js

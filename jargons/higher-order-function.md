@@ -9,10 +9,10 @@ tags:
 - fonksiyonel programlama
 ---
 
-Aşağıdaki kurallardan **en az birini** karşılayan fonksiyonlar `higher-order function` olarak adlandırılır.
+Aşağıdaki kurallardan **en az birini** karşılayan fonksiyonlar `higher-order function` olarak adlandırılır:
 
-* Argüman olarak bir veya birden fazla fonksiyon alır.
-* Geriye bir fonksiyon return eder.
+* Argüman ([argument](/argument)) olarak bir veya birden fazla fonksiyon alır.
+* Geriye bir fonksiyon döndürür.
 
 ```js
 // filterWords bir HOF'tur.

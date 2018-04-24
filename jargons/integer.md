@@ -6,7 +6,7 @@ tags:
 
 integer, İngilizce tamsayı anlamına gelir. Programlama dillerinde tamsayı türündeki değişkenleri ifade eder.
 
-```Java
+```java
 // myNumber değişkenine 5 tamsayısını atama yapar
 int myNumber = 5;
 

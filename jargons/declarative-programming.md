@@ -6,9 +6,9 @@ tags:
 - genel
 ---
 
-`declarative programming` [imperative programming](/imperative-programming)'in zıttı bir şekilde, yazılımcının tüm sürecin nasıl işleyeceğini tek tek yazmadığı, onun yerine neye ulaşılmak istendiğini tanımladığı programlama paradigmasıdır. Örnek vermek gerekirse [react.js](/reactjs), declarative bir [UI](/ui) [framework](/framework)'üdür.
+`declarative programming` [imperative programming](/imperative-programming)'in zıttı bir şekilde, yazılımcının tüm sürecin nasıl işleyeceğini tek tek yazmadığı, onun yerine neye ulaşılmak istendiğini tanımladığı programlama paradigmasıdır. Örnek vermek gerekirse [React](/reactjs), declarative bir [UI](/ui) [framework](/framework)'üdür.
 
-Bir container içindeki butona tıklandığında, bu container'daki `div`'e `class` ekleyen, tekrar tıklandığında ise kaldıran bir JavaScript kodu [imperative](/imperative-programming) olarak şu şekilde yazılabilir;
+Bir [container](/container) içindeki butona tıklandığında, bu container'daki `div`'e `class` ekleyen, tekrar tıklandığında ise kaldıran bir [JavaScript](/javascript) kodu [imperative](/imperative-programming) olarak şu şekilde yazılabilir:
 
 ```js
 const className = 'is-open';
@@ -32,7 +32,7 @@ container.appendChild(button);
 container.appendChild(div);
 ```
 
-Aynı kod ise [react.js](/reactjs) ile `declarative` olarak ise şu şekilde yazılabilir;
+Aynı kod ise [React](/reactjs) ile `declarative` olarak ise şu şekilde yazılabilir:
 
 ```jsx
 class Foo extends PureComponent {

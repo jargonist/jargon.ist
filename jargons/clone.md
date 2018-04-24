@@ -4,12 +4,12 @@ tags:
 - git
 ---
 
-clone, [local](/local)de ya da uzak bir sunucuda yer alan bir [repository](/repository)nin çalışan kopyasını bulunduğunuz dizine kopyalar.
+clone, [local](/local)'de ya da uzak bir sunucuda yer alan bir [repository](/repository)'nin çalışan kopyasını bulunduğunuz dizine kopyalar.
 
-```
-// localdeki /path'den kopyalar.
+```bash
+# localdeki /path'den kopyalar.
 git clone /path
 
-// uzak sunucudaki bir adresten kopyalar.
+# uzak sunucudaki bir adresten kopyalar.
 git clone username@host:/path
 ```

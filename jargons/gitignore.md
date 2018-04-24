@@ -6,11 +6,11 @@ tags:
 - github
 ---
 
-_.gitignore_ dosyası git reposundan hariç tutulacak dosyaların listesinin bulunduğu repo ana dizinde bulunan bir ayar dosyasıdır.
+_.gitignore_ dosyası [git](/git) [repository](/repository)'sinden hariç tutulacak dosyaların listesinin bulunduğu, repository'nin ana dizininde bulunan bir ayar dosyasıdır.
 
-Örnek bir _.gitignore_ dosyası şu sekildedir;
+Örnek bir _.gitignore_ dosyası şu sekildedir:
 
-```
+```bash
 # Belirli bir dosyayı es geçmek için
 log.xml
 
@@ -24,3 +24,5 @@ logs/errors/
 *.log
 !errors.log
 ```
+
+Yaygın kullanılan `.gitignore` içeriklerine ulaşmak için [gitignore.io](https://www.gitignore.io/) adresi incelenebilir.

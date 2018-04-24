@@ -5,12 +5,12 @@ tags:
 - veri yapısı
 ---
 
-[Integer](/integer) veri tipinin hafızasında tutabileceği belli bir byte kapasitesi vardır. Biginteger kütüphanesi, gerekli durumlarda bir değişkendeki byte sınırını kaldırarak,
+[Integer](/integer) veri tipinin hafızasında tutabileceği belli bir [byte](/byte) kapasitesi vardır. Biginteger kütüphanesi, gerekli durumlarda bir değişkendeki byte sınırını kaldırarak,
 istediğimiz veriyi o değişkende saklamamıza yardımcı olur.
 
 Örneğin C# ile;
 
-```C#
+```cs
 // using System.Numerics;
 // diyerek numeric kutuphanesini koda dahil ettikten sonra
 BigInteger result = BigInteger.pow(2,900);
