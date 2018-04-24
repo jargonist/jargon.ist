@@ -4,7 +4,7 @@ tags:
 - git
 ---
 
-status, bir [git](/git) komutudur. Mevcut çalışma alanında [commit](/commit) ve [head](/head) hakkında durum bilgisi verir.
+status, [git](/git) için mevcut çalışma alanında [commit](/commit) ve [head](/head) hakkında durum bilgisi veren bir komuttur.
 
 ```
 git status

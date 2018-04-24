@@ -4,7 +4,7 @@ tags:
 - git
 ---
 
-diff, bir [git](/git) komutudur. Mevcut çalışma alanındaki değişiklikleri gösterir.
+diff [git](/git) için mevcut çalışma alanındaki değişiklikleri gösteren bir komuttur.
 
 ```
 git diff
