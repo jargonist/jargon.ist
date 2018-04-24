@@ -4,7 +4,7 @@ tags:
 - javascript
 ---
 
-En basit anlatımıyla; [Node.js](/nodejs) ile javascript üzerindeki bağımlılıklarınızı yöneten, derleyen ve birleştiren araçtır, bunun yanı sıra eklentileri ile birlikte pek çok görev otomasyonu için kullanılabilir.
+[Node.js](/nodejs) görev otomasyon aracıdır.
 
 Örnek Görevler; 
 *  Html, Javascript, ECMAScript, Css ve Görüntü dosyalarını minimize ve derleme işlemleri.
@@ -13,5 +13,5 @@ En basit anlatımıyla; [Node.js](/nodejs) ile javascript üzerindeki bağımlı
 
 Grunt eklentilerini [buradan](https://gruntjs.com/plugins) inceleyebilirsiniz.
 
-Alternatifler: [Webpack](/webpack), [Gulp](/gulp)
+Alternatifler: [Gulp](/gulp)
 

@@ -13,5 +13,4 @@ En basit anlatımıyla; [Node.js](/nodejs) ile javascript üzerindeki bağımlı
 
 Webpack eklentilerini [buradan](https://github.com/webpack-contrib/awesome-webpack) inceleyebilirsiniz.
 
-Alternatifler: [Gulp](/gulp), [Grunt](/grunt)
 
