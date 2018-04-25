@@ -5,7 +5,7 @@ tags:
 - programlama
 ---
 
-`dotenv` bir çok dilin paket yöneticisinde bulunan, [environment variable](/environment-variable)'ları `.env` dosyasından almaya yarayan bir kütüphanedir. Örnek bir `.env` dosyası şu şekildedir;
+`dotenv` birçok dilin paket yöneticisinde bulunan, [environment variable](/environment-variable)'ları `.env` dosyasından almaya yarayan bir kütüphanedir. Örnek bir `.env` dosyası şu şekildedir;
 
 ```bash
 ENV_VAR_1=value1
