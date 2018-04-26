@@ -4,7 +4,7 @@ tags:
 - programlama
 ---
 
-Uygulama çalışma esnasında oluşan hataları yakalamaya yarar.
+Uygulamada, çalışma esnasında ([runtime](/runtime)) oluşan hataları yönetmeye yarayan kod bloklarıdır. Dilden dile kullanım şekilleri değişebilir veya bazi dillerde hiç bulunmayabilir.
 
 ```C#
 try
