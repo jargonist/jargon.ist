@@ -22,6 +22,7 @@
     "gatsby-plugin-nprogress": "^1.0.14",
     "gatsby-plugin-purify-css": "^2.2.1",
     "gatsby-plugin-react-helmet": "^2.0.8",
+    "gatsby-plugin-remove-serviceworker": "^1.0.0",
     "gatsby-plugin-sass": "^1.0.25",
     "gatsby-remark-prismjs": "^1.2.24",
     "gatsby-source-filesystem": "^1.5.28",

@@ -7,7 +7,7 @@ tags:
 - paradigma
 - genel
 ---
- 
+
 Sözlük anlamı : **bir şeyin nasıl üretileceği konusunda örnek, model.**
 
 Yazılım geliştirme üzerindeki anlamı ise, yazılımın geliştirileceği yol, method olarak anlamlandırılabilir.
