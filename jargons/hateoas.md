@@ -6,7 +6,7 @@ tags:
 
 HATEOAS, **Hypermedia As The Engine Of Application State**'in kısaltmasıdır. RESTful mimarisini diğer ağ uygulamaları mimarisinden ayıran önemli bir özelliktir.
 
-HATEOAS destekleyen bir sistemde, bir REST isteğinin sonucunda, yaptığınız işlem ile bağlantılı olarak yapabileceğiniz diğer işlemlerin linkleri de gönderilir. Böylece istemci (client), sistem hakkında hiç bir bilgisi olmadığı halde bu linkleri takip ederek kolayca sistem ile etkileşime geçebilir. Bir web sitesinde kullanıcının aradığı sayfaya sitedeki bağlantıları tıklayarak ulaşması gibi düşünebilirsiniz.
+HATEOAS destekleyen bir sistemde, bir REST isteğinin sonucunda, yaptığınız işlem ile bağlantılı olarak yapabileceğiniz diğer işlemlerin linkleri de gönderilir. Böylece istemci (client), sistem hakkında hiçbir bilgisi olmadığı halde bu linkleri takip ederek kolayca sistem ile etkileşime geçebilir. Bir web sitesinde kullanıcının aradığı sayfaya sitedeki bağlantıları tıklayarak ulaşması gibi düşünebilirsiniz.
 
 Daha detaylı anlamak için aşağıdaki örneği ele alalım;
 
@@ -14,7 +14,7 @@ Aşağıdaki JSON nesnesi, HATEOAS destekleyen bir sunucuya yapılan HTTP GET i�
 <br /><br />
 `GET /hesap/12345`
 
-```
+```json
 {
     "hesapNumarası": 12345,
     "name": "jargonist",
