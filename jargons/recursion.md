@@ -4,20 +4,20 @@ sameWith:
 - recursive
 tags:
 - genel
-- iteration
 ---
 
-Bir problemin çözümünü elde etmek için kendini tekrarlayan metodu tanımlama şeklidir.
+Bir problemin çözümünü elde etmek için kendini tekrarlayan metodu tanımlama şeklidir. [Bu](/recursion) sayfa [recursion](/recursion)'a örnek gösterilebilir.
 
 ```js
 function fibonacci(x) {
-    if(x==0)
+  if (x <= 1) {
     return 1;
-    else if(x==1)
-    return 1;
-    else return (fibonacci(x-1)+fibonacci(x-2));
-  }
+  };
+  
+  // Burada recursive olarak fibonacci fonksiyonunu tekrar çağırıyoruz.
+  return fibonacci(x - 1) + fibonacci(x - 2);
+}
 
-  let y = fibonacci(8);
-  document.write(y);
+const result = fibonacci(8);
+console.log(result); // Output: 34
 ```
