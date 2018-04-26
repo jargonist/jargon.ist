@@ -3,7 +3,7 @@ title: Conditional Conformance
 tags:
 - swift
 ---
- 
+
 Türkçesi, şartlı uyumluluk olarak geçebilir. Ancak türkçesi ile google'da bilgi bulmak pek mümkün değil.
 Apple'ın Swift 4.1 ile duyurduğu bir özelliktir.
 
