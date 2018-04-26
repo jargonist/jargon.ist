@@ -1,6 +1,7 @@
 ---
 title: diff
 tags:
+- genel
 - git
 ---
 
