@@ -8,7 +8,7 @@ tags:
 - restful
 ---
 
-Idempotent methodlar, bir veya birden fazla çağırıldığında (kaç defa çağırıldığı farketmeksizin) aynı sonucu veren methodlardır.
+Idempotent methodlar, bir veya birden fazla çağırıldığında (kaç defa çağırıldığı fark etmeksizin) aynı sonucu veren methodlardır.
 
 Daha iyi açıklama için eğer RESTful servis bakış açısından bakacak olursak, bir işlemin idempotent olması için, istemci sunucuya aynı isteği defalarca gönderse bile hepsinde aynı sonucu alması gerekir.
 
