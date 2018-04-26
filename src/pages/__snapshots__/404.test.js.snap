@@ -11,7 +11,7 @@ exports[`renders correctly 1`] = `
       Sayfa bulunamadı
     </h1>
     <p>
-      Aradığınız sayfa bulunamadı. Eğer aradıgınız şey bir jargon ise, bize
+      Aradığınız sayfa bulunamadı. Eğer aradığınız şey bir jargon ise, bize
        
       <a
         href="/blob/master/CONTRIBUTING.md"
