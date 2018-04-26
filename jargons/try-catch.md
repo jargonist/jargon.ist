@@ -4,7 +4,7 @@ tags:
 - programlama
 ---
 
-Uygulamada, çalışma esnasında ([runtime](/runtime)) oluşan hataları yönetmeye yarayan kod bloklarıdır. Dilden dile kullanım şekilleri değişebilir veya bazi dillerde hiç bulunmayabilir.
+Uygulamada, çalışma esnasında ([runtime](/runtime)) oluşan hataları yönetmeye yarayan kod bloklarıdır. Dilden dile kullanım şekilleri değişebilir veya bazı dillerde hiç bulunmayabilir.
 
 ```C#
 try
