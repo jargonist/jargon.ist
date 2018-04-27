@@ -4,9 +4,9 @@ tags:
 - veri yapısı
 ---
 
-Array, içeriğine dizinle(satır numarasıyla) erişilen bir veri grubu oluşturmak için kullanılan bir [data structure](/data-structure)dır.
+Array, içeriğine [dizin](/index-terimi)le (satır numarasıyla) erişilen bir veri grubu oluşturmak için kullanılan bir [data structure](/data-structure)dır.
 
-Ornek olarak;
+Örnek olarak;
 
 ```javascript
 // Array oluşturmak

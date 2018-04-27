@@ -1,16 +1,16 @@
 newIssueWelcomeComment: >
   🎉👊 **Issue için teşekkürler** 👊 🎉
 
-  En kısa zamanda geliştiriciler size geri dönüş yapacaklardır. Eğer bu issue, bir yazım hatası ile ilgili ise bu hatayı siz de düzeltip pull request açabilirsiniz. Katkıda bulunmadan önce [CONTRIBUTING.md](https://github.com/jargonist/jargon.ist/blob/master/CONTRIBUTING.md) dökümanını okumayı unutmayın.
+  En kısa zamanda geliştiriciler size geri dönüş yapacaklardır. Eğer bu issue, bir yazım hatası ile ilgili ise bu hatayı siz de düzeltip pull request açabilirsiniz. Katkıda bulunmadan önce [CONTRIBUTING.md](https://github.com/jargonist/jargon.ist/blob/master/CONTRIBUTING.md) dokümanını okumayı unutmayın.
 
 newPRWelcomeComment: >
   🎉👊 **Pull request için teşekkürler** 👊 🎉
 
-  Pull request için teşekkür ederiz. Eger bu PR'da yeni bir jargon eklediyseniz, lütfen [CONTRIBUTING.md](https://github.com/jargonist/jargon.ist/blob/master/CONTRIBUTING.md) dökümanını okuyup burada yazılanlara uyduğunuza emin olun.
+  Pull request için teşekkür ederiz. Eger bu PR'da yeni bir jargon eklediyseniz, lütfen [CONTRIBUTING.md](https://github.com/jargonist/jargon.ist/blob/master/CONTRIBUTING.md) dokümanını okuyup burada yazılanlara uyduğunuza emin olun.
 
-  Yazmış olduğunuz dökümünda eğer başka jargonları da kullandıysanız ve bu jargonlar daha önce [jargon.ist](https://jargon.ist) üzerinde yazılmışsa onlara link vermeniz faydalı olacaktır. Bu jargonlar daha önce tanımlanmadıysa ise yeni bir döküman yazmasanız bile, en azından bu jargonları linklemeniz topluluktan başkalarının daha sonra tanımlaması için yardımcı olacaktır.
+  Yazmış olduğunuz dokümanda eğer başka jargonları da kullandıysanız ve bu jargonlar daha önce [jargon.ist](https://jargon.ist) üzerinde yazılmışsa onlara link vermeniz faydalı olacaktır. Bu jargonlar daha önce tanımlanmadıysa ise yeni bir doküman yazmasanız bile, en azından bu jargonları linklemeniz topluluktan başkalarının daha sonra tanımlaması için yardımcı olacaktır.
 
 firstPRMergeComment: >
   🎉👊 **Pull request birleştirildi** 👊 🎉
 
-  Tebrikler! Pull request'in birleştirildi. Yaptığın değişiklikler otomatik olarak bir kaç dakika içinde [jargon.ist](https://jargon.ist) üzerinde yayında olacak. Eğer yeni bir jargon eklediysen bu jargonun linki yine otomatik olarak Twitter üzerinde [@jargon_ist](https://twitter.com/jargon_ist) hesabının takipçileri ile paylaşılacak.
+  Tebrikler! Pull request'in birleştirildi. Yaptığın değişiklikler otomatik olarak birkaç dakika içinde [jargon.ist](https://jargon.ist) üzerinde yayında olacak. Eğer yeni bir jargon eklediysen bu jargonun linki yine otomatik olarak Twitter üzerinde [@jargon_ist](https://twitter.com/jargon_ist) hesabının takipçileri ile paylaşılacak.

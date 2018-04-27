@@ -38,7 +38,7 @@ class JargonList extends PureComponent<Props, State> {
           <Container>
             <h1 className="u-color-primary u-clear-gap-top u-gap-bottom-small">Dizin</h1>
             <p className="u-color-comet u-half-width@md-up u-full-width@md-down">
-              Çeşitli programlama dillerinden ve prensiplerinden bir çok jargonu alfabetik olarak
+              Çeşitli programlama dillerinden ve prensiplerinden birçok jargonu alfabetik olarak
               görüntüleyin, örneklerle birlikte jargona hakim olun.
             </p>
           </Container>

@@ -1,13 +1,41 @@
 ---
 title: boolean
+sameWith:
+- bool
 tags:
+- programlama
+- matematik
 - genel
 ---
 
-Boolean, değeri **doğru** ya da **yanlış** bir veri tipidir. Bu değer, bazen **1(doğru)** ya da **0(yanlış)** şeklinde temsil edilir.
+Matematik ve Bilgisayar bilimlerinde sadece doğru veya yanlış olabilecek değişken tipine denir. Bu değişkenler sadece **0 ve 1** veya **True ve False** değerlerini alır. Karşılıkları **Doğru ve Yanlış**'tır.
 
-```c#
-bool dogru = true; //true yerine 1 de diyebilirdik.
+```js
+Boolean(10 > 9)(
+  // true değerine eşittir
 
-bool yanlis = false; // false yerine 0 da diyebilirdik.
+  10 > 9,
+)(
+  // true değerine eşittir
+
+  10 > 15,
+); // false değerine eşittir
+
+// Bir değere sahip olmayan(Matematiksel olarak boş bir değere sahip olan veya henüz hiç değeri belirlenmemiş) değişkenler false değerini alır.
+
+var x = 0;
+
+Boolean(x); // x = false
+
+//veya
+
+var x = '';
+
+Boolean(x); // x = false
+
+//veya
+
+var x;
+
+Boolean(x); // x = false
 ```
