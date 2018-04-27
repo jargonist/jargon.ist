@@ -1,14 +1,10 @@
 ---
-title: packagejson
+title: package.json
 tags:
 - javascript
-- genel
+- node.js
 ---
 
-Nodejs’in paket yönetimi dosyası proje içindeki package.json ana dizininde bulunan ve projemiz hakkında bilgiler içeren, projemiz içerisinde kullanılan paketlerin listesini tutan ve bir çok bilgiyi içeren özel bir json dosyasıdır.
+Node.js için paket yöneticilerinin kullandığı özel bir [JSON](/json) dosyasıdır. Bu dosyada proje ve geliştiricileri hakkında bilgiler, projenin bağımlılıkları ve paket yöneticileri tarafından kullanılabilecek [script](/script)'ler bulunabilir.
 
-Komut satırı şu şekildedir;
-
-```
-npm init
-```
+Örnek dosya olarak [jargon.ist](https://jargon.ust) projesinin [package.json](https://github.com/jargonist/jargon.ist/blob/master/package.json) dosyası incelenebilir.
