@@ -3,25 +3,21 @@ title: float
 tags:
 - genel
 - veri yapısı
+- css
 ---
 
-Float, ondalık değerleri ifade etmek için kullanılır.
-CSS' de bir öğeyi konumlandırmak için kullanılır. Kullanıldığı taktirde ondan sonra gelen öğelerde aynı konumda sıralanacağı için öğeyi sıraladıktan sonra clear özelliği ile temizlemek gerekir.
+## Veri Yapısı
+float veri tipi ondalık değerleri ifade etmek için kullanılır.
 
 ```c
-
-// C kodu
 float ondalik = 21.14;
 ```
 
-
+## CSS
+Bir öğeyi taşıyıcısına göre konumlandırmak için kullanılır.
 
 ```css
-
-// CSS kodu
-
-div.kutu{
-float:left; // Float özelliği sayesinde div.kutu öğesini sol tarafa konumlandırdık.
+.eleman {
+  float: left;
 }
-
 ```
