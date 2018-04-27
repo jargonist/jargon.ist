@@ -9,7 +9,7 @@ const NotFoundPage = () => (
     <Container>
       <h1>Sayfa bulunamadı</h1>
       <p>
-        Aradığınız sayfa bulunamadı. Eğer aradıgınız şey bir jargon ise, bize{' '}
+        Aradığınız sayfa bulunamadı. Eğer aradığınız şey bir jargon ise, bize{' '}
         <a href={`${process.env.GATSBY_REPO_URL || ''}/blob/master/CONTRIBUTING.md`}>
           katkıda bulunarak
         </a>{' '}

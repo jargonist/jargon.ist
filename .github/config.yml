@@ -8,7 +8,7 @@ newPRWelcomeComment: >
 
   Pull request için teşekkür ederiz. Eger bu PR'da yeni bir jargon eklediyseniz, lütfen [CONTRIBUTING.md](https://github.com/jargonist/jargon.ist/blob/master/CONTRIBUTING.md) dokümanını okuyup burada yazılanlara uyduğunuza emin olun.
 
-  Yazmış olduğunuz dökümünda eğer başka jargonları da kullandıysanız ve bu jargonlar daha önce [jargon.ist](https://jargon.ist) üzerinde yazılmışsa onlara link vermeniz faydalı olacaktır. Bu jargonlar daha önce tanımlanmadıysa ise yeni bir doküman yazmasanız bile, en azından bu jargonları linklemeniz topluluktan başkalarının daha sonra tanımlaması için yardımcı olacaktır.
+  Yazmış olduğunuz dokümanda eğer başka jargonları da kullandıysanız ve bu jargonlar daha önce [jargon.ist](https://jargon.ist) üzerinde yazılmışsa onlara link vermeniz faydalı olacaktır. Bu jargonlar daha önce tanımlanmadıysa ise yeni bir doküman yazmasanız bile, en azından bu jargonları linklemeniz topluluktan başkalarının daha sonra tanımlaması için yardımcı olacaktır.
 
 firstPRMergeComment: >
   🎉👊 **Pull request birleştirildi** 👊 🎉
