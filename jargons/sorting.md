@@ -7,7 +7,7 @@ tags:
 - programlama
 ---
 
-Sorting veri öğeleri arasındaki bazı doğrusal ilişkilere göre, verilerin artan veya azalan şekilde sıralanmasıdır. Genelde yapılacak olan aramaları kolaylaştırmak için tercih edilir. Örneğin; isimlerin karışık şekilde tutulduğu bir telefon defterinde aran ismi bulmak, isimleri alfabetik sıraya göre dizdikten sonra bulmaktan daha uzun sürebilir. Bu yüzden verileri öncellikle sıraya koyarız.
+Sorting veri öğeleri arasındaki bazı doğrusal ilişkilere dayalı, verilerin belirli bir düzene göre sıralanmasıdır. Genelde yapılacak olan aramaları kolaylaştırmak için tercih edilir. Örneğin; isimlerin karışık şekilde tutulduğu bir telefon defterinde aranan ismi bulmak, isimleri alfabetik sıraya göre dizdikten sonra bulmaktan daha uzun sürebilir. Bu yüzden verileri öncellikle sıraya koyarız.
 
 Sorting çeşitli [algoritmalar](/algorithm) kullanılarak yapılabilir, bunlardan bazıları:
 
@@ -72,4 +72,4 @@ void insertionSort(int arr[], int size) {
 }
 ```
 
-Daha farklı algoritmalar ve detaylı bilgilere [buradan](http://bilgisayarkavramlari.sadievrenseker.com/2008/08/09/siralama-algoritmalari-sorting-algorithms/) ulaşabilirsiniz.
+`Not:` Sorting algoritmaları yukarıdakiler ile sınırlı değildir. Bu algoritmalar dışında farklı bir çok sorting algoritması mevcuttur. 
