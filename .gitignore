@@ -11,3 +11,7 @@ coverage
 /public
 
 .env
+
+# IDE
+.idea
+.vs
