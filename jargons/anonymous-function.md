@@ -4,7 +4,7 @@ tags:
 - javascript
 ---
 
-**İsimsiz fonksiyonlardır.** Fonksiyonlar [javascript](/k/javascript)'in temelleridir. Her bir fonksiyon bir görev yada bir değer hesaplayan ifade kümeleridir. Fakat bir fonksiyon bir isme sahip olmak zorunda değildir.
+**İsimsiz fonksiyonlardır.** Fonksiyonlar, [JavaScript](/k/javascript)'in first-class objeleridir; çünkü içerisinde [object](/object), property, method vs. bulundurabilir.  Her bir fonksiyon, bir görev ya da bir değer hesaplayan ifade kümeleridir; fakat bir fonksiyon bir isme sahip olmak zorunda değildir.
 
 ```js
   (function(xy) { 
