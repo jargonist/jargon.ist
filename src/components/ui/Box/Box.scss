@@ -1,13 +1,8 @@
 @import '../../../styles/abstracts/index';
 
 .c-box {
-  border-color: $g-border-color;
-  border-style: solid;
-  border-width: px-to-rem(1px);
-  padding: pad(large) pad(small);
-  transition: 0.4s;
-
-  &:hover {
-    box-shadow: 1px 1px 30px rgba(51, 51, 51, 0.3);
-  }
+    border-color: $g-border-color;
+    border-style: solid;
+    border-width: px-to-rem(1px);
+    padding: pad(large) pad(small);
 }
