@@ -1,8 +1,8 @@
 @import '../../../styles/abstracts/index';
 
 .c-box {
-  border-color: $g-border-color;
-  border-style: solid;
-  border-width: px-to-rem(1px);
-  padding: pad(large) pad(small);
+    border-color: $g-border-color;
+    border-style: solid;
+    border-width: px-to-rem(1px);
+    padding: pad(large) pad(small);
 }
