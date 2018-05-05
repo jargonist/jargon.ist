@@ -8,8 +8,7 @@ tags:
 ---
 
 Side effect terimi kendi kapsamının dışında bulunan herhangi bir [state](/state)'i değiştiren fonksiyonlar için kullanılır.
-Eğer bir fonksiyon return ettiği değerden bağımsız olarak içinde çağırdığı başka bir fonksiyon sayesinde de [state](/state)
-güncellemesi yapıyorsa yine side effect yaratır.
+Eğer bir fonksiyon döndürdüğü değerden bağımsız olarak içinde çağırdığı başka bir fonksiyon sayesinde de [state](/state) güncellemesi yapıyorsa yine side effect yaratır.
 
 Kendisine verilen argümanı güncelleme, dosyaya yazı yazma gibi işlemleri gerçekleştiren fonksiyonlar side effect'e sahiptir.
 
@@ -25,4 +24,4 @@ function pushFn(arg1) {
 }
 ```
 
-Yukaridaki fonksiyon side effect yaratmaktadır. Kendi kapsamı dışındaki `arr` değişkenini [mutate](/mutation) etmektedir.
+Yukarıdaki fonksiyon side effect yaratmaktadır. Kendi kapsamı dışındaki `arr` değişkenini [mutate](/mutation) etmektedir.

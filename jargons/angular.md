@@ -1,7 +1,7 @@
 ---
-title: angularjs
+title: angular
 sameWith:
-- angular
+- angularjs
 tags:
 - javascript
 - mvvm

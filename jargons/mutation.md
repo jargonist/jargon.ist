@@ -12,12 +12,10 @@ tags:
 - fonksiyonel programlama
 ---
 
-Mutation programlama dillerinde ana kaynağı oluşturma aşamasından sonra uygulamanın herhangi bir anında
-modifiye etmek anlamına gelir. JavaScript özelinde bakacak olarak herhangi bir array'a bir eleman push'lamak
-mutation yaratır. Yine JavaScript özelinde [primitive](/primitive) tipler [immutable](/immutable)
-iken `Array` ve `Object` tipleri mutable'dır.
+Mutation, programlama dillerinde ana kaynağı oluşturma aşamasından sonra uygulamanın herhangi bir anında
+modifiye edilmesi anlamına gelir. [JavaScript](/javascript) özelinde bakacak olarak herhangi bir [array](/array)'e bir eleman eklemek mutation yaratır. Yine JavaScript özelinde [primitive](/primitive) tipler [immutable](/immutable) iken `Array` ve `Object` tipleri mutable'dır.
 
-Mutation örneği;
+Mutation örneği:
 
 ```js
 const obj = {
@@ -25,5 +23,7 @@ const obj = {
   email: 'user1@example.com',
 };
 
-obj.country = 'TR'; // Burada mutation yarattık.
+obj.country = 'TR'; // 'TR'
+
+console.log(obj); // { user: 'user1', email: 'user1@example.com', country: 'TR' }
 ```

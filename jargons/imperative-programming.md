@@ -32,7 +32,7 @@ container.appendChild(button);
 container.appendChild(div);
 ```
 
-Aynı kod ise [react.js](/reactjs) ile [declarative](/declarative-programming) olarak ise şu şekilde yazılabilir;
+Aynı kod ise [React](/reactjs) ile [declarative](/declarative-programming) olarak ise şu şekilde yazılabilir;
 
 ```jsx
 class Foo extends PureComponent {

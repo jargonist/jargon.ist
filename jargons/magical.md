@@ -12,4 +12,4 @@ tags:
 user.findByEmail('test@example.com');
 ```
 
-Yukarıdaki metodu `findByX` olarak düşünürsek ve `x`'i de veritabanında `user` tablosundaki herhangi bir field olarak planlarsak, `findByEmail` bir `magic` metoddur. Arkaplanda `findByEmail` metodun'dan `Email` kısmı alınıp [camelcase](/camelcase)'e döndürülüp daha sonra veritabanında email alanında arama yapılmaktadır. `x` yerine veritabanındaki tablodaki herhangi bir field da gelebilmektedir.
+Yukarıdaki metodu `findByX` olarak düşünürsek ve `x`'i de veritabanında `user` tablosundaki herhangi bir field olarak planlarsak, `findByEmail` bir `magic` metoddur. Arkaplanda `findByEmail` metotundan `Email` kısmı alınıp [camelCase](/camelcase)'e döndürülüp daha sonra veritabanında email alanında arama yapılmaktadır. `x` yerine veritabanındaki tablodaki herhangi bir field da gelebilmektedir.

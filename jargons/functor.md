@@ -8,7 +8,7 @@ tags:
 - fonksiyonel programlama
 ---
 
-Tuttuğu veri üzerinde [map](/map) işlemi yapılabilen yapılara `functor` ismi verilir. JavaScript açısından bakarsak [Array](/array) bir functor'dır. Dikkat edilmesi gereken [map](/map) kuralını sağlayan herhangi bir veri tipinin functor olabileceğidir. Aşagıdaki örnek de bir functor'dır.
+Tuttuğu veri üzerinde [map](/map) işlemi yapılabilen yapılara `functor` ismi verilir. [JavaScript](/javascript) açısından bakarsak [Array](/array) bir functor örneğidir. Dikkat edilmesi gereken nokta, [map](/map) kuralını sağlayan herhangi bir veri tipinin functor olabileceğidir. Aşagıdaki örnek de bir functor'dır.
 
 ```js
 class Thing {

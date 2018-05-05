@@ -20,4 +20,4 @@ func main() {
 }
 ```
 
-go derleyicisi `value` değişkeninin tipinin `int` olduğunu `infer` etmektedir.
+[Go](/go) derleyicisi `value` değişkeninin tipinin `int` olduğunu `infer` etmektedir.

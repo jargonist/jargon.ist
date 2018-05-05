@@ -7,7 +7,7 @@ tags:
 
 Kullanıcıların verileri doldurabileceği boş alanlar içeren biçimlendirilmiş yapılardır.
 
-Html ile oluşturulmuş bir form  örneği:
+[HTML](/html) ile oluşturulmuş bir form örneği:
 
 ```html
 <form action="/signup.php" method="post">

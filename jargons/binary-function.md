@@ -13,4 +13,4 @@ const add = (x, y) => x + y;
 // add fonksiyonu binary bir fonksiyondur.
 ```
 
-Ayrica [binary operation](/binary-operation) jargonuna da bakılabilir.
+Ayrıca [binary operation](/binary-operation) jargonuna da bakılabilir.
