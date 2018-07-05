@@ -24,82 +24,85 @@ const regex = /ab+c/;
 JavaScript kullanıyorsak aşağıdaki gibi de tanımlanabilir.
 
 ```js
-const regex = new RegExp('[0-9]','g');
+const regex = new RegExp('[0-9]', 'g');
 ```
 
 Düzenli ifadeler bazı özel karakterlere sahiptir. Bunları belirli başlıklar altında inceleyecek olursak:
 
-- Karakter Sınıfları - [Character](/char) [Class](/class)es 
-- Karakter Dizileri - [Character Set](/character-set)s 
-- Değişim - Alteration 
-- Sınırlar - Boundaries 
-- Gruplama ve geriye dönük referanslar - Grouping and back references 
-- Niceleyiciler - Quantifiers
-- Koşullar - Assertions 
+* Karakter Sınıfları - [Character](/char) [Class](/class)es
+* Karakter Dizileri - [Character Set](/character-set)s
+* Değişim - Alteration
+* Sınırlar - Boundaries
+* Gruplama ve geriye dönük referanslar - Grouping and back references
+* Niceleyiciler - Quantifiers
+* Koşullar - Assertions
 
 Karakter Sınıfları:
+
 <!-- prettier-ignore -->
-| Karakter   | Eşleşmeler - Matches     | 
-| ---        | ---      | 
-| `.`     | Herhangi bir karakter ile eşleşir. |
-| `\d`    | Tek bir [digit](/digit) karakter ile eşleşir. Eşdeğeri `[0-9]`. |
-| `\D`    | Digit **olmayan** tek bir karakter ile eşleşir. Eşdeğeri `[^0-9]`. |
-| `\w`    | [Alphanumeric](/alphanumeric) bir kelimede tek bir karakter ile eşleşir. Bunlara `_` de dahildir. Eşdeğeri `[A-Za-z0-9_]`. |
-| `\W`    | Alphanumeric **olmayan** bir karakter ile eşleşir. Eşdeğeri `[^A-Za-z0-9_]`. |
-| `\s`    | Tek bir boşluk karakteri ile eşleşir. Örneğin: space ( ) , tab (`\t`), [form](/form) feed (`\f`), line feed (`\n`) ve unicode spaces (`U+0020`). |
-| `\S`    | Boşluk olmayan bir karakter ile eşleşir. |
+| Karakter | Eşleşmeler - Matches |
+| --- | --- |
+| `.`  | Herhangi bir karakter ile eşleşir. |
+| `\d` | Tek bir [digit](/digit) karakter ile eşleşir. Eşdeğeri `[0-9]`. |
+| `\D` | Digit **olmayan** tek bir karakter ile eşleşir. Eşdeğeri `[^0-9]`. |
+| `\w` | [Alphanumeric](/alphanumeric) bir kelimede tek bir karakter ile eşleşir. Bunlara `_` de dahildir. Eşdeğeri `[A-Za-z0-9_]`. |
+| `\W` | Alphanumeric **olmayan** bir karakter ile eşleşir. Eşdeğeri `[^A-Za-z0-9_]`. |
+| `\s` | Tek bir boşluk karakteri ile eşleşir. Örneğin: space ( ) , tab (`\t`), [form](/form) feed (`\f`), line feed (`\n`) ve unicode spaces (`U+0020`). |
+| `\S` | Boşluk olmayan bir karakter ile eşleşir. |
 
 Karakter Dizileri:
 
-- `[abcd]` karakter dizisi {`a`, `b`, `c`, `d`} karakterlerinden herhangi biri ile eşleşecektir. Aynı zamanda `[a-d]` şeklinde de yazılabilir.
+* `[abcd]` karakter dizisi {`a`, `b`, `c`, `d`} karakterlerinden herhangi biri ile eşleşecektir. Aynı zamanda `[a-d]` şeklinde de yazılabilir.
 
-- `[^abcd]` karakter dizisi {`a`, `b`, `c`, `d`} **olmayan** herhangi bir karakter ile eşleşecektir. Aynı zamanda `[^a-d]` şeklinde de yazılabilir.
+* `[^abcd]` karakter dizisi {`a`, `b`, `c`, `d`} **olmayan** herhangi bir karakter ile eşleşecektir. Aynı zamanda `[^a-d]` şeklinde de yazılabilir.
 
 Değişim:
 
 `|` sembolü düzenli ifadelerde iki şeyden birisi ile eşleşmek için kullanılmaktadır. Örneğin: `a|b`, `a` veya `b` ile eşleşecektir.
 
 Sınırlar:
+
 <!-- prettier-ignore -->
-| Karakter   | Eşleşmeler - Matches     | 
-| ---        | ---      | 
-| `^`     | String'in **başı** ile eşleşir. Eğer multiline flag'ı aktif ise aynı zamanda line break (`\n`) karakterinden hemen **sonrası** ile de eşleşir. |
-| `$`     | String'in **sonu** ile eşleşir. Eğer multiline flag'ı aktif ise aynı zamanda line break (`\n`) karakterinin hemen **öncesi** ile de eşleşir. |
-| `\b`    | Bir harf ve boşluk arasındaki sıfır genişlikli bir sözcük sınırı. |
-| `\B`    | İki harf arasında veya iki boşluk arasında sıfır genişlikli bir sözcük olmayan sınırla eşleşir. |
+| Karakter | Eşleşmeler - Matches |
+| --- | --- |
+| `^`  | String'in **başı** ile eşleşir. Eğer multiline flag'ı aktif ise aynı zamanda line break (`\n`) karakterinden hemen **sonrası** ile de eşleşir. |
+| `$`  | String'in **sonu** ile eşleşir. Eğer multiline flag'ı aktif ise aynı zamanda line break (`\n`) karakterinin hemen **öncesi** ile de eşleşir. |
+| `\b` | Bir harf ve boşluk arasındaki sıfır genişlikli bir sözcük sınırı. |
+| `\B` | İki harf arasında veya iki boşluk arasında sıfır genişlikli bir sözcük olmayan sınırla eşleşir. |
 
 Gruplama ve geriye dönük referanslar:
 
-- `(a)` {`a`} ile eşleşir ve bu eşleşmeyi **hatırlar**. Bunlara yakalama grupları (capturing groups) denir.
+* `(a)` {`a`} ile eşleşir ve bu eşleşmeyi **hatırlar**. Bunlara yakalama grupları (capturing groups) denir.
 
-- `(?:a)` {`a`} ile eşleşir ancak bu eşleşmeyi **hatırlamaz**. Bunlara yakalamayan gruplar (non-capturing groups) denir.
+* `(?:a)` {`a`} ile eşleşir ancak bu eşleşmeyi **hatırlamaz**. Bunlara yakalamayan gruplar (non-capturing groups) denir.
 
-- `\n` n pozitif bir değer olmak üzere, n. eşleşmesinin değerine dönük bir referanstır.
+* `\n` n pozitif bir değer olmak üzere, n. eşleşmesinin değerine dönük bir referanstır.
 
 Niceleyiciler:
 
-- `*` Kendinden önceki karakterden **en az `0`** tane veya daha fazla olması durumunda eşleşme gerçekleştirir. Örneğin: `a*` a karakterinden 0 tane veya daha fazla olmasını beklemektedir.
+* `*` Kendinden önceki karakterden **en az `0`** tane veya daha fazla olması durumunda eşleşme gerçekleştirir. Örneğin: `a*` a karakterinden 0 tane veya daha fazla olmasını beklemektedir.
 
-- `+` Kendinden önceki karakterden **en az `1`** tane veya daha fazla olması durumunda eşleşme gerçekleştirir. Örneğin: `a+` a karakterinden **en az 1** tane veya daha fazla olmasını beklemektedir.
+* `+` Kendinden önceki karakterden **en az `1`** tane veya daha fazla olması durumunda eşleşme gerçekleştirir. Örneğin: `a+` a karakterinden **en az 1** tane veya daha fazla olmasını beklemektedir.
 
-- `?` Kendinden önceki karakterden `0` veya `1` tane olması durumunda eşleşme gerçekleştirir. Örneğin: `a?` a karakterinden 0 veya 1 tane olmasını beklemektedir.
+* `?` Kendinden önceki karakterden `0` veya `1` tane olması durumunda eşleşme gerçekleştirir. Örneğin: `a?` a karakterinden 0 veya 1 tane olmasını beklemektedir.
 
-- `{n}` n pozitif bir sayı olmak üzere. Kendinden önceki karakterden tam olarak `n` tane olması durumunda eşleşme gerçekleştirir. Örneğin: `a{5}` a karakterinden 5 tane olmasını beklemektedir.
+* `{n}` n pozitif bir sayı olmak üzere. Kendinden önceki karakterden tam olarak `n` tane olması durumunda eşleşme gerçekleştirir. Örneğin: `a{5}` a karakterinden 5 tane olmasını beklemektedir.
 
-- `{n,}` n pozitif bir sayı olmak üzere. Kendinden önceki karakterden **en az `n`** tane olması durumunda eşleşme gerçekleştirir. Örneğin: `a{5,}` a karakterinden **en az 5** tane olmasını beklemektedir.
+* `{n,}` n pozitif bir sayı olmak üzere. Kendinden önceki karakterden **en az `n`** tane olması durumunda eşleşme gerçekleştirir. Örneğin: `a{5,}` a karakterinden **en az 5** tane olmasını beklemektedir.
 
-- `{n,m}` n ve m pozitif birer sayı olmak üzere. Kendinden önceki karakterden **en az `n`** ve **en fazla `m`** tane olması durumunda eşleşme gerçekleştirir. Örneğin: `a{5,10}` a karakterinden **en az 5** ve **en fazla 10** tane olmasını beklemektedir.
+* `{n,m}` n ve m pozitif birer sayı olmak üzere. Kendinden önceki karakterden **en az `n`** ve **en fazla `m`** tane olması durumunda eşleşme gerçekleştirir. Örneğin: `a{5,10}` a karakterinden **en az 5** ve **en fazla 10** tane olmasını beklemektedir.
 
 Koşullar:
 
-- `a(?=b)` a dan hemen sonra b **geliyor** ise eşleşme gerçekleştirir.
+* `a(?=b)` a dan hemen sonra b **geliyor** ise eşleşme gerçekleştirir.
 
-- `a(?!b)` a dan hemen sonra b **gelmiyor** ise eşleşme gerçekleştirir.
+* `a(?!b)` a dan hemen sonra b **gelmiyor** ise eşleşme gerçekleştirir.
 
 Örnek 1:
+
 <!-- prettier-ignore -->
 ```js
-// içinde yazım sırası önem arzeder şekilde `jargon` kelimesi bulunan string'leri arayalım. 
+// içinde yazım sırası önem arzeder şekilde `jargon` kelimesi bulunan string'leri arayalım.
 const regex = /.*j.*a.*r.*g.*o.*n.*/;
 
 const string1 = "asdasjsdaqwdasrasdasgasdasdaoasdasdn",
@@ -124,6 +127,7 @@ console.log(
 Dördüncü string `jargon` barındırıyor fakat `J` harfi büyük. Sonuç: `false`
 
 Örnek 2:
+
 <!-- prettier-ignore -->
 ```js
 // herhangi bir karakterden yine aynı karaktere kadar olan kısımın arasında kalan karakterleri match edelim.

@@ -8,34 +8,29 @@ tags:
 - genel
 ---
 
-Matematik ve Bilgisayar bilimlerinde sadece doğru veya yanlış olabilecek değişken tipine denir. Bu değişkenler sadece **0 ve 1** veya **True ve False** değerlerini alır. Karşılıkları **Doğru ve Yanlış**'tır.
+Matematik ve bilgisayar bilimlerinde sadece doğru veya yanlış olabilecek değişken tipine denir. Bu değişkenler sadece **0 ve 1** veya **True ve False** değerlerini alır. Karşılıkları **Doğru ve Yanlış**'tır.
 
 ```js
-Boolean(10 > 9)(
-  // true değerine eşittir
+Boolean(10 > 9); // true değerine eşittir
+Boolean(10 > 15); // false değerine eşittir
+```
 
-  10 > 9,
-)(
-  // true değerine eşittir
+Bir değere sahip olmayan (matematiksel olarak boş bir değere sahip olan veya henüz hiç değeri belirlenmemiş) değişkenler `false` değerini alır.
 
-  10 > 15,
-); // false değerine eşittir
-
-// Bir değere sahip olmayan(Matematiksel olarak boş bir değere sahip olan veya henüz hiç değeri belirlenmemiş) değişkenler false değerini alır.
-
+```js
 var x = 0;
 
 Boolean(x); // x = false
 
-//veya
+// veya
 
-var x = '';
+var y = '';
 
-Boolean(x); // x = false
+Boolean(y); // y = false
 
-//veya
+// veya
 
-var x;
+var z;
 
-Boolean(x); // x = false
+Boolean(z); // z = false
 ```

@@ -6,4 +6,4 @@ tags:
 ---
 
 input, programlara verilen girdi olarak düşünülebilir. Kullanıcı programa [console](/console)'dan ya da herhangi bir arayüzden girdi gönderebilir.
-Fonksiyonlara gönderilen inputlara [parametre](/argument) denir.
+Fonksiyonlara gönderilen input'lara [parametre](/argument) denir.

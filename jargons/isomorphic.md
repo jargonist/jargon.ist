@@ -4,4 +4,4 @@ tags:
 - javascript
 ---
 
-Hem tarayıcıda hem [Node.js](/node) ile çalışan araçlar için kullanılan ifadedir.
+Hem sunucu ([server](/server)) hem de istemci ([client](/client)) tarafında çalışan kodlar için kullanılan ifadedir.

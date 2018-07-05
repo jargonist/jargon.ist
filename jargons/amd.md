@@ -5,7 +5,7 @@ tags:
 - modules
 ---
 
-**Asenkron Modül Tanımlaması** ifadesinin kısaltmasıdır. Tarayıcıların ihtiyaç yönetimini (dependency management) yapabilmesi için geliştirilmiş bir yöntemdir.
+**Asenkron Modül Tanımlaması** _(Asynchronous Module Definition)_ ifadesinin kısaltmasıdır. Tarayıcıların ihtiyaç yönetimini [dependency management](/dependency-management) yapabilmesi için geliştirilmiş bir yöntemdir.
 
 ```js
 require(['x.js', 'y.js', 'z.js'], function(x, y, z) {
@@ -13,4 +13,4 @@ require(['x.js', 'y.js', 'z.js'], function(x, y, z) {
 });
 ```
 
-Yeni teknolojilerle birlikte ihtiyaç azalmıştır.
+Yeni teknolojilerle birlikte ihtiyaç azalmıştır. Alternatif olarak [CommonJS](/commonjs) incelenebilir.

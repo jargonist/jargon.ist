@@ -12,5 +12,6 @@ tags:
 const a = [1, 2, 3];
 const b = a.map(x => x * 2);
 
-console.log(b); // output: [2, 4, 6]
+console.log(a); // [1, 2, 3]
+console.log(b); // [2, 4, 6]
 ```

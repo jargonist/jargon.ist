@@ -5,12 +5,14 @@ tags:
 - genel
 ---
 
-NPM 'in açılımı, [Node Package Manager](/nodejs) 'dir. Yazılım geliştiricilerinin kendi yazdığı yazdığı eklentileri , 3. parti yazılımları paylaşmasını sağlayan bir Paket Yöneticisidir. Bu paket yöneticisi , hali hazırda yapılmış olan 3. parti yazılımları projemizde kullanmamıza olanak sağlar.
+npm _(Node Package Manager)_, [JavaScript](/javascript) için kullanılabilen bir paket yöneticisidir. Aynı zamanda, [Node.js](/nodejs) için de varsayılan paket yöneticisidir.
 
-Örneğin:
+Örneğin;
 
 ```bash
 npm i eslint
 ```
 
-denilerek eslint kütüphanesi projeye dahil edilebilir.
+komutuyla, [ESLint](/eslint) paketi projeye dahil edilebilir.
+
+Alternatif olarak [Yarn](/yarn) incelenebilir.

@@ -5,4 +5,4 @@ tags:
 - matematik
 ---
 
-Onluk taban'daki sayıları ifade eder (günlük hayatta kullandığımız sayılar). Örneğin: 9, 100345000, -256
+Onluk tabandaki sayıları ifade eder (günlük hayatta kullandığımız sayılar). Örneğin: 9, 100345000, -256

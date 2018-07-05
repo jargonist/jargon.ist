@@ -5,7 +5,7 @@ tags:
 - matematik
 ---
 
-Fonksiyonel programlamada bir fonksiyonunun aldığı argümanların sayısına veya işlemlerin aldığı operatör sayısına `arity` denir. Örnek olarak;
+Fonksiyonel programlamada bir fonksiyonunun aldığı argümanların ([argument](/argument)) sayısına veya işlemlerin aldığı operatör sayısına `arity` denir. Örnek olarak;
 
 ```js
 const add = (x, y) => x + y;

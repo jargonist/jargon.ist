@@ -9,7 +9,7 @@ Index, bir [array](/array)'deki verinin konumudur. `Lua, COBOL, Fortran` vb. gib
 
 Örnek olarak;
 
-```javascript
+```js
 // Array'in ilk elemanına erişmek için
 myArray[0];
 
