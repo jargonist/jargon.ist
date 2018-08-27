@@ -5,4 +5,15 @@ tags:
 - programlama
 ---
 
-Karakterleri ([char](/char)) tam sayı olarak temsil eden bir standart. Her karakter için 8 [bit](/bit) kullanan [ASCII](/ascii)'den farklı olarak, Unicode 16 bit kullanır, yani 65.000'den fazla benzersiz karakteri temsil edebilir. Bu, İngilizce ve Batı Avrupa dilleri için biraz fazladır, ancak Türkçe, Yunanca, Çince ve Japonca gibi diğer diller için gereklidir.
+Yazı karakterlerinin sayısal temsili için bir standart. Dünya dillerindeki harfler, matematik sembolleri ve emojiler gibi birçok simgeyi içerir. Her karaktere *kod noktası* denilen bir tam sayı değeri atanmıştır. Bu tekil değerler (ve dolayısıyla metinler) UTF-8, UTF-16, UTF-32 gibi karakter kodlamalarıyla bir [byte](/byte) dizisine dönüştürülebilir.
+
+```
+Karakter: ₺
+İsim: TURKISH LIRA SIGN
+Sürüm: Unicode 6.2 (Eylül 2012)
+Kod noktası: U+20BA
+UTF-8 kodlaması: 0xE2 0x82 0xBA
+UTF-16 kodlaması: 0x20BA
+```
+
+Unicode standardı karakterlerin sınıflandırılması, denkliği ve dönüşümü gibi konuları da ele alır. Böylece metinlerin düzenlenmesi, karşılaştırılması ve saklanması gibi işlemlerde kolaylık sağlar.
