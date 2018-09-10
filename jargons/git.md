@@ -7,6 +7,7 @@ tags:
 
 git, bir versiyon kontrol sistemidir. Sürüm kontrolü, bir ya da daha fazla dosya üzerinde yapılan değişiklikleri kaydeden ve daha sonra belirli bir sürüme geri dönebilmenizi sağlayan bir sistemdir.
 
+[init](/init),
 [commit](/commit),
 [push](/push),
 [pull](/pull),
