@@ -6,9 +6,9 @@ tags:
 - thread
 ---
 
-Türkçe olarak anlatmak istersek **Eşzamansız** programlama olarak tanımlanabilir. Basitçe tek bir [thread](/thread) üzerinde bir çok fonksiyonu veya isteği karşılamak mümkün ama standart yapıda işlemler sıraya girerek görevlerini yerine getirir. Buna [SYNC](/sync) (senkron) denir. Async de ise bu işler birbirinden ayrı thread'lerde sıraya girmeden aynı anda başlatılabilir. Hiç bir işlem bir birine bağlı olmadan bağımsız çalışır.
+Türkçe olarak anlatmak istersek **Eşzamansız** programlama olarak tanımlanabilir. Basitçe tek bir [thread](/thread) üzerinde bir çok fonksiyonu veya isteği karşılamak mümkündür ama standart yapıda işlemler sıraya girerek görevlerini yerine getirir. Buna [SYNC](/sync) (senkron) denir. Async'de ise bu işler birbirinden ayrı thread'lerde sıraya girmeden aynı anda başlatılabilir. Her işlem bir birine bağlı olmadan bağımsız şekilde çalışır.
 
-### GO Dilinde örnek
+### Go Dilinde örnek
 Goroutines kullanarak *Go Programlama Dili* nde örnek yapabiliriz. Resmi dökümanlar ve örnekler için [buraya](https://tour.golang.org/concurrency/1) bakabilirsiniz.
 
 ### ASYNC
