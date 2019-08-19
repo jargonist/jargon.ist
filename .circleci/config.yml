@@ -2,7 +2,7 @@ version: 2
 jobs:
   build_dependencies:
     docker:
-      - image: circleci/node:latest
+      - image: circleci/node:10
     working_directory: ~/repo
     steps:
       - checkout
@@ -25,7 +25,7 @@ jobs:
 
   test_app:
     docker:
-      - image: circleci/node:latest
+      - image: circleci/node:10
     working_directory: ~/repo
     steps:
       - checkout
@@ -43,7 +43,7 @@ jobs:
 
   tweet:
     docker:
-      - image: circleci/node:latest
+      - image: circleci/node:10
     working_directory: ~/repo
     steps:
       - checkout
