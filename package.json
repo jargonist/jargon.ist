@@ -14,7 +14,7 @@
     "classnames": "^2.2.5",
     "dotenv": "^5.0.1",
     "empty": "^0.10.1",
-    "gatsby": "^1.9.241",
+    "gatsby": "^5.3.3",
     "gatsby-link": "^1.6.39",
     "gatsby-plugin-favicon": "^2.1.1",
     "gatsby-plugin-google-analytics": "^1.0.29",
