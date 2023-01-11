@@ -26,7 +26,7 @@
     "gatsby-plugin-sass": "^1.0.25",
     "gatsby-remark-prismjs": "^1.2.24",
     "gatsby-source-filesystem": "^1.5.28",
-    "gatsby-transformer-remark": "^1.7.39",
+    "gatsby-transformer-remark": "^5.25.1",
     "graphql": "0.11.7",
     "normalize.css": "^8.0.0",
     "prismjs": "^1.13.0",
